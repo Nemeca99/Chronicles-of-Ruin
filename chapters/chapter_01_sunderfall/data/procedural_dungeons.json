@@ -1,0 +1,146 @@
+{
+  "dungeon_1_1754690798": {
+    "id": "dungeon_1_1754690798",
+    "name": "1",
+    "theme": "ancient_ruins",
+    "difficulty": "easy",
+    "level_range": [
+      1,
+      1
+    ],
+    "rooms": {
+      "room_00": {
+        "id": "room_00",
+        "room_type": "entrance",
+        "x": 0,
+        "y": 0,
+        "width": 3,
+        "height": 3,
+        "connections": [
+          "room_01",
+          "room_02"
+        ],
+        "monsters": [
+          {
+            "type": "stone_golem",
+            "level": 1,
+            "is_boss": false,
+            "special_abilities": [
+              "stone_skin",
+              "ancient_knowledge"
+            ]
+          }
+        ],
+        "treasures": [],
+        "special_features": [
+          "warning_sign"
+        ],
+        "difficulty_rating": 0.38,
+        "description": "A weathered chamber that serves as the entrance to this forgotten place. Notable features include warning_sign."
+      },
+      "room_01": {
+        "id": "room_01",
+        "room_type": "combat",
+        "x": 3,
+        "y": 0,
+        "width": 6,
+        "height": 6,
+        "connections": [
+          "room_00"
+        ],
+        "monsters": [
+          {
+            "type": "stone_golem",
+            "level": 1,
+            "is_boss": false,
+            "special_abilities": [
+              "combat_expertise",
+              "pack_tactics",
+              "ancient_knowledge"
+            ]
+          },
+          {
+            "type": "stone_golem",
+            "level": 1,
+            "is_boss": false,
+            "special_abilities": [
+              "combat_expertise",
+              "pack_tactics",
+              "stone_skin"
+            ]
+          },
+          {
+            "type": "stone_golem",
+            "level": 1,
+            "is_boss": false,
+            "special_abilities": [
+              "combat_expertise",
+              "pack_tactics",
+              "ancient_knowledge"
+            ]
+          }
+        ],
+        "treasures": [],
+        "special_features": [
+          "combat_arena",
+          "weapon_rack"
+        ],
+        "difficulty_rating": 1.1,
+        "description": "A weathered arena where countless battles have been fought. Notable features include combat_arena, weapon_rack."
+      },
+      "room_02": {
+        "id": "room_02",
+        "room_type": "secret",
+        "x": 1,
+        "y": 2,
+        "width": 3,
+        "height": 3,
+        "connections": [
+          "room_00"
+        ],
+        "monsters": [
+          {
+            "type": "stone_golem",
+            "level": 1,
+            "is_boss": false,
+            "special_abilities": [
+              "stone_skin",
+              "ancient_knowledge"
+            ]
+          },
+          {
+            "type": "stone_golem",
+            "level": 1,
+            "is_boss": false,
+            "special_abilities": [
+              "ancient_knowledge",
+              "stone_skin"
+            ]
+          }
+        ],
+        "treasures": [
+          {
+            "type": "ancient_artifact",
+            "quality": "common",
+            "level_requirement": 1
+          }
+        ],
+        "special_features": [
+          "ancient_artifact"
+        ],
+        "difficulty_rating": 0.9,
+        "description": "A hidden moss-covered chamber concealed from prying eyes. Notable features include ancient_artifact."
+      }
+    },
+    "entrance_room": "room_00",
+    "boss_room": null,
+    "estimated_completion_time": 20,
+    "loot_quality": "common",
+    "special_mechanics": [
+      "crumbling_walls",
+      "ancient_traps",
+      "environmental_hazards"
+    ],
+    "ai_test_results": {}
+  }
+}
