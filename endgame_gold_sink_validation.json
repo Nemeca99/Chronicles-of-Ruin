@@ -1,0 +1,22 @@
+{
+  "purpose": "Optional endgame luxury gold sink",
+  "not_required_for": [
+    "Story progression",
+    "Boss defeats",
+    "Skill unlocks",
+    "Area access",
+    "Quest completion"
+  ],
+  "target_audience": [
+    "Players with excess gold (500k+)",
+    "Min-maxers who want perfect builds",
+    "Completionists seeking optimization",
+    "Players who finished all content"
+  ],
+  "core_principle": "Enhancement, not requirement",
+  "balance_validation": {
+    "naked_playthrough": "Must be possible",
+    "basic_gear_playthrough": "Should be comfortable",
+    "set_gear_playthrough": "Should be easier/faster, not required"
+  }
+}

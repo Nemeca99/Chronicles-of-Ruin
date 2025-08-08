@@ -1,0 +1,41 @@
+{
+  "core_philosophy": "Game MUST be beatable with skills only - no gear required",
+  "changes_applied": [
+    {
+      "change": "Base damage scaling",
+      "old": "5 + (level * 2)",
+      "new": "10 + (level * 5)",
+      "impact": "Level 15: 35 \u2192 85 damage (+143%)"
+    },
+    {
+      "change": "Pure archetype multipliers",
+      "old": "Pure: 1.5x, Hybrid: 1.25x",
+      "new": "Pure: 2.5x, Hybrid: 1.8x",
+      "impact": "Pure builds now 67% stronger"
+    },
+    {
+      "change": "Skill level bonuses",
+      "old": "Expert: 1.2x, Master: 1.4x",
+      "new": "Expert: 1.6x, Master: 2.0x",
+      "impact": "Master players deal 2x damage"
+    },
+    {
+      "change": "Skill points per level",
+      "old": "3 per level",
+      "new": "5 per level",
+      "impact": "67% more skill points for builds"
+    },
+    {
+      "change": "Enemy health scaling",
+      "old": "40 + (level * 15)",
+      "new": "30 + (level * 10)",
+      "impact": "32% less enemy health"
+    }
+  ],
+  "new_calculations": {
+    "level_15_naked_damage": 425.0,
+    "boss_health": 180,
+    "hits_to_kill_boss": 0.4,
+    "viable": true
+  }
+}

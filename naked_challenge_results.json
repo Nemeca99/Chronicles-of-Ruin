@@ -1,0 +1,5086 @@
+{
+  "naked_challenge_passed": false,
+  "player_success_rate": 0.0,
+  "average_success_rate": 0.375,
+  "final_boss_success_rate": 0.2,
+  "successful_players": 0,
+  "total_players": 4,
+  "player_results": [
+    {
+      "player": "NakedWarrior",
+      "overall_success": false,
+      "stage_results": [
+        {
+          "stage": "Stage 1: Level 1 - sunderfall_outskirts",
+          "level": 1,
+          "area": "sunderfall_outskirts",
+          "success_rate": 0.6,
+          "victories": 3,
+          "attempts": 5,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 22,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 60,
+              "health_lost": 60,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.1
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 22,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.1
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 55,
+              "health_lost": 42,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 60,
+              "health_lost": 60,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2: Level 3 - whispering_woods",
+          "level": 3,
+          "area": "whispering_woods",
+          "success_rate": 0.8,
+          "victories": 8,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 85,
+              "health_lost": 64,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.8
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 51,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.8
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 85,
+              "health_lost": 64,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.8
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 70,
+              "health_lost": 43,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.8
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 70,
+              "health_lost": 43,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.8
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 54,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.9
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 70,
+              "health_lost": 58,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.9
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 70,
+              "health_lost": 58,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.9
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 70,
+              "health_lost": 58,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.9
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 70,
+              "health_lost": 58,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.9
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3: Level 5 - ancient_ruins",
+          "level": 5,
+          "area": "ancient_ruins",
+          "success_rate": 0.5,
+          "victories": 5,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 83,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 100,
+              "health_lost": 52,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 100,
+              "health_lost": 52,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 100,
+              "health_lost": 52,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 108,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 100,
+              "health_lost": 74,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.9
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 76,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.9
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 76,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.9
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 66,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.9
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 100,
+              "health_lost": 74,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.9
+            }
+          ]
+        },
+        {
+          "stage": "Stage 4: Level 8 - corrupted_grove",
+          "level": 8,
+          "area": "corrupted_grove",
+          "success_rate": 0.3,
+          "victories": 3,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 160,
+              "health_lost": 237,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 49,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 54,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 54,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 45,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 15.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 112,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 160,
+              "health_lost": 95,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 112,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 160,
+              "health_lost": 95,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 112,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            }
+          ]
+        },
+        {
+          "stage": "Stage 5: Level 12 - guardian_chamber",
+          "level": 12,
+          "area": "guardian_chamber",
+          "success_rate": 0.0,
+          "victories": 0,
+          "attempts": 5,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "forest_guardian",
+              "damage_dealt": 81,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "forest_guardian",
+              "damage_dealt": 81,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "forest_guardian",
+              "damage_dealt": 76,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "forest_guardian",
+              "damage_dealt": 81,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.1
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "forest_guardian",
+              "damage_dealt": 76,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 6: Level 15 - boss_arena",
+          "level": 15,
+          "area": "boss_arena",
+          "success_rate": 0.2,
+          "victories": 2,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 76,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 72,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 76,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 250,
+              "health_lost": 347,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 76,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 81,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": true,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 265,
+              "health_lost": 390,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 81,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 81,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            },
+            {
+              "victory": false,
+              "player": "NakedWarrior",
+              "enemy": "corruption_lord",
+              "damage_dealt": 76,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "power_strike",
+                "berserker_rage",
+                "defensive_stance"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 25.2
+            }
+          ]
+        }
+      ],
+      "final_boss_attempts": 10,
+      "final_boss_victories": 2,
+      "average_success_rate": 0.39999999999999997
+    },
+    {
+      "player": "NakedMage",
+      "overall_success": false,
+      "stage_results": [
+        {
+          "stage": "Stage 1: Level 1 - sunderfall_outskirts",
+          "level": 1,
+          "area": "sunderfall_outskirts",
+          "success_rate": 0.6,
+          "victories": 3,
+          "attempts": 5,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 43,
+              "health_lost": 60,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 12.6
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 70,
+              "health_lost": 54,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 12.6
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 43,
+              "health_lost": 60,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 12.6
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 55,
+              "health_lost": 34,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 12.6
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 18,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 12.6
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2: Level 3 - whispering_woods",
+          "level": 3,
+          "area": "whispering_woods",
+          "success_rate": 0.4,
+          "victories": 4,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 70,
+              "health_lost": 35,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 19.8
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 70,
+              "health_lost": 35,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 19.8
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 75,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.75,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 19.8
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 85,
+              "health_lost": 51,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.75,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 19.8
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 75,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.75,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 19.8
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 52,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 44,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 44,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 44,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 85,
+              "health_lost": 73,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3: Level 5 - ancient_ruins",
+          "level": 5,
+          "area": "ancient_ruins",
+          "success_rate": 0.6,
+          "victories": 6,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 115,
+              "health_lost": 69,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.75,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 83,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 130,
+              "health_lost": 88,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 108,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 83,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 115,
+              "health_lost": 69,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.75,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 115,
+              "health_lost": 69,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.75,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 83,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 100,
+              "health_lost": 52,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 115,
+              "health_lost": 69,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.75,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 27.0
+            }
+          ]
+        },
+        {
+          "stage": "Stage 4: Level 8 - corrupted_grove",
+          "level": 8,
+          "area": "corrupted_grove",
+          "success_rate": 0.8,
+          "victories": 8,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 145,
+              "health_lost": 65,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.2,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 45.4
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 175,
+              "health_lost": 95,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.2,
+              "win_probability": 0.5,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 45.4
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 145,
+              "health_lost": 65,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.2,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 45.4
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 160,
+              "health_lost": 79,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.2,
+              "win_probability": 0.75,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 45.4
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 145,
+              "health_lost": 65,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.2,
+              "win_probability": 0.9,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 45.4
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 81,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.7
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 160,
+              "health_lost": 158,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.7
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 175,
+              "health_lost": 189,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.7
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 160,
+              "health_lost": 158,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.7
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 67,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.7
+            }
+          ]
+        },
+        {
+          "stage": "Stage 5: Level 12 - guardian_chamber",
+          "level": 12,
+          "area": "guardian_chamber",
+          "success_rate": 0.2,
+          "victories": 1,
+          "attempts": 5,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "forest_guardian",
+              "damage_dealt": 121,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 36.5
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "forest_guardian",
+              "damage_dealt": 121,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 36.5
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "forest_guardian",
+              "damage_dealt": 121,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 36.5
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "forest_guardian",
+              "damage_dealt": 205,
+              "health_lost": 161,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 36.5
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "forest_guardian",
+              "damage_dealt": 106,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 36.5
+            }
+          ]
+        },
+        {
+          "stage": "Stage 6: Level 15 - boss_arena",
+          "level": 15,
+          "area": "boss_arena",
+          "success_rate": 0.4,
+          "victories": 4,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 114,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 108,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 121,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 250,
+              "health_lost": 231,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 250,
+              "health_lost": 231,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 121,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 108,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": false,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 121,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 250,
+              "health_lost": 231,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            },
+            {
+              "victory": true,
+              "player": "NakedMage",
+              "enemy": "corruption_lord",
+              "damage_dealt": 250,
+              "health_lost": 231,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.25,
+              "strategy_used": [
+                "fireball",
+                "ice_shard",
+                "mana_shield"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 37.8
+            }
+          ]
+        }
+      ],
+      "final_boss_attempts": 10,
+      "final_boss_victories": 4,
+      "average_success_rate": 0.5
+    },
+    {
+      "player": "NakedRanger",
+      "overall_success": false,
+      "stage_results": [
+        {
+          "stage": "Stage 1: Level 1 - sunderfall_outskirts",
+          "level": 1,
+          "area": "sunderfall_outskirts",
+          "success_rate": 0.2,
+          "victories": 1,
+          "attempts": 5,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 60,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.8
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 60,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.8
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 60,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.8
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 51,
+              "health_lost": 60,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.8
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 55,
+              "health_lost": 36,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.8
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2: Level 3 - whispering_woods",
+          "level": 3,
+          "area": "whispering_woods",
+          "success_rate": 0.6,
+          "victories": 6,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 70,
+              "health_lost": 37,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.5
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 70,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.5
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 85,
+              "health_lost": 55,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.5
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 85,
+              "health_lost": 55,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.5
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 85,
+              "health_lost": 55,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.8,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.5
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 63,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 44,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 52,
+              "health_lost": 80,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 70,
+              "health_lost": 49,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 100,
+              "health_lost": 101,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.6,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.9
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3: Level 5 - ancient_ruins",
+          "level": 5,
+          "area": "ancient_ruins",
+          "success_rate": 0.4,
+          "victories": 4,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 130,
+              "health_lost": 75,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 31.5
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 97,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 31.5
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 115,
+              "health_lost": 59,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 31.5
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 100,
+              "health_lost": 44,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 31.5
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 100,
+              "health_lost": 44,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 31.5
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 88,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.0
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 68,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.0
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 68,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.0
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 68,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.0
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 68,
+              "health_lost": 100,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 22.0
+            }
+          ]
+        },
+        {
+          "stage": "Stage 4: Level 8 - corrupted_grove",
+          "level": 8,
+          "area": "corrupted_grove",
+          "success_rate": 0.5,
+          "victories": 5,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 175,
+              "health_lost": 243,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.6
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 57,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.6
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 52,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.6
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 63,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.6
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 63,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.6
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 145,
+              "health_lost": 67,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 44.1
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 131,
+              "health_lost": 130,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 44.1
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 175,
+              "health_lost": 97,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 44.1
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 145,
+              "health_lost": 67,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 44.1
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 160,
+              "health_lost": 81,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 1.0,
+              "win_probability": 0.7,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 44.1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 5: Level 12 - guardian_chamber",
+          "level": 12,
+          "area": "guardian_chamber",
+          "success_rate": 0.2,
+          "victories": 1,
+          "attempts": 5,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "forest_guardian",
+              "damage_dealt": 88,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 30.4
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "forest_guardian",
+              "damage_dealt": 235,
+              "health_lost": 254,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 30.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "forest_guardian",
+              "damage_dealt": 101,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 30.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "forest_guardian",
+              "damage_dealt": 88,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 30.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "forest_guardian",
+              "damage_dealt": 88,
+              "health_lost": 170,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 30.4
+            }
+          ]
+        },
+        {
+          "stage": "Stage 6: Level 15 - boss_arena",
+          "level": 15,
+          "area": "boss_arena",
+          "success_rate": 0.1,
+          "victories": 1,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 94,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 89,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 89,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 94,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 89,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 89,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 84,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 89,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": false,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 84,
+              "health_lost": 200,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            },
+            {
+              "victory": true,
+              "player": "NakedRanger",
+              "enemy": "corruption_lord",
+              "damage_dealt": 265,
+              "health_lost": 334,
+              "skill_effectiveness": 1.5,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "aimed_shot",
+                "poison_arrow",
+                "evasive_maneuvers"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 29.4
+            }
+          ]
+        }
+      ],
+      "final_boss_attempts": 10,
+      "final_boss_victories": 1,
+      "average_success_rate": 0.3333333333333333
+    },
+    {
+      "player": "NakedHybrid",
+      "overall_success": false,
+      "stage_results": [
+        {
+          "stage": "Stage 1: Level 1 - sunderfall_outskirts",
+          "level": 1,
+          "area": "sunderfall_outskirts",
+          "success_rate": 0.6,
+          "victories": 3,
+          "attempts": 5,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 31,
+              "health_lost": 60,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 7.0
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 32,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 7.0
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 32,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 7.0
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 24,
+              "health_lost": 60,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 7.0
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 40,
+              "health_lost": 32,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.85,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 60,
+                "base_mana": 35,
+                "base_damage": 7,
+                "skill_points": 3,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 7.0
+            }
+          ]
+        },
+        {
+          "stage": "Stage 2: Level 3 - whispering_woods",
+          "level": 3,
+          "area": "whispering_woods",
+          "success_rate": 0.2,
+          "victories": 2,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 50,
+              "health_lost": 80,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.0
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 41,
+              "health_lost": 80,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.0
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 41,
+              "health_lost": 80,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.0
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 41,
+              "health_lost": 80,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.0
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_wolf",
+              "damage_dealt": 100,
+              "health_lost": 127,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.8,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 11.0
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 26,
+              "health_lost": 80,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.6,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 8.2
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 70,
+              "health_lost": 83,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.6,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 8.2
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 38,
+              "health_lost": 80,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.6,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 8.2
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 26,
+              "health_lost": 80,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.6,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 8.2
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_bear",
+              "damage_dealt": 31,
+              "health_lost": 80,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.6,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 80,
+                "base_mana": 45,
+                "base_damage": 11,
+                "skill_points": 9,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 8.2
+            }
+          ]
+        },
+        {
+          "stage": "Stage 3: Level 5 - ancient_ruins",
+          "level": 5,
+          "area": "ancient_ruins",
+          "success_rate": 0.3,
+          "victories": 3,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 100,
+              "health_lost": 75,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.8
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 65,
+              "health_lost": 100,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.8
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 100,
+              "health_lost": 75,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.8
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 65,
+              "health_lost": 100,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.8
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_sprite",
+              "damage_dealt": 75,
+              "health_lost": 100,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.45,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.8
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 52,
+              "health_lost": 100,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.1
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 52,
+              "health_lost": 100,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.1
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 40,
+              "health_lost": 100,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.1
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 100,
+              "health_lost": 107,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.1
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "skeleton_warrior",
+              "damage_dealt": 52,
+              "health_lost": 100,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.7,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 100,
+                "base_mana": 55,
+                "base_damage": 15,
+                "skill_points": 15,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 13.1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 4: Level 8 - corrupted_grove",
+          "level": 8,
+          "area": "corrupted_grove",
+          "success_rate": 0.2,
+          "victories": 2,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 31,
+              "health_lost": 130,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 38,
+              "health_lost": 130,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 38,
+              "health_lost": 130,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 38,
+              "health_lost": 130,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_treant",
+              "damage_dealt": 34,
+              "health_lost": 130,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 10.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 78,
+              "health_lost": 130,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.2
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 94,
+              "health_lost": 130,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.2
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 175,
+              "health_lost": 163,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.2
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 85,
+              "health_lost": 130,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.2
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corrupted_mage",
+              "damage_dealt": 145,
+              "health_lost": 112,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 1.0,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 130,
+                "base_mana": 70,
+                "base_damage": 21,
+                "skill_points": 24,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 26.2
+            }
+          ]
+        },
+        {
+          "stage": "Stage 5: Level 12 - guardian_chamber",
+          "level": 12,
+          "area": "guardian_chamber",
+          "success_rate": 0.2,
+          "victories": 1,
+          "attempts": 5,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "forest_guardian",
+              "damage_dealt": 60,
+              "health_lost": 170,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.1
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "forest_guardian",
+              "damage_dealt": 60,
+              "health_lost": 170,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.1
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "forest_guardian",
+              "damage_dealt": 205,
+              "health_lost": 325,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.1
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "forest_guardian",
+              "damage_dealt": 52,
+              "health_lost": 170,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.1
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "forest_guardian",
+              "damage_dealt": 52,
+              "health_lost": 170,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.5,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 170,
+                "base_mana": 90,
+                "base_damage": 29,
+                "skill_points": 36,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 18.1
+            }
+          ]
+        },
+        {
+          "stage": "Stage 6: Level 15 - boss_arena",
+          "level": 15,
+          "area": "boss_arena",
+          "success_rate": 0.1,
+          "victories": 1,
+          "attempts": 10,
+          "combats": [
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 53,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 53,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 50,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 56,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 50,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 50,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 53,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 53,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": false,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 50,
+              "health_lost": 200,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            },
+            {
+              "victory": true,
+              "player": "NakedHybrid",
+              "enemy": "corruption_lord",
+              "damage_dealt": 250,
+              "health_lost": 500,
+              "skill_effectiveness": 1.25,
+              "resistance_factor": 0.4,
+              "win_probability": 0.2,
+              "strategy_used": [
+                "elemental_weapon",
+                "tactical_strike",
+                "adaptive_defense"
+              ],
+              "naked_stats": {
+                "base_health": 200,
+                "base_mana": 105,
+                "base_damage": 35,
+                "skill_points": 45,
+                "resistances": {},
+                "gear_bonuses": {}
+              },
+              "final_damage_per_hit": 17.5
+            }
+          ]
+        }
+      ],
+      "final_boss_attempts": 10,
+      "final_boss_victories": 1,
+      "average_success_rate": 0.26666666666666666
+    }
+  ]
+}
