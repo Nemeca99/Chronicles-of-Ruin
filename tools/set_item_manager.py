@@ -7,6 +7,7 @@ Enhanced custom set creation with AI testing and balance validation
 import sys
 import json
 import time
+import random
 from pathlib import Path
 from typing import Dict, List, Optional, Any
 from enum import Enum
@@ -126,7 +127,10 @@ class SetManager:
             'bonuses': bonuses,
             'usage_count': 0,
             'balance_rating': None,
-            'ai_test_results': {}
+            'ai_test_results': {},
+            'reroll_count': 0,
+            'gambling_tax_per_piece': {slot: 0.0 for slot in selected_slots},
+            'base_reroll_cost': self._calculate_base_reroll_cost(len(selected_slots))
         }
         
         self.enhanced_sets[set_id] = enhanced_set
@@ -317,6 +321,67 @@ class SetManager:
         del self.enhanced_sets[set_id]
         self._save_enhanced_sets()
         return True
+    
+    def _calculate_base_reroll_cost(self, piece_count: int) -> int:
+        """Calculate base cost for rerolling a set"""
+        # Base cost scales with number of pieces
+        return 100 * piece_count
+    
+    def calculate_reroll_cost(self, set_id: str) -> int:
+        """Calculate current reroll cost including gambling tax"""
+        if set_id not in self.enhanced_sets:
+            return 0
+        
+        set_data = self.enhanced_sets[set_id]
+        base_cost = set_data['base_reroll_cost']
+        reroll_count = set_data['reroll_count']
+        
+        # Exponential base cost increase
+        escalation_cost = base_cost * (2 ** reroll_count)
+        
+        # Calculate total gambling tax from all pieces
+        total_tax = sum(set_data['gambling_tax_per_piece'].values())
+        tax_multiplier = 1 + total_tax
+        
+        return int(escalation_cost * tax_multiplier)
+    
+    def reroll_set_bonuses(self, set_id: str, player_gold: int) -> Dict:
+        """Reroll set bonuses with gambling tax system"""
+        if set_id not in self.enhanced_sets:
+            return {"success": False, "error": "Set not found"}
+        
+        set_data = self.enhanced_sets[set_id]
+        reroll_cost = self.calculate_reroll_cost(set_id)
+        
+        if player_gold < reroll_cost:
+            return {
+                "success": False, 
+                "error": f"Not enough gold! Need {reroll_cost}, have {player_gold}"
+            }
+        
+        # Apply gambling tax to each piece (0.001% to 0.01% per piece)
+        for slot in set_data['slots']:
+            tax_increase = random.uniform(0.00001, 0.0001)  # 0.001% to 0.01% as decimal
+            set_data['gambling_tax_per_piece'][slot] += tax_increase
+        
+        # Increment reroll count
+        set_data['reroll_count'] += 1
+        
+        # Generate new bonuses
+        new_bonuses = self._generate_bonuses(set_data['set_type'], len(set_data['slots']))
+        set_data['bonuses'] = new_bonuses
+        
+        # Save changes
+        self._save_enhanced_sets()
+        
+        return {
+            "success": True,
+            "cost_paid": reroll_cost,
+            "new_bonuses": new_bonuses,
+            "reroll_count": set_data['reroll_count'],
+            "next_reroll_cost": self.calculate_reroll_cost(set_id),
+            "gambling_taxes": {slot: f"{tax*100:.4f}%" for slot, tax in set_data['gambling_tax_per_piece'].items()}
+        }
 
 def main():
     """Main CLI interface"""
@@ -328,7 +393,8 @@ def main():
         print("2. List sets")
         print("3. View set details")
         print("4. Test set with AI")
-        print("5. Delete set")
+        print("5. Reroll set bonuses (GAMBLING)")
+        print("6. Delete set")
         print("0. Exit")
         
         choice = input("\nChoice: ").strip()
@@ -384,6 +450,52 @@ def main():
                 print("Set not found.")
         
         elif choice == "5":
+            set_id = input("Set ID to reroll: ").strip()
+            if set_id not in manager.enhanced_sets:
+                print("Set not found.")
+                continue
+            
+            # Show current cost and gambling taxes
+            current_cost = manager.calculate_reroll_cost(set_id)
+            set_data = manager.enhanced_sets[set_id]
+            
+            print(f"\n=== GAMBLING REROLL ===")
+            print(f"Set: {set_data['name']}")
+            print(f"Reroll Count: {set_data['reroll_count']}")
+            print(f"Current Cost: {current_cost} gold")
+            
+            if set_data['reroll_count'] > 0:
+                print("\nGambling Taxes per piece:")
+                for slot, tax in set_data['gambling_tax_per_piece'].items():
+                    print(f"  {slot}: +{tax*100:.4f}% cost")
+            
+            print(f"\n⚠️  WARNING: Each reroll adds 0.001%-0.01% permanent tax per piece!")
+            player_gold = int(input(f"Your gold amount: ") or "0")
+            
+            if player_gold < current_cost:
+                print(f"❌ Not enough gold! Need {current_cost}, have {player_gold}")
+                continue
+            
+            confirm = input("Confirm reroll? (y/N): ").lower().strip()
+            if confirm == 'y':
+                result = manager.reroll_set_bonuses(set_id, player_gold)
+                if result['success']:
+                    print(f"\n✅ Reroll successful!")
+                    print(f"💰 Cost: {result['cost_paid']} gold")
+                    print(f"🎲 Reroll #{result['reroll_count']}")
+                    print(f"💸 Next reroll cost: {result['next_reroll_cost']} gold")
+                    
+                    print("\n🎁 New bonuses:")
+                    for bonus in result['new_bonuses']:
+                        print(f"  {bonus['pieces']}pc: {bonus['name']} - {bonus['effect']}")
+                    
+                    print("\n📊 Updated gambling taxes:")
+                    for slot, tax in result['gambling_taxes'].items():
+                        print(f"  {slot}: +{tax}")
+                else:
+                    print(f"❌ {result['error']}")
+        
+        elif choice == "6":
             set_id = input("Set ID to delete: ").strip()
             creator_id = input("Creator ID: ").strip()
             if manager.delete_set(set_id, creator_id):

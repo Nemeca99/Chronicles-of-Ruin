@@ -128,15 +128,52 @@ class CombatSystem:
     def _calculate_base_damage(
         self, attacker_stats: Dict, skill_data: Dict, weapon_data: Dict
     ) -> float:
-        """Calculate base damage from stats, skills, and weapon."""
-        # Scaled for early/mid/late progression
-        power_damage = (
-            attacker_stats.get("power", 0) * 0.4
-        )  # Slightly higher contribution (tuned)
+        """Calculate base damage using simplified formula: (positive stats) - (negative stats)."""
+        
+        # Collect all positive and negative base damage contributions
+        positive_bonuses = []
+        negative_bonuses = []
+        
+        # Power contribution
+        power_damage = attacker_stats.get("power", 0) * 0.4
+        if power_damage >= 0:
+            positive_bonuses.append(power_damage)
+        else:
+            negative_bonuses.append(abs(power_damage))
+        
+        # Weapon damage
         weapon_damage = weapon_data.get("damage", 0)
+        if weapon_damage >= 0:
+            positive_bonuses.append(weapon_damage)
+        else:
+            negative_bonuses.append(abs(weapon_damage))
+        
+        # Skill damage
         skill_damage = skill_data.get("base_damage", 0)
-
-        return power_damage + weapon_damage + skill_damage
+        if skill_damage >= 0:
+            positive_bonuses.append(skill_damage)
+        else:
+            negative_bonuses.append(abs(skill_damage))
+        
+        # Equipment flat bonuses (if available)
+        if self.items_system and "player_id" in weapon_data:
+            equipment_bonuses = self.items_system.get_equipment_bonuses(
+                weapon_data["player_id"]
+            )
+            for bonus_type, bonus_value in equipment_bonuses.items():
+                if bonus_type in ["flat_damage", "base_power", "base_strength"]:
+                    if bonus_value >= 0:
+                        positive_bonuses.append(bonus_value)
+                    else:
+                        negative_bonuses.append(abs(bonus_value))
+        
+        # Apply simplified formula: positive sum - negative sum
+        total_positive = sum(positive_bonuses)
+        total_negative = sum(negative_bonuses)
+        base_damage = total_positive - total_negative
+        
+        # Ensure minimum base damage
+        return max(base_damage, 1.0)
 
     def _apply_item_percentages(self, base_damage: float, weapon_data: Dict) -> float:
         """Apply percentage bonuses from equipment."""
