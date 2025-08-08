@@ -11,9 +11,109 @@
     "monsters": [],
     "quests": [
       "quest_001",
-      "quest_101"
+      "quest_002",
+      "quest_101",
+      "quest_104",
+      "quest_201",
+      "quest_301",
+      "quest_401",
+      "quest_501",
+      "quest_502"
     ],
     "connections": [
+      "village_center",
+      "village_market",
+      "village_tavern",
+      "forest_edge"
+    ],
+    "story_flags_required": []
+  },
+  {
+    "id": "village_center",
+    "name": "Village Center",
+    "description": "The heart of Sunderfall village, where the elder's house and council chamber are located.",
+    "area_type": "AreaType.TOWN",
+    "level_range": [
+      1,
+      10
+    ],
+    "monsters": [],
+    "quests": [
+      "quest_001",
+      "quest_002"
+    ],
+    "connections": [
+      "sunderfall_village",
+      "village_market",
+      "village_tavern"
+    ],
+    "story_flags_required": []
+  },
+  {
+    "id": "village_market",
+    "name": "Village Market",
+    "description": "A bustling marketplace where merchants and villagers gather to trade goods and gossip.",
+    "area_type": "AreaType.TOWN",
+    "level_range": [
+      1,
+      10
+    ],
+    "monsters": [],
+    "quests": [
+      "quest_102",
+      "quest_103",
+      "quest_201",
+      "quest_501"
+    ],
+    "connections": [
+      "sunderfall_village",
+      "village_center",
+      "village_tavern"
+    ],
+    "story_flags_required": []
+  },
+  {
+    "id": "village_tavern",
+    "name": "Village Tavern",
+    "description": "The local tavern where travelers and villagers gather to share stories and news.",
+    "area_type": "AreaType.TOWN",
+    "level_range": [
+      1,
+      10
+    ],
+    "monsters": [],
+    "quests": [
+      "quest_104",
+      "quest_201",
+      "quest_501",
+      "quest_502"
+    ],
+    "connections": [
+      "sunderfall_village",
+      "village_center",
+      "village_market"
+    ],
+    "story_flags_required": []
+  },
+  {
+    "id": "forest_edge",
+    "name": "Forest Edge",
+    "description": "The boundary between the village and the Whispering Woods. The air feels heavy with foreboding.",
+    "area_type": "AreaType.FOREST",
+    "level_range": [
+      1,
+      3
+    ],
+    "monsters": [
+      "giant_rat",
+      "crop_pest"
+    ],
+    "quests": [
+      "quest_003",
+      "quest_105"
+    ],
+    "connections": [
+      "sunderfall_village",
       "whispering_woods"
     ],
     "story_flags_required": []
@@ -33,15 +133,146 @@
       "corrupted_sprite"
     ],
     "quests": [
-      "quest_002",
-      "quest_102"
+      "quest_004",
+      "quest_102",
+      "quest_202",
+      "quest_302"
     ],
     "connections": [
-      "sunderfall_village",
-      "ancient_ruins"
+      "forest_edge",
+      "forest_clearing",
+      "forest_stream",
+      "forest_ruins",
+      "corrupted_grove"
     ],
     "story_flags_required": [
       "met_elder"
+    ]
+  },
+  {
+    "id": "forest_clearing",
+    "name": "Forest Clearing",
+    "description": "A peaceful clearing in the forest where sunlight filters through the canopy.",
+    "area_type": "AreaType.FOREST",
+    "level_range": [
+      2,
+      5
+    ],
+    "monsters": [
+      "corrupted_wolf",
+      "corrupted_sprite"
+    ],
+    "quests": [
+      "quest_202"
+    ],
+    "connections": [
+      "whispering_woods",
+      "forest_stream",
+      "forest_ruins"
+    ],
+    "story_flags_required": [
+      "met_elder"
+    ]
+  },
+  {
+    "id": "forest_stream",
+    "name": "Forest Stream",
+    "description": "A clear stream that flows through the forest, providing fresh water and attracting wildlife.",
+    "area_type": "AreaType.FOREST",
+    "level_range": [
+      2,
+      5
+    ],
+    "monsters": [
+      "corrupted_bear",
+      "corrupted_sprite"
+    ],
+    "quests": [
+      "quest_202"
+    ],
+    "connections": [
+      "whispering_woods",
+      "forest_clearing",
+      "forest_ruins"
+    ],
+    "story_flags_required": [
+      "met_elder"
+    ]
+  },
+  {
+    "id": "forest_ruins",
+    "name": "Forest Ruins",
+    "description": "Ancient stone ruins partially overgrown by the forest, hinting at a forgotten civilization.",
+    "area_type": "AreaType.RUINS",
+    "level_range": [
+      3,
+      6
+    ],
+    "monsters": [
+      "corrupted_wolf",
+      "corrupted_sprite"
+    ],
+    "quests": [
+      "quest_202"
+    ],
+    "connections": [
+      "whispering_woods",
+      "forest_clearing",
+      "forest_stream",
+      "corrupted_grove"
+    ],
+    "story_flags_required": [
+      "met_elder"
+    ]
+  },
+  {
+    "id": "corrupted_grove",
+    "name": "Corrupted Grove",
+    "description": "A once-beautiful grove now twisted by corruption. The trees are blackened and the air is thick with dark energy.",
+    "area_type": "AreaType.FOREST",
+    "level_range": [
+      3,
+      6
+    ],
+    "monsters": [
+      "corrupted_bear",
+      "corrupted_sprite",
+      "corrupted_treant"
+    ],
+    "quests": [
+      "quest_005"
+    ],
+    "connections": [
+      "whispering_woods",
+      "forest_ruins",
+      "hidden_path"
+    ],
+    "story_flags_required": [
+      "discovered_corruption"
+    ]
+  },
+  {
+    "id": "hidden_path",
+    "name": "Hidden Path",
+    "description": "A secret path revealed by the grove's essence, leading deeper into the forest's mysteries.",
+    "area_type": "AreaType.FOREST",
+    "level_range": [
+      4,
+      7
+    ],
+    "monsters": [
+      "corrupted_treant",
+      "corrupted_sprite"
+    ],
+    "quests": [
+      "quest_006"
+    ],
+    "connections": [
+      "corrupted_grove",
+      "ancient_ruins"
+    ],
+    "story_flags_required": [
+      "cleared_corrupted_grove"
     ]
   },
   {
@@ -59,14 +290,115 @@
       "corrupted_mage"
     ],
     "quests": [
-      "quest_003"
+      "quest_007",
+      "quest_203"
     ],
     "connections": [
-      "whispering_woods",
-      "corruption_heart"
+      "hidden_path",
+      "ruins_library",
+      "ruins_temple",
+      "artifact_chamber",
+      "deep_chambers"
     ],
     "story_flags_required": [
       "discovered_corruption"
+    ]
+  },
+  {
+    "id": "ruins_library",
+    "name": "Ruins Library",
+    "description": "An ancient library filled with crumbling tomes and scrolls containing forgotten knowledge.",
+    "area_type": "AreaType.RUINS",
+    "level_range": [
+      6,
+      9
+    ],
+    "monsters": [
+      "corrupted_skeleton",
+      "corrupted_mage"
+    ],
+    "quests": [
+      "quest_203"
+    ],
+    "connections": [
+      "ancient_ruins",
+      "ruins_temple"
+    ],
+    "story_flags_required": [
+      "found_villagers"
+    ]
+  },
+  {
+    "id": "ruins_temple",
+    "name": "Ruins Temple",
+    "description": "A grand temple with ornate carvings and religious artifacts from the ancient civilization.",
+    "area_type": "AreaType.RUINS",
+    "level_range": [
+      6,
+      9
+    ],
+    "monsters": [
+      "corrupted_guardian",
+      "corrupted_skeleton"
+    ],
+    "quests": [
+      "quest_203"
+    ],
+    "connections": [
+      "ancient_ruins",
+      "ruins_library"
+    ],
+    "story_flags_required": [
+      "found_villagers"
+    ]
+  },
+  {
+    "id": "artifact_chamber",
+    "name": "Artifact Chamber",
+    "description": "A sacred chamber where the ancient artifact was once kept, now radiating with mysterious power.",
+    "area_type": "AreaType.RUINS",
+    "level_range": [
+      6,
+      9
+    ],
+    "monsters": [
+      "corrupted_guardian",
+      "corrupted_mage"
+    ],
+    "quests": [
+      "quest_008"
+    ],
+    "connections": [
+      "ancient_ruins",
+      "deep_chambers"
+    ],
+    "story_flags_required": [
+      "defeated_guardian"
+    ]
+  },
+  {
+    "id": "deep_chambers",
+    "name": "Deep Chambers",
+    "description": "Dark chambers deep beneath the ruins, where the corruption's influence is strongest.",
+    "area_type": "AreaType.RUINS",
+    "level_range": [
+      7,
+      10
+    ],
+    "monsters": [
+      "corrupted_mage",
+      "corrupted_skeleton"
+    ],
+    "quests": [
+      "quest_009"
+    ],
+    "connections": [
+      "ancient_ruins",
+      "artifact_chamber",
+      "corruption_heart"
+    ],
+    "story_flags_required": [
+      "activated_artifact"
     ]
   },
   {
@@ -82,13 +414,13 @@
       "corruption_lord"
     ],
     "quests": [
-      "quest_004"
+      "quest_010"
     ],
     "connections": [
-      "ancient_ruins"
+      "deep_chambers"
     ],
     "story_flags_required": [
-      "defeated_guardian"
+      "explored_deep_chambers"
     ]
   }
 ]

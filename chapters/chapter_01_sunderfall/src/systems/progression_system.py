@@ -149,11 +149,27 @@ class ProgressionSystem:
                 with open(self.quests_file, 'r') as f:
                     quests_data = json.load(f)
                     for quest_data in quests_data:
+                        # Handle quest_type enum conversion
+                        quest_type_str = quest_data['quest_type']
+                        if isinstance(quest_type_str, str):
+                            if '.' in quest_type_str:
+                                quest_type_str = quest_type_str.split('.')[-1]
+                            # Map string values to enum values
+                            quest_type_mapping = {
+                                'story': 'story',
+                                'side_quest': 'side_quest',
+                                'exploration': 'exploration',
+                                'combat': 'combat',
+                                'crafting': 'crafting',
+                                'social': 'social'
+                            }
+                            quest_type_str = quest_type_mapping.get(quest_type_str.lower(), quest_type_str)
+                        
                         quest = Quest(
                             id=quest_data['id'],
                             name=quest_data['name'],
                             description=quest_data['description'],
-                            quest_type=QuestType(quest_data['quest_type']),
+                            quest_type=QuestType(quest_type_str),
                             level_requirement=quest_data['level_requirement'],
                             objectives=quest_data.get('objectives', []),
                             rewards=quest_data.get('rewards', {}),
@@ -170,11 +186,27 @@ class ProgressionSystem:
                 with open(self.areas_file, 'r') as f:
                     areas_data = json.load(f)
                     for area_data in areas_data:
+                        # Handle area_type enum conversion
+                        area_type_str = area_data['area_type']
+                        if isinstance(area_type_str, str):
+                            if '.' in area_type_str:
+                                area_type_str = area_type_str.split('.')[-1]
+                            # Map string values to enum values
+                            area_type_mapping = {
+                                'town': 'town',
+                                'forest': 'forest',
+                                'cave': 'cave',
+                                'ruins': 'ruins',
+                                'boss_arena': 'boss_arena',
+                                'wilderness': 'wilderness'
+                            }
+                            area_type_str = area_type_mapping.get(area_type_str.lower(), area_type_str)
+                        
                         area = Area(
                             id=area_data['id'],
                             name=area_data['name'],
                             description=area_data['description'],
-                            area_type=AreaType(area_data['area_type']),
+                            area_type=AreaType(area_type_str),
                             level_range=tuple(area_data['level_range']),
                             monsters=area_data.get('monsters', []),
                             quests=area_data.get('quests', []),

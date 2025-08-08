@@ -38,8 +38,81 @@
   },
   {
     "id": "quest_002",
+    "name": "The Village Council",
+    "description": "The elder has called a meeting of the village council. Attend the meeting to learn more about the crisis.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 1,
+    "objectives": [
+      {
+        "type": "talk",
+        "target": "village_council",
+        "description": "Attend the village council meeting"
+      },
+      {
+        "type": "collect",
+        "target": "council_notes",
+        "count": 1,
+        "description": "Record the council's findings"
+      }
+    ],
+    "rewards": {
+      "experience": 150,
+      "gold": 75,
+      "items": [
+        "village_map"
+      ]
+    },
+    "story_flags": [
+      "attended_council",
+      "learned_corruption_history"
+    ],
+    "prerequisites": [
+      "quest_001"
+    ]
+  },
+  {
+    "id": "quest_003",
+    "name": "The Scout's Report",
+    "description": "A village scout has returned with disturbing news from the forest. Meet with the scout to learn what they discovered.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 2,
+    "objectives": [
+      {
+        "type": "talk",
+        "target": "village_scout",
+        "description": "Speak with the village scout"
+      },
+      {
+        "type": "collect",
+        "target": "scout_report",
+        "count": 1,
+        "description": "Obtain the scout's detailed report"
+      },
+      {
+        "type": "explore",
+        "target": "forest_edge",
+        "description": "Investigate the forest edge"
+      }
+    ],
+    "rewards": {
+      "experience": 200,
+      "gold": 100,
+      "items": [
+        "scout_gear"
+      ]
+    },
+    "story_flags": [
+      "met_scout",
+      "confirmed_corruption"
+    ],
+    "prerequisites": [
+      "quest_002"
+    ]
+  },
+  {
+    "id": "quest_004",
     "name": "Into the Forest",
-    "description": "The elder believes the disappearances are linked to the corrupted forest. Venture into the Whispering Woods to investigate.",
+    "description": "The scout's report confirms the corruption is spreading. Venture into the Whispering Woods to investigate.",
     "quest_type": "QuestType.STORY",
     "level_requirement": 2,
     "objectives": [
@@ -62,8 +135,8 @@
       }
     ],
     "rewards": {
-      "experience": 200,
-      "gold": 100,
+      "experience": 250,
+      "gold": 125,
       "items": [
         "forest_map"
       ]
@@ -73,13 +146,99 @@
       "cleared_forest_path"
     ],
     "prerequisites": [
-      "quest_001"
+      "quest_003"
     ]
   },
   {
-    "id": "quest_003",
+    "id": "quest_005",
+    "name": "The Corrupted Grove",
+    "description": "Deep in the forest, you've found a grove completely overtaken by corruption. Clear the area and investigate its source.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 3,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "corrupted_grove",
+        "description": "Explore the corrupted grove"
+      },
+      {
+        "type": "defeat",
+        "target": "corrupted_bear",
+        "count": 2,
+        "description": "Defeat corrupted bears"
+      },
+      {
+        "type": "defeat",
+        "target": "corrupted_sprite",
+        "count": 3,
+        "description": "Defeat corrupted sprites"
+      },
+      {
+        "type": "collect",
+        "target": "grove_essence",
+        "count": 1,
+        "description": "Collect the grove's essence"
+      }
+    ],
+    "rewards": {
+      "experience": 300,
+      "gold": 150,
+      "items": [
+        "nature_charm"
+      ]
+    },
+    "story_flags": [
+      "cleared_corrupted_grove",
+      "found_ancient_path"
+    ],
+    "prerequisites": [
+      "quest_004"
+    ]
+  },
+  {
+    "id": "quest_006",
+    "name": "The Hidden Path",
+    "description": "The grove's essence reveals a hidden path leading deeper into the forest. Follow it to discover what lies beyond.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 4,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "hidden_path",
+        "description": "Follow the hidden path"
+      },
+      {
+        "type": "defeat",
+        "target": "corrupted_treant",
+        "count": 1,
+        "description": "Defeat the corrupted treant guardian"
+      },
+      {
+        "type": "collect",
+        "target": "path_key",
+        "count": 1,
+        "description": "Obtain the path key"
+      }
+    ],
+    "rewards": {
+      "experience": 400,
+      "gold": 200,
+      "items": [
+        "ancient_key"
+      ]
+    },
+    "story_flags": [
+      "found_ruins_entrance",
+      "obtained_ancient_key"
+    ],
+    "prerequisites": [
+      "quest_005"
+    ]
+  },
+  {
+    "id": "quest_007",
     "name": "The Ancient Ruins",
-    "description": "The corruption leads to ancient ruins beneath the forest. Find the source of the corruption and the missing villagers.",
+    "description": "The hidden path leads to ancient ruins beneath the forest. Find the source of the corruption and the missing villagers.",
     "quest_type": "QuestType.STORY",
     "level_requirement": 5,
     "objectives": [
@@ -113,11 +272,95 @@
       "defeated_guardian"
     ],
     "prerequisites": [
-      "quest_002"
+      "quest_006"
     ]
   },
   {
-    "id": "quest_004",
+    "id": "quest_008",
+    "name": "The Artifact's Power",
+    "description": "The ancient artifact you found radiates with power. Learn to harness its abilities and understand its connection to the corruption.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 6,
+    "objectives": [
+      {
+        "type": "talk",
+        "target": "village_elder",
+        "description": "Consult the elder about the artifact"
+      },
+      {
+        "type": "explore",
+        "target": "artifact_chamber",
+        "description": "Explore the artifact's chamber"
+      },
+      {
+        "type": "ritual",
+        "target": "activate_artifact",
+        "description": "Activate the artifact's power"
+      }
+    ],
+    "rewards": {
+      "experience": 600,
+      "gold": 300,
+      "items": [
+        "artifact_focus"
+      ]
+    },
+    "story_flags": [
+      "activated_artifact",
+      "learned_corruption_source"
+    ],
+    "prerequisites": [
+      "quest_007"
+    ]
+  },
+  {
+    "id": "quest_009",
+    "name": "The Deep Chambers",
+    "description": "The artifact reveals deeper chambers beneath the ruins. Venture into the depths to confront the source of corruption.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 7,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "deep_chambers",
+        "description": "Explore the deep chambers"
+      },
+      {
+        "type": "defeat",
+        "target": "corrupted_mage",
+        "count": 2,
+        "description": "Defeat corrupted mages"
+      },
+      {
+        "type": "defeat",
+        "target": "corrupted_skeleton",
+        "count": 5,
+        "description": "Defeat corrupted skeletons"
+      },
+      {
+        "type": "collect",
+        "target": "chamber_essence",
+        "count": 3,
+        "description": "Collect chamber essences"
+      }
+    ],
+    "rewards": {
+      "experience": 700,
+      "gold": 350,
+      "items": [
+        "chamber_key"
+      ]
+    },
+    "story_flags": [
+      "explored_deep_chambers",
+      "found_corruption_heart"
+    ],
+    "prerequisites": [
+      "quest_008"
+    ]
+  },
+  {
+    "id": "quest_010",
     "name": "The Corrupted Heart",
     "description": "The ancient artifact has been corrupted. Confront the source of corruption and restore balance to Sunderfall.",
     "quest_type": "QuestType.STORY",
@@ -154,7 +397,7 @@
       "chapter_1_complete"
     ],
     "prerequisites": [
-      "quest_003"
+      "quest_009"
     ]
   },
   {
@@ -211,6 +454,473 @@
     },
     "story_flags": [
       "helped_merchant"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_103",
+    "name": "The Blacksmith's Request",
+    "description": "The village blacksmith needs rare metals for crafting. Find the materials in the forest.",
+    "quest_type": "QuestType.SIDE_QUEST",
+    "level_requirement": 2,
+    "objectives": [
+      {
+        "type": "collect",
+        "target": "rare_metal",
+        "count": 3,
+        "description": "Collect rare metals"
+      },
+      {
+        "type": "return",
+        "target": "blacksmith",
+        "description": "Deliver metals to blacksmith"
+      }
+    ],
+    "rewards": {
+      "experience": 100,
+      "gold": 50,
+      "items": [
+        "crafted_weapon"
+      ]
+    },
+    "story_flags": [
+      "helped_blacksmith"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_104",
+    "name": "The Innkeeper's Problem",
+    "description": "The village innkeeper's cellar has been infested with rats. Help clear them out.",
+    "quest_type": "QuestType.SIDE_QUEST",
+    "level_requirement": 1,
+    "objectives": [
+      {
+        "type": "defeat",
+        "target": "giant_rat",
+        "count": 8,
+        "description": "Defeat giant rats"
+      },
+      {
+        "type": "talk",
+        "target": "innkeeper",
+        "description": "Report completion to innkeeper"
+      }
+    ],
+    "rewards": {
+      "experience": 75,
+      "gold": 40,
+      "items": [
+        "free_room_night"
+      ]
+    },
+    "story_flags": [
+      "helped_innkeeper"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_105",
+    "name": "The Farmer's Dilemma",
+    "description": "A farmer's crops are being destroyed by pests. Help protect the crops.",
+    "quest_type": "QuestType.SIDE_QUEST",
+    "level_requirement": 2,
+    "objectives": [
+      {
+        "type": "defeat",
+        "target": "crop_pest",
+        "count": 12,
+        "description": "Defeat crop pests"
+      },
+      {
+        "type": "collect",
+        "target": "pest_essence",
+        "count": 5,
+        "description": "Collect pest essences for study"
+      }
+    ],
+    "rewards": {
+      "experience": 125,
+      "gold": 60,
+      "items": [
+        "fresh_produce"
+      ]
+    },
+    "story_flags": [
+      "helped_farmer"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_106",
+    "name": "The Scholar's Research",
+    "description": "A visiting scholar needs samples from the forest for research. Help collect various specimens.",
+    "quest_type": "QuestType.SIDE_QUEST",
+    "level_requirement": 4,
+    "objectives": [
+      {
+        "type": "collect",
+        "target": "forest_specimen",
+        "count": 8,
+        "description": "Collect forest specimens"
+      },
+      {
+        "type": "collect",
+        "target": "corruption_sample",
+        "count": 2,
+        "description": "Collect corruption samples"
+      },
+      {
+        "type": "return",
+        "target": "scholar",
+        "description": "Deliver samples to scholar"
+      }
+    ],
+    "rewards": {
+      "experience": 200,
+      "gold": 100,
+      "items": [
+        "research_notes"
+      ]
+    },
+    "story_flags": [
+      "helped_scholar"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_201",
+    "name": "Explore the Village",
+    "description": "Get to know the village of Sunderfall and its inhabitants.",
+    "quest_type": "QuestType.EXPLORATION",
+    "level_requirement": 1,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "village_center",
+        "description": "Explore the village center"
+      },
+      {
+        "type": "explore",
+        "target": "village_market",
+        "description": "Explore the village market"
+      },
+      {
+        "type": "explore",
+        "target": "village_tavern",
+        "description": "Explore the village tavern"
+      },
+      {
+        "type": "talk",
+        "target": "village_residents",
+        "count": 5,
+        "description": "Talk to village residents"
+      }
+    ],
+    "rewards": {
+      "experience": 75,
+      "gold": 25,
+      "items": [
+        "village_guide"
+      ]
+    },
+    "story_flags": [
+      "explored_village"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_202",
+    "name": "Forest Survey",
+    "description": "Conduct a thorough survey of the Whispering Woods to map its features.",
+    "quest_type": "QuestType.EXPLORATION",
+    "level_requirement": 3,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "forest_clearing",
+        "description": "Explore forest clearings"
+      },
+      {
+        "type": "explore",
+        "target": "forest_stream",
+        "description": "Explore forest streams"
+      },
+      {
+        "type": "explore",
+        "target": "forest_ruins",
+        "description": "Explore forest ruins"
+      },
+      {
+        "type": "collect",
+        "target": "forest_map_piece",
+        "count": 4,
+        "description": "Collect map pieces"
+      }
+    ],
+    "rewards": {
+      "experience": 150,
+      "gold": 75,
+      "items": [
+        "complete_forest_map"
+      ]
+    },
+    "story_flags": [
+      "surveyed_forest"
+    ],
+    "prerequisites": [
+      "quest_004"
+    ]
+  },
+  {
+    "id": "quest_203",
+    "name": "Ancient Knowledge",
+    "description": "Search the ancient ruins for historical knowledge and artifacts.",
+    "quest_type": "QuestType.EXPLORATION",
+    "level_requirement": 6,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "ruins_library",
+        "description": "Explore the ruins library"
+      },
+      {
+        "type": "explore",
+        "target": "ruins_temple",
+        "description": "Explore the ruins temple"
+      },
+      {
+        "type": "collect",
+        "target": "ancient_text",
+        "count": 6,
+        "description": "Collect ancient texts"
+      },
+      {
+        "type": "collect",
+        "target": "historical_artifact",
+        "count": 3,
+        "description": "Collect historical artifacts"
+      }
+    ],
+    "rewards": {
+      "experience": 300,
+      "gold": 150,
+      "items": [
+        "ancient_knowledge_tome"
+      ]
+    },
+    "story_flags": [
+      "studied_ancient_knowledge"
+    ],
+    "prerequisites": [
+      "quest_007"
+    ]
+  },
+  {
+    "id": "quest_301",
+    "name": "Village Defense Training",
+    "description": "Help train the village militia in basic combat techniques.",
+    "quest_type": "QuestType.COMBAT",
+    "level_requirement": 2,
+    "objectives": [
+      {
+        "type": "train",
+        "target": "village_militia",
+        "count": 5,
+        "description": "Train village militia members"
+      },
+      {
+        "type": "demonstrate",
+        "target": "combat_techniques",
+        "description": "Demonstrate combat techniques"
+      }
+    ],
+    "rewards": {
+      "experience": 100,
+      "gold": 50,
+      "items": [
+        "militia_medal"
+      ]
+    },
+    "story_flags": [
+      "trained_militia"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_302",
+    "name": "Forest Patrol",
+    "description": "Join the village scouts on a patrol of the forest to ensure safety.",
+    "quest_type": "QuestType.COMBAT",
+    "level_requirement": 4,
+    "objectives": [
+      {
+        "type": "patrol",
+        "target": "forest_patrol_route",
+        "description": "Complete forest patrol route"
+      },
+      {
+        "type": "defeat",
+        "target": "forest_threat",
+        "count": 8,
+        "description": "Defeat forest threats"
+      },
+      {
+        "type": "report",
+        "target": "patrol_report",
+        "description": "Submit patrol report"
+      }
+    ],
+    "rewards": {
+      "experience": 250,
+      "gold": 125,
+      "items": [
+        "scout_badge"
+      ]
+    },
+    "story_flags": [
+      "completed_forest_patrol"
+    ],
+    "prerequisites": [
+      "quest_004"
+    ]
+  },
+  {
+    "id": "quest_401",
+    "name": "Craft a Weapon",
+    "description": "Learn to craft a basic weapon with the village blacksmith.",
+    "quest_type": "QuestType.CRAFTING",
+    "level_requirement": 2,
+    "objectives": [
+      {
+        "type": "collect",
+        "target": "crafting_materials",
+        "count": 5,
+        "description": "Gather crafting materials"
+      },
+      {
+        "type": "craft",
+        "target": "basic_weapon",
+        "description": "Craft a basic weapon"
+      },
+      {
+        "type": "test",
+        "target": "weapon_test",
+        "description": "Test the crafted weapon"
+      }
+    ],
+    "rewards": {
+      "experience": 125,
+      "gold": 60,
+      "items": [
+        "crafted_weapon"
+      ]
+    },
+    "story_flags": [
+      "learned_crafting"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_402",
+    "name": "Brew Healing Potions",
+    "description": "Learn to brew healing potions with the village healer.",
+    "quest_type": "QuestType.CRAFTING",
+    "level_requirement": 3,
+    "objectives": [
+      {
+        "type": "collect",
+        "target": "herb_ingredients",
+        "count": 8,
+        "description": "Gather herb ingredients"
+      },
+      {
+        "type": "craft",
+        "target": "healing_potion",
+        "count": 5,
+        "description": "Brew healing potions"
+      },
+      {
+        "type": "test",
+        "target": "potion_test",
+        "description": "Test the potions"
+      }
+    ],
+    "rewards": {
+      "experience": 175,
+      "gold": 85,
+      "items": [
+        "potion_kit"
+      ]
+    },
+    "story_flags": [
+      "learned_alchemy"
+    ],
+    "prerequisites": [
+      "quest_101"
+    ]
+  },
+  {
+    "id": "quest_501",
+    "name": "Village Gossip",
+    "description": "Listen to the latest gossip and rumors circulating in the village.",
+    "quest_type": "QuestType.SOCIAL",
+    "level_requirement": 1,
+    "objectives": [
+      {
+        "type": "talk",
+        "target": "village_gossip",
+        "count": 3,
+        "description": "Listen to village gossip"
+      },
+      {
+        "type": "collect",
+        "target": "rumor_info",
+        "count": 5,
+        "description": "Collect rumor information"
+      }
+    ],
+    "rewards": {
+      "experience": 50,
+      "gold": 25,
+      "items": [
+        "gossip_notes"
+      ]
+    },
+    "story_flags": [
+      "heard_village_gossip"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_502",
+    "name": "Make Friends",
+    "description": "Build relationships with the village residents and make new friends.",
+    "quest_type": "QuestType.SOCIAL",
+    "level_requirement": 2,
+    "objectives": [
+      {
+        "type": "talk",
+        "target": "village_friends",
+        "count": 4,
+        "description": "Make friends with villagers"
+      },
+      {
+        "type": "help",
+        "target": "village_help",
+        "count": 3,
+        "description": "Help villagers with tasks"
+      }
+    ],
+    "rewards": {
+      "experience": 100,
+      "gold": 50,
+      "items": [
+        "friendship_bracelet"
+      ]
+    },
+    "story_flags": [
+      "made_village_friends"
     ],
     "prerequisites": []
   }
