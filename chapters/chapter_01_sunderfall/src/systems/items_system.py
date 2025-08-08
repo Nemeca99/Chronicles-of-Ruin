@@ -221,6 +221,11 @@ class ItemsSystem:
         """Get all items of a specific type."""
         return [item for item in self.items_database.values() if item['type'] == item_type]
     
+    def get_items_by_slot(self, equipment_slot: EquipmentSlot) -> List[Dict]:
+        """Get all items that can be equipped in a specific slot."""
+        return [item for item in self.items_database.values() 
+                if item.get('slot') == equipment_slot]
+    
     def get_items_by_quality(self, quality: ItemQuality) -> List[Dict]:
         """Get all items of a specific quality."""
         return [item for item in self.items_database.values() if item['quality'] == quality]

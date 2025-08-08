@@ -17,7 +17,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '../../../../'))
 
 from chapters.chapter_01_sunderfall.src.systems.progression_system import ProgressionSystem, PlayerProgress, Quest, Area
 from chapters.chapter_01_sunderfall.src.systems.resistance_system import ResistanceSystem, ResistanceProfile, EntityType, ResistanceType
-from tools.ai_player_system import AIPLAYERSystem
+from tools.ai_player_system import AIPlayerSystem
 
 @dataclass
 class GameSession:
@@ -49,7 +49,7 @@ class AILearningSession:
     
     def __init__(self, data_dir: Path):
         self.data_dir = data_dir
-        self.ai_system = AIPLAYERSystem()
+        self.ai_system = AIPlayerSystem(Path(__file__).parent.parent.parent.parent.parent)
         self.progression_system = ProgressionSystem(data_dir)
         self.resistance_system = ResistanceSystem()
         
@@ -67,43 +67,67 @@ class AILearningSession:
         """Initialize resistance profiles for expanded content"""
         # Regular monsters
         self.monster_profiles = {
-            "corrupted_wolf": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.PHYSICAL: 20.0, ResistanceType.POISON: 50.0}
+            "corrupted_wolf": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.PHYSICAL: 20.0, ResistanceType.POISON: 50.0}
             ),
-            "corrupted_bear": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.PHYSICAL: 40.0, ResistanceType.FIRE: 30.0}
+            "corrupted_bear": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.PHYSICAL: 40.0, ResistanceType.FIRE: 30.0}
             ),
-            "corrupted_sprite": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.LIGHTNING: 60.0, ResistanceType.ICE: 30.0}
+            "corrupted_sprite": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.LIGHTNING: 60.0, ResistanceType.ICE: 30.0}
             ),
-            "corrupted_treant": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.PHYSICAL: 60.0, ResistanceType.FIRE: -20.0}
+            "corrupted_treant": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.PHYSICAL: 60.0, ResistanceType.FIRE: -20.0}
             ),
-            "corrupted_skeleton": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.PHYSICAL: 30.0, ResistanceType.POISON: 80.0}
+            "corrupted_skeleton": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.PHYSICAL: 30.0, ResistanceType.POISON: 80.0}
             ),
-            "corrupted_mage": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.FIRE: 40.0, ResistanceType.LIGHTNING: 40.0}
+            "corrupted_mage": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.FIRE: 40.0, ResistanceType.LIGHTNING: 40.0}
             ),
-            "corrupted_guardian": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.PHYSICAL: 50.0, ResistanceType.FIRE: 30.0, ResistanceType.ICE: 30.0}
+            "corrupted_guardian": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.PHYSICAL: 50.0, ResistanceType.FIRE: 30.0, ResistanceType.ICE: 30.0}
             ),
-            "giant_rat": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.PHYSICAL: 10.0}
+            "giant_rat": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.PHYSICAL: 10.0}
             ),
-            "crop_pest": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.PHYSICAL: 5.0, ResistanceType.POISON: 70.0}
+            "crop_pest": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.PHYSICAL: 5.0, ResistanceType.POISON: 70.0}
             ),
-            "forest_threat": self.resistance_system.create_monster_profile(
-                resistances={ResistanceType.PHYSICAL: 25.0, ResistanceType.POISON: 40.0}
+            "forest_threat": self.resistance_system.create_resistance_profile(
+                EntityType.REGULAR_MONSTER,
+                custom_resistances={ResistanceType.PHYSICAL: 25.0, ResistanceType.POISON: 40.0}
             )
         }
         
         # Boss monsters
         self.boss_profiles = {
-            "corruption_lord": self.resistance_system.create_boss_profile(
-                resistances={ResistanceType.PHYSICAL: 60.0, ResistanceType.FIRE: 40.0, ResistanceType.ICE: 40.0, ResistanceType.LIGHTNING: 40.0},
-                immunities=[ResistanceType.STUN, ResistanceType.FREEZE]
+            "corruption_lord": self.resistance_system.create_resistance_profile(
+                EntityType.BOSS,
+                custom_resistances={ResistanceType.PHYSICAL: 60.0, ResistanceType.FIRE: 40.0, ResistanceType.ICE: 40.0, ResistanceType.LIGHTNING: 40.0},
+                immunities=[ResistanceType.STUN, ResistanceType.FREEZE, ResistanceType.POISON],
+                vulnerabilities=[]
+            ),
+            "ancient_guardian": self.resistance_system.create_resistance_profile(
+                EntityType.BOSS,
+                custom_resistances={ResistanceType.PHYSICAL: 80.0, ResistanceType.FIRE: 20.0, ResistanceType.ICE: 60.0},
+                immunities=[ResistanceType.STUN, ResistanceType.FREEZE],
+                vulnerabilities=[ResistanceType.FIRE]
+            ),
+            "corrupted_heart": self.resistance_system.create_resistance_profile(
+                EntityType.BOSS,
+                custom_resistances={ResistanceType.PHYSICAL: 50.0, ResistanceType.FIRE: 30.0, ResistanceType.ICE: 30.0, ResistanceType.LIGHTNING: 30.0, ResistanceType.POISON: 90.0},
+                immunities=[ResistanceType.STUN, ResistanceType.FREEZE, ResistanceType.POISON],
+                vulnerabilities=[]
             )
         }
     
