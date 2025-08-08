@@ -164,36 +164,82 @@ class PlayerProfile:
     
     def get_team_behavior(self, team_size: int, team_composition: List[str]) -> Dict[str, Any]:
         """Get team-oriented behavior based on role and team composition"""
+        # Default skill distribution if not available
+        default_distribution = {"damage": 0.5, "healing": 0.25, "mitigation": 0.25}
+        
         team_behavior = {
             'coordination_level': self.team_coordination,
             'communication_style': self.communication_style,
             'role_focus': self.team_role,
-            'team_adaptations': []
+            'team_adaptations': [],
+            'skill_distribution': default_distribution,
+            'toolbelt_size': 2,  # Default hybrid
+            'damage_multiplier': 1.0  # Default multiplier
         }
         
         # Adjust behavior based on team composition
         if team_size > 1:
-            if self.team_role == "tank":
-                # Tanks focus on protection and aggro management
-                team_behavior['priority'] = "protect_allies"
+            if self.team_role == "pure_dps":
+                # Pure DPS focus on maximum damage output
+                team_behavior['priority'] = "maximize_damage"
                 team_behavior['risk_tolerance'] = min(1.0, self.risk_tolerance + 0.2)
+                team_behavior['self_sufficiency'] = 0.3  # Low self-sufficiency, rely on team
+                team_behavior['skill_distribution'] = {"damage": 0.8, "healing": 0.1, "mitigation": 0.1}
+                team_behavior['toolbelt_size'] = 1
+                team_behavior['damage_multiplier'] = 1.5
+            
+            elif self.team_role == "hybrid_dps":
+                # Hybrid DPS balance damage with some utility
+                team_behavior['priority'] = "balanced_damage"
+                team_behavior['risk_tolerance'] = min(1.0, self.risk_tolerance + 0.1)
+                team_behavior['self_sufficiency'] = 0.6  # Moderate self-sufficiency
+                team_behavior['skill_distribution'] = {"damage": 0.6, "healing": 0.2, "mitigation": 0.2}
+                team_behavior['toolbelt_size'] = 2
+                team_behavior['damage_multiplier'] = 1.2
             
             elif self.team_role == "support":
-                # Supports focus on buffing and healing
-                team_behavior['priority'] = "support_allies"
+                # Support roles provide utility and some healing
+                team_behavior['priority'] = "team_utility"
                 team_behavior['patience_level'] = min(1.0, self.patience_level + 0.2)
+                team_behavior['self_sufficiency'] = 0.7  # Good self-sufficiency
+                team_behavior['skill_distribution'] = {"damage": 0.3, "healing": 0.4, "mitigation": 0.3}
+                team_behavior['toolbelt_size'] = 3
+                team_behavior['damage_multiplier'] = 0.8
             
-            elif self.team_role == "dps":
-                # DPS focus on damage output
-                team_behavior['priority'] = "maximize_damage"
-                team_behavior['optimization_focus'] = "damage"
+            elif self.team_role == "hybrid_support":
+                # Hybrid support focus on healing with some utility
+                team_behavior['priority'] = "team_healing"
+                team_behavior['patience_level'] = min(1.0, self.patience_level + 0.3)
+                team_behavior['self_sufficiency'] = 0.8  # High self-sufficiency
+                team_behavior['skill_distribution'] = {"damage": 0.2, "healing": 0.5, "mitigation": 0.3}
+                team_behavior['toolbelt_size'] = 2
+                team_behavior['damage_multiplier'] = 0.6
             
-            # Team coordination adjustments
-            if "tank" in team_composition and self.team_role != "tank":
-                team_behavior['team_adaptations'].append("rely_on_tank_protection")
+            elif self.team_role == "pure_support":
+                # Pure support focus on maximum healing and survival
+                team_behavior['priority'] = "team_survival"
+                team_behavior['patience_level'] = min(1.0, self.patience_level + 0.4)
+                team_behavior['self_sufficiency'] = 0.9  # Very high self-sufficiency
+                team_behavior['skill_distribution'] = {"damage": 0.1, "healing": 0.6, "mitigation": 0.3}
+                team_behavior['toolbelt_size'] = 1
+                team_behavior['damage_multiplier'] = 0.4
             
-            if "support" in team_composition and self.team_role != "support":
-                team_behavior['team_adaptations'].append("expect_healing_support")
+            # Team coordination adjustments based on composition
+            pure_dps_count = team_composition.count("pure_dps")
+            support_count = team_composition.count("pure_support") + team_composition.count("hybrid_support")
+            
+            if pure_dps_count > 2:
+                team_behavior['team_adaptations'].append("high_damage_team")
+                team_behavior['coordination_level'] = min(1.0, team_behavior['coordination_level'] + 0.1)
+            
+            if support_count > 2:
+                team_behavior['team_adaptations'].append("high_survival_team")
+                team_behavior['patience_level'] = min(1.0, team_behavior['patience_level'] + 0.1)
+            
+            # Everyone has access to healing and damage mitigation
+            team_behavior['universal_abilities'] = True
+            team_behavior['healing_capability'] = team_behavior['skill_distribution']["healing"]
+            team_behavior['mitigation_capability'] = team_behavior['skill_distribution']["mitigation"]
         
         return team_behavior
 
@@ -1085,12 +1131,43 @@ class LearningAIPartySystem:
         }
         
         # Team roles and compositions
-        self.team_roles = ["tank", "dps", "dps", "support", "healer"]
+        self.team_roles = ["pure_dps", "hybrid_dps", "support", "hybrid_support", "pure_support"]
         self.role_specializations = {
-            "tank": {"playstyle": "defensive", "optimization_focus": "survival"},
-            "dps": {"playstyle": "aggressive", "optimization_focus": "damage"},
-            "support": {"playstyle": "balanced", "optimization_focus": "utility"},
-            "healer": {"playstyle": "defensive", "optimization_focus": "survival"}
+            "pure_dps": {
+                "playstyle": "aggressive", 
+                "optimization_focus": "damage",
+                "skill_distribution": {"damage": 0.8, "healing": 0.1, "mitigation": 0.1},
+                "toolbelt_size": 1,
+                "damage_multiplier": 1.5
+            },
+            "hybrid_dps": {
+                "playstyle": "balanced", 
+                "optimization_focus": "damage",
+                "skill_distribution": {"damage": 0.6, "healing": 0.2, "mitigation": 0.2},
+                "toolbelt_size": 2,
+                "damage_multiplier": 1.2
+            },
+            "support": {
+                "playstyle": "balanced", 
+                "optimization_focus": "utility",
+                "skill_distribution": {"damage": 0.3, "healing": 0.4, "mitigation": 0.3},
+                "toolbelt_size": 3,
+                "damage_multiplier": 0.8
+            },
+            "hybrid_support": {
+                "playstyle": "defensive", 
+                "optimization_focus": "survival",
+                "skill_distribution": {"damage": 0.2, "healing": 0.5, "mitigation": 0.3},
+                "toolbelt_size": 2,
+                "damage_multiplier": 0.6
+            },
+            "pure_support": {
+                "playstyle": "defensive", 
+                "optimization_focus": "survival",
+                "skill_distribution": {"damage": 0.1, "healing": 0.6, "mitigation": 0.3},
+                "toolbelt_size": 1,
+                "damage_multiplier": 0.4
+            }
         }
     
     def create_learning_party(self, skill_levels: List[str] = None) -> List[PlayerProfile]:
@@ -1131,22 +1208,30 @@ class LearningAIPartySystem:
     
     def _get_personality_for_role(self, role: str, skill_level: str) -> str:
         """Get appropriate personality for role and skill level"""
-        if role == "tank":
-            return "cautious" if skill_level in ["noob", "casual"] else "strategic"
-        elif role == "dps":
+        if role == "pure_dps":
             return "risk_taker" if skill_level in ["expert", "master"] else "impulsive"
-        elif role in ["support", "healer"]:
+        elif role == "hybrid_dps":
+            return "strategic" if skill_level in ["experienced", "expert", "master"] else "balanced"
+        elif role == "support":
             return "strategic" if skill_level in ["experienced", "expert", "master"] else "cautious"
+        elif role == "hybrid_support":
+            return "cautious" if skill_level in ["noob", "casual"] else "strategic"
+        elif role == "pure_support":
+            return "cautious" if skill_level in ["noob", "casual"] else "strategic"
         return "balanced"
     
     def _get_archetype_for_role(self, role: str) -> str:
         """Get appropriate archetype for role"""
-        if role == "tank":
-            return "melee"
-        elif role == "dps":
-            return "melee"  # Could be "ranged" for some DPS
-        elif role in ["support", "healer"]:
-            return "magic"
+        if role == "pure_dps":
+            return "melee"  # Could be "ranged" for some pure DPS
+        elif role == "hybrid_dps":
+            return "hybrid"  # Mix of melee and magic
+        elif role == "support":
+            return "magic"  # Balanced magic user
+        elif role == "hybrid_support":
+            return "hybrid"  # Mix of magic and utility
+        elif role == "pure_support":
+            return "magic"  # Pure magic support
         return "hybrid"
     
     def _get_decision_style_for_skill(self, skill_level: str) -> str:
@@ -1161,10 +1246,11 @@ class LearningAIPartySystem:
     def _get_risk_tolerance_for_role(self, role: str, skill_level: str) -> float:
         """Get risk tolerance based on role and skill level"""
         base_risk = {
-            "tank": 0.3,
-            "dps": 0.7,
+            "pure_dps": 0.8,
+            "hybrid_dps": 0.6,
             "support": 0.4,
-            "healer": 0.3
+            "hybrid_support": 0.3,
+            "pure_support": 0.2
         }
         
         skill_multiplier = {
@@ -1180,10 +1266,11 @@ class LearningAIPartySystem:
     def _get_patience_for_role(self, role: str, skill_level: str) -> float:
         """Get patience level based on role and skill level"""
         base_patience = {
-            "tank": 0.8,
-            "dps": 0.4,
+            "pure_dps": 0.3,
+            "hybrid_dps": 0.5,
             "support": 0.7,
-            "healer": 0.8
+            "hybrid_support": 0.8,
+            "pure_support": 0.9
         }
         
         skill_multiplier = {
@@ -1198,12 +1285,16 @@ class LearningAIPartySystem:
     
     def _get_communication_style_for_role(self, role: str) -> str:
         """Get communication style for role"""
-        if role == "tank":
-            return "direct"
-        elif role == "dps":
-            return "direct"
-        elif role in ["support", "healer"]:
-            return "supportive"
+        if role == "pure_dps":
+            return "direct"  # Pure DPS are direct and focused
+        elif role == "hybrid_dps":
+            return "strategic"  # Hybrid DPS think strategically
+        elif role == "support":
+            return "supportive"  # Support roles are encouraging
+        elif role == "hybrid_support":
+            return "supportive"  # Hybrid support are also encouraging
+        elif role == "pure_support":
+            return "supportive"  # Pure support are most encouraging
         return "strategic"
     
     def run_learning_session(self, scenarios: List[str], session_name: str = None) -> Dict[str, Any]:

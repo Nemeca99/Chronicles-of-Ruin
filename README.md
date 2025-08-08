@@ -56,11 +56,24 @@ Chronicles_of_Ruin/
 
 ### Party Composition
 
-- **Alex** (Noob Tank) - Cautious, defensive, learns slowly
-- **Sam** (Casual DPS) - Impulsive, aggressive, moderate learning
-- **Jordan** (Experienced DPS) - Impulsive, aggressive, good learning
-- **Casey** (Expert Support) - Strategic, balanced, fast learning
-- **Riley** (Master Healer) - Strategic, defensive, fastest learning
+- **Alex** (Noob Pure DPS) - Maximum damage output, low self-sufficiency
+- **Sam** (Casual Hybrid DPS) - Balanced damage with utility, moderate self-sufficiency
+- **Jordan** (Experienced Support) - Team utility and healing, good self-sufficiency
+- **Casey** (Expert Hybrid Support) - Healing with utility, high self-sufficiency
+- **Riley** (Master Pure Support) - Maximum healing and survival, very high self-sufficiency
+
+#### Team Roles
+
+- **Pure DPS** - Maximum damage output, rely on team for survival
+- **Hybrid DPS** - Balanced damage with utility, moderate self-sufficiency
+- **Support** - Team utility and healing, good self-sufficiency
+- **Hybrid Support** - Healing with utility, high self-sufficiency
+- **Pure Support** - Maximum healing and survival, very high self-sufficiency
+
+**Toolbelt Size:**
+- **Pure roles** (1 skill type) - Maximum specialization, highest effectiveness
+- **Hybrid roles** (2 skill types) - Balanced approach, moderate effectiveness
+- **Support role** (3 skill types) - Maximum versatility, lowest specialization
 
 ### Learning Capabilities
 
