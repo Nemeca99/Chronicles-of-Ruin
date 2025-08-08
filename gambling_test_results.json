@@ -1,0 +1,331 @@
+{
+  "timestamp": 1754693096.029486,
+  "test_results": [
+    {
+      "player": "GamblerMax",
+      "set_id": "test_GamblerMax_1754693096_0",
+      "starting_gold": 95000,
+      "rerolls": [
+        {
+          "reroll_number": 1,
+          "cost": 600,
+          "gold_before": 95000,
+          "decision": "stop",
+          "probability": 0.47684210526315796,
+          "factors": {
+            "risk_tolerance": 0.9,
+            "patience_level": 0.2,
+            "cost_ratio": 0.00631578947368421,
+            "reroll_count": 1,
+            "sunk_cost": 0
+          }
+        }
+      ],
+      "final_gold": 95000,
+      "total_spent": 0,
+      "stopped_reason": "ai_decision_stop_at_1",
+      "rerolls_completed": 0
+    },
+    {
+      "player": "CautiousCarla",
+      "set_id": "test_CautiousCarla_1754693096_1",
+      "starting_gold": 65000,
+      "rerolls": [
+        {
+          "reroll_number": 1,
+          "cost": 400,
+          "gold_before": 65000,
+          "decision": "stop",
+          "probability": 0.1769230769230769,
+          "factors": {
+            "risk_tolerance": 0.3,
+            "patience_level": 0.8,
+            "cost_ratio": 0.006153846153846154,
+            "reroll_count": 1,
+            "sunk_cost": 0
+          }
+        }
+      ],
+      "final_gold": 65000,
+      "total_spent": 0,
+      "stopped_reason": "ai_decision_stop_at_1",
+      "rerolls_completed": 0
+    },
+    {
+      "player": "BalancedBob",
+      "set_id": "test_BalancedBob_1754693096_2",
+      "starting_gold": 80000,
+      "rerolls": [
+        {
+          "reroll_number": 1,
+          "cost": 500,
+          "gold_before": 80000,
+          "decision": "stop",
+          "probability": 0.326875,
+          "factors": {
+            "risk_tolerance": 0.6,
+            "patience_level": 0.5,
+            "cost_ratio": 0.00625,
+            "reroll_count": 1,
+            "sunk_cost": 0
+          }
+        }
+      ],
+      "final_gold": 80000,
+      "total_spent": 0,
+      "stopped_reason": "ai_decision_stop_at_1",
+      "rerolls_completed": 0
+    },
+    {
+      "player": "LuckyLisa",
+      "set_id": "test_LuckyLisa_1754693096_3",
+      "starting_gold": 85000,
+      "rerolls": [
+        {
+          "reroll_number": 1,
+          "cost": 800,
+          "gold_before": 85000,
+          "decision": "reroll",
+          "probability": 0.3752941176470587,
+          "factors": {
+            "risk_tolerance": 0.7,
+            "patience_level": 0.4,
+            "cost_ratio": 0.009411764705882352,
+            "reroll_count": 1,
+            "sunk_cost": 0
+          },
+          "gold_after": 84200,
+          "cost_paid": 800,
+          "new_bonuses": [
+            {
+              "pieces": 2,
+              "name": "Guardian's Will",
+              "effect": "+15% health",
+              "values": {
+                "health": 0.15
+              }
+            },
+            {
+              "pieces": 4,
+              "name": "Stalwart Defense",
+              "effect": "+20% damage reduction",
+              "values": {
+                "damage_reduction": 0.2
+              }
+            },
+            {
+              "pieces": 6,
+              "name": "Fortress",
+              "effect": "+30% health, +15% reduction",
+              "values": {
+                "health": 0.3,
+                "damage_reduction": 0.15
+              }
+            }
+          ],
+          "gambling_taxes": {
+            "slot_0": "0.0054%",
+            "slot_1": "0.0073%",
+            "slot_2": "0.0012%",
+            "slot_3": "0.0019%",
+            "slot_4": "0.0046%",
+            "slot_5": "0.0019%",
+            "slot_6": "0.0047%",
+            "slot_7": "0.0098%"
+          },
+          "next_cost": 1601
+        },
+        {
+          "reroll_number": 2,
+          "cost": 1601,
+          "gold_before": 84200,
+          "decision": "stop",
+          "probability": 0.37689287410926364,
+          "factors": {
+            "risk_tolerance": 0.7,
+            "patience_level": 0.4,
+            "cost_ratio": 0.019014251781472685,
+            "reroll_count": 2,
+            "sunk_cost": 800
+          }
+        }
+      ],
+      "final_gold": 84200,
+      "total_spent": 800,
+      "stopped_reason": "ai_decision_stop_at_2",
+      "rerolls_completed": 1
+    }
+  ],
+  "analysis": {
+    "total_players": 4,
+    "total_spent": 800,
+    "average_rerolls": 1.0,
+    "average_addiction_score": 0.010941176470588237,
+    "personality_patterns": {
+      "High_Risk_Low_Patience": [
+        {
+          "player": "GamblerMax",
+          "set_id": "test_GamblerMax_1754693096_0",
+          "starting_gold": 95000,
+          "rerolls": [
+            {
+              "reroll_number": 1,
+              "cost": 600,
+              "gold_before": 95000,
+              "decision": "stop",
+              "probability": 0.47684210526315796,
+              "factors": {
+                "risk_tolerance": 0.9,
+                "patience_level": 0.2,
+                "cost_ratio": 0.00631578947368421,
+                "reroll_count": 1,
+                "sunk_cost": 0
+              }
+            }
+          ],
+          "final_gold": 95000,
+          "total_spent": 0,
+          "stopped_reason": "ai_decision_stop_at_1",
+          "rerolls_completed": 0
+        }
+      ],
+      "Low_Risk_High_Patience": [
+        {
+          "player": "CautiousCarla",
+          "set_id": "test_CautiousCarla_1754693096_1",
+          "starting_gold": 65000,
+          "rerolls": [
+            {
+              "reroll_number": 1,
+              "cost": 400,
+              "gold_before": 65000,
+              "decision": "stop",
+              "probability": 0.1769230769230769,
+              "factors": {
+                "risk_tolerance": 0.3,
+                "patience_level": 0.8,
+                "cost_ratio": 0.006153846153846154,
+                "reroll_count": 1,
+                "sunk_cost": 0
+              }
+            }
+          ],
+          "final_gold": 65000,
+          "total_spent": 0,
+          "stopped_reason": "ai_decision_stop_at_1",
+          "rerolls_completed": 0
+        }
+      ],
+      "Medium_Risk_Medium_Patience": [
+        {
+          "player": "BalancedBob",
+          "set_id": "test_BalancedBob_1754693096_2",
+          "starting_gold": 80000,
+          "rerolls": [
+            {
+              "reroll_number": 1,
+              "cost": 500,
+              "gold_before": 80000,
+              "decision": "stop",
+              "probability": 0.326875,
+              "factors": {
+                "risk_tolerance": 0.6,
+                "patience_level": 0.5,
+                "cost_ratio": 0.00625,
+                "reroll_count": 1,
+                "sunk_cost": 0
+              }
+            }
+          ],
+          "final_gold": 80000,
+          "total_spent": 0,
+          "stopped_reason": "ai_decision_stop_at_1",
+          "rerolls_completed": 0
+        }
+      ],
+      "Medium_Risk_Low_Patience": [
+        {
+          "player": "LuckyLisa",
+          "set_id": "test_LuckyLisa_1754693096_3",
+          "starting_gold": 85000,
+          "rerolls": [
+            {
+              "reroll_number": 1,
+              "cost": 800,
+              "gold_before": 85000,
+              "decision": "reroll",
+              "probability": 0.3752941176470587,
+              "factors": {
+                "risk_tolerance": 0.7,
+                "patience_level": 0.4,
+                "cost_ratio": 0.009411764705882352,
+                "reroll_count": 1,
+                "sunk_cost": 0
+              },
+              "gold_after": 84200,
+              "cost_paid": 800,
+              "new_bonuses": [
+                {
+                  "pieces": 2,
+                  "name": "Guardian's Will",
+                  "effect": "+15% health",
+                  "values": {
+                    "health": 0.15
+                  }
+                },
+                {
+                  "pieces": 4,
+                  "name": "Stalwart Defense",
+                  "effect": "+20% damage reduction",
+                  "values": {
+                    "damage_reduction": 0.2
+                  }
+                },
+                {
+                  "pieces": 6,
+                  "name": "Fortress",
+                  "effect": "+30% health, +15% reduction",
+                  "values": {
+                    "health": 0.3,
+                    "damage_reduction": 0.15
+                  }
+                }
+              ],
+              "gambling_taxes": {
+                "slot_0": "0.0054%",
+                "slot_1": "0.0073%",
+                "slot_2": "0.0012%",
+                "slot_3": "0.0019%",
+                "slot_4": "0.0046%",
+                "slot_5": "0.0019%",
+                "slot_6": "0.0047%",
+                "slot_7": "0.0098%"
+              },
+              "next_cost": 1601
+            },
+            {
+              "reroll_number": 2,
+              "cost": 1601,
+              "gold_before": 84200,
+              "decision": "stop",
+              "probability": 0.37689287410926364,
+              "factors": {
+                "risk_tolerance": 0.7,
+                "patience_level": 0.4,
+                "cost_ratio": 0.019014251781472685,
+                "reroll_count": 2,
+                "sunk_cost": 800
+              }
+            }
+          ],
+          "final_gold": 84200,
+          "total_spent": 800,
+          "stopped_reason": "ai_decision_stop_at_2",
+          "rerolls_completed": 1
+        }
+      ]
+    },
+    "high_engagement": 0,
+    "high_spenders": 0
+  }
+}

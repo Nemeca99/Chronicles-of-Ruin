@@ -1,0 +1,164 @@
+{
+  "test_GamblerMax_1754693096_0": {
+    "id": "test_GamblerMax_1754693096_0",
+    "name": "GamblerMax's Fire Lord's Regalia",
+    "description": "Test set for GamblerMax",
+    "creator_id": "GamblerMax",
+    "creation_time": 1754693096.0245163,
+    "set_type": "Combat",
+    "slots": [
+      "slot_0",
+      "slot_1",
+      "slot_2",
+      "slot_3",
+      "slot_4",
+      "slot_5"
+    ],
+    "bonuses": [
+      {
+        "pieces": 2,
+        "name": "Initial Bonus",
+        "effect": "+5% damage"
+      }
+    ],
+    "usage_count": 0,
+    "balance_rating": null,
+    "ai_test_results": {},
+    "reroll_count": 0,
+    "gambling_tax_per_piece": {
+      "slot_0": 0.0,
+      "slot_1": 0.0,
+      "slot_2": 0.0,
+      "slot_3": 0.0,
+      "slot_4": 0.0,
+      "slot_5": 0.0
+    },
+    "base_reroll_cost": 600
+  },
+  "test_CautiousCarla_1754693096_1": {
+    "id": "test_CautiousCarla_1754693096_1",
+    "name": "CautiousCarla's Mystic Wisdom",
+    "description": "Test set for CautiousCarla",
+    "creator_id": "CautiousCarla",
+    "creation_time": 1754693096.0249846,
+    "set_type": "Magic",
+    "slots": [
+      "slot_0",
+      "slot_1",
+      "slot_2",
+      "slot_3"
+    ],
+    "bonuses": [
+      {
+        "pieces": 2,
+        "name": "Initial Bonus",
+        "effect": "+5% damage"
+      }
+    ],
+    "usage_count": 0,
+    "balance_rating": null,
+    "ai_test_results": {},
+    "reroll_count": 0,
+    "gambling_tax_per_piece": {
+      "slot_0": 0.0,
+      "slot_1": 0.0,
+      "slot_2": 0.0,
+      "slot_3": 0.0
+    },
+    "base_reroll_cost": 400
+  },
+  "test_BalancedBob_1754693096_2": {
+    "id": "test_BalancedBob_1754693096_2",
+    "name": "BalancedBob's Ranger's Focus",
+    "description": "Test set for BalancedBob",
+    "creator_id": "BalancedBob",
+    "creation_time": 1754693096.0249846,
+    "set_type": "Utility",
+    "slots": [
+      "slot_0",
+      "slot_1",
+      "slot_2",
+      "slot_3",
+      "slot_4"
+    ],
+    "bonuses": [
+      {
+        "pieces": 2,
+        "name": "Initial Bonus",
+        "effect": "+5% damage"
+      }
+    ],
+    "usage_count": 0,
+    "balance_rating": null,
+    "ai_test_results": {},
+    "reroll_count": 0,
+    "gambling_tax_per_piece": {
+      "slot_0": 0.0,
+      "slot_1": 0.0,
+      "slot_2": 0.0,
+      "slot_3": 0.0,
+      "slot_4": 0.0
+    },
+    "base_reroll_cost": 500
+  },
+  "test_LuckyLisa_1754693096_3": {
+    "id": "test_LuckyLisa_1754693096_3",
+    "name": "LuckyLisa's Balanced Build",
+    "description": "Test set for LuckyLisa",
+    "creator_id": "LuckyLisa",
+    "creation_time": 1754693096.0249846,
+    "set_type": "Defense",
+    "slots": [
+      "slot_0",
+      "slot_1",
+      "slot_2",
+      "slot_3",
+      "slot_4",
+      "slot_5",
+      "slot_6",
+      "slot_7"
+    ],
+    "bonuses": [
+      {
+        "pieces": 2,
+        "name": "Guardian's Will",
+        "effect": "+15% health",
+        "values": {
+          "health": 0.15
+        }
+      },
+      {
+        "pieces": 4,
+        "name": "Stalwart Defense",
+        "effect": "+20% damage reduction",
+        "values": {
+          "damage_reduction": 0.2
+        }
+      },
+      {
+        "pieces": 6,
+        "name": "Fortress",
+        "effect": "+30% health, +15% reduction",
+        "values": {
+          "health": 0.3,
+          "damage_reduction": 0.15
+        }
+      }
+    ],
+    "usage_count": 0,
+    "balance_rating": null,
+    "ai_test_results": {},
+    "reroll_count": 1,
+    "gambling_tax_per_piece": {
+      "slot_0": 5.38941602219163e-05,
+      "slot_1": 7.34105178547989e-05,
+      "slot_2": 1.2367713330597551e-05,
+      "slot_3": 1.910121580352386e-05,
+      "slot_4": 4.6185627142941026e-05,
+      "slot_5": 1.9417391357197182e-05,
+      "slot_6": 4.684036688214487e-05,
+      "slot_7": 9.828701744047071e-05
+    },
+    "base_reroll_cost": 800
+  }
+}

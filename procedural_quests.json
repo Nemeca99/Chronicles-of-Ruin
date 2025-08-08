@@ -1,0 +1,565 @@
+{
+  "generation_timestamp": 1754693197.6645868,
+  "quests": {
+    "proc_crafting_1754693197_5891": {
+      "id": "proc_crafting_1754693197_5891",
+      "name": "Master of Equipment Mastery",
+      "description": "Learn the art of creating custom item sets from Artificer Grix, a legendary artificer. Create your first Combat set with at least 6 pieces.",
+      "quest_type": "crafting",
+      "difficulty": "trivial",
+      "objectives": [
+        {
+          "type": "talk_to_npc",
+          "target": "Artificer Grix",
+          "count": 1
+        },
+        {
+          "type": "gather_items",
+          "target": "any_equipment",
+          "count": "6"
+        },
+        {
+          "type": "create_set",
+          "target": "custom_set",
+          "count": 1
+        },
+        {
+          "type": "demonstrate_set",
+          "target": "Artificer Grix",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 600,
+        "experience": 300,
+        "set_creation_bonus": 0
+      },
+      "prerequisites": [
+        "reached_level_3"
+      ],
+      "area_requirements": [
+        "sunderfall_village"
+      ],
+      "level_requirement": 3,
+      "estimated_duration": 9,
+      "generation_timestamp": 1754693197.6581116,
+      "ai_tested": true,
+      "success_rate": 1.0,
+      "player_feedback": []
+    },
+    "proc_crafting_1754693197_9652": {
+      "id": "proc_crafting_1754693197_9652",
+      "name": "Master of Item Bonding",
+      "description": "Learn the art of creating custom item sets from Artificer Grix, a legendary enchanter. Create your first Utility set with at least 4 pieces.",
+      "quest_type": "crafting",
+      "difficulty": "trivial",
+      "objectives": [
+        {
+          "type": "talk_to_npc",
+          "target": "Artificer Grix",
+          "count": 1
+        },
+        {
+          "type": "gather_items",
+          "target": "any_equipment",
+          "count": "4"
+        },
+        {
+          "type": "create_set",
+          "target": "custom_set",
+          "count": 1
+        },
+        {
+          "type": "demonstrate_set",
+          "target": "Artificer Grix",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 600,
+        "experience": 300,
+        "set_creation_bonus": 0
+      },
+      "prerequisites": [
+        "reached_level_3"
+      ],
+      "area_requirements": [
+        "sunderfall_village"
+      ],
+      "level_requirement": 3,
+      "estimated_duration": 9,
+      "generation_timestamp": 1754693197.6581116,
+      "ai_tested": true,
+      "success_rate": 1.0,
+      "player_feedback": []
+    },
+    "proc_crafting_1754693197_2939": {
+      "id": "proc_crafting_1754693197_2939",
+      "name": "Master of Item Bonding",
+      "description": "Learn the art of creating custom item sets from Enchanter Lyra, a legendary blacksmith. Create your first Defense set with at least 5 pieces.",
+      "quest_type": "crafting",
+      "difficulty": "trivial",
+      "objectives": [
+        {
+          "type": "talk_to_npc",
+          "target": "Enchanter Lyra",
+          "count": 1
+        },
+        {
+          "type": "gather_items",
+          "target": "any_equipment",
+          "count": "5"
+        },
+        {
+          "type": "create_set",
+          "target": "custom_set",
+          "count": 1
+        },
+        {
+          "type": "demonstrate_set",
+          "target": "Enchanter Lyra",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 600,
+        "experience": 300,
+        "set_creation_bonus": 0
+      },
+      "prerequisites": [
+        "reached_level_3"
+      ],
+      "area_requirements": [
+        "sunderfall_village"
+      ],
+      "level_requirement": 3,
+      "estimated_duration": 9,
+      "generation_timestamp": 1754693197.6581116,
+      "ai_tested": true,
+      "success_rate": 1.0,
+      "player_feedback": []
+    },
+    "proc_gambling_1754693197_9911": {
+      "id": "proc_gambling_1754693197_9911",
+      "name": "The Desperate Gambler's Downfall",
+      "description": "Help Marcus who has become addicted to rerolling their Battle Gear. They've spent 50,000 gold and need assistance breaking the cycle.",
+      "quest_type": "gambling",
+      "difficulty": "normal",
+      "objectives": [
+        {
+          "type": "talk_to_npc",
+          "target": "Marcus",
+          "count": 1
+        },
+        {
+          "type": "witness_gambling",
+          "target": "set_reroll",
+          "count": 3
+        },
+        {
+          "type": "intervention",
+          "target": "gambling_intervention",
+          "count": 1
+        },
+        {
+          "type": "provide_counseling",
+          "target": "Marcus",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 850,
+        "experience": 340,
+        "reputation": 17
+      },
+      "prerequisites": [
+        "unlocked_gambling",
+        "met_npc_Marcus"
+      ],
+      "area_requirements": [
+        "sunderfall_village",
+        "gambling_district"
+      ],
+      "level_requirement": 5,
+      "estimated_duration": 8,
+      "generation_timestamp": 1754693197.6605859,
+      "ai_tested": true,
+      "success_rate": 0.25,
+      "player_feedback": []
+    },
+    "proc_gambling_1754693197_3863": {
+      "id": "proc_gambling_1754693197_3863",
+      "name": "The Obsessed Gambler's Problem",
+      "description": "Help Viktor who has become addicted to rerolling their Mystic Wisdom Set. They've spent 500,000 gold and need assistance breaking the cycle.",
+      "quest_type": "gambling",
+      "difficulty": "normal",
+      "objectives": [
+        {
+          "type": "talk_to_npc",
+          "target": "Viktor",
+          "count": 1
+        },
+        {
+          "type": "witness_gambling",
+          "target": "set_reroll",
+          "count": 3
+        },
+        {
+          "type": "intervention",
+          "target": "gambling_intervention",
+          "count": 1
+        },
+        {
+          "type": "provide_counseling",
+          "target": "Viktor",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 850,
+        "experience": 340,
+        "reputation": 17
+      },
+      "prerequisites": [
+        "unlocked_gambling",
+        "met_npc_Viktor"
+      ],
+      "area_requirements": [
+        "sunderfall_village",
+        "gambling_district"
+      ],
+      "level_requirement": 5,
+      "estimated_duration": 8,
+      "generation_timestamp": 1754693197.6605859,
+      "ai_tested": true,
+      "success_rate": 0.0,
+      "player_feedback": []
+    },
+    "proc_crafting_1754693197_9766": {
+      "id": "proc_crafting_1754693197_9766",
+      "name": "Master of Equipment Mastery",
+      "description": "Learn the art of creating custom item sets from Enchanter Lyra, a legendary artificer. Create your first Utility set with at least 6 pieces.",
+      "quest_type": "crafting",
+      "difficulty": "normal",
+      "objectives": [
+        {
+          "type": "talk_to_npc",
+          "target": "Enchanter Lyra",
+          "count": 1
+        },
+        {
+          "type": "gather_items",
+          "target": "any_equipment",
+          "count": "6"
+        },
+        {
+          "type": "create_set",
+          "target": "custom_set",
+          "count": 1
+        },
+        {
+          "type": "demonstrate_set",
+          "target": "Enchanter Lyra",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 1700,
+        "experience": 850,
+        "set_creation_bonus": 0
+      },
+      "prerequisites": [
+        "reached_level_3"
+      ],
+      "area_requirements": [
+        "sunderfall_village"
+      ],
+      "level_requirement": 5,
+      "estimated_duration": 19,
+      "generation_timestamp": 1754693197.6605859,
+      "ai_tested": true,
+      "success_rate": 0.0,
+      "player_feedback": []
+    },
+    "proc_exploration_1754693197_9349": {
+      "id": "proc_exploration_1754693197_9349",
+      "name": "Understanding Poison Resistance",
+      "description": "Study the resistance patterns of ancient_guardians creatures in ancient_ruins. Discover their weaknesses and document your findings for future adventurers.",
+      "quest_type": "exploration",
+      "difficulty": "normal",
+      "objectives": [
+        {
+          "type": "defeat_monsters",
+          "target": "ancient_guardians",
+          "count": 10
+        },
+        {
+          "type": "test_damage_types",
+          "target": "various_elements",
+          "count": 5
+        },
+        {
+          "type": "document_findings",
+          "target": "resistance_journal",
+          "count": 1
+        },
+        {
+          "type": "report_to_scholar",
+          "target": "Scholar Miren",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 1800,
+        "experience": 960,
+        "resistance_knowledge": 2
+      },
+      "prerequisites": [
+        "unlocked_area_ancient_ruins"
+      ],
+      "area_requirements": [
+        "ancient_ruins"
+      ],
+      "level_requirement": 12,
+      "estimated_duration": 40,
+      "generation_timestamp": 1754693197.6620872,
+      "ai_tested": true,
+      "success_rate": 0.5,
+      "player_feedback": []
+    },
+    "proc_exploration_1754693197_5174": {
+      "id": "proc_exploration_1754693197_5174",
+      "name": "Understanding Physical Resistance",
+      "description": "Study the resistance patterns of forest_sprites creatures in whispering_woods. Discover their weaknesses and document your findings for future adventurers.",
+      "quest_type": "exploration",
+      "difficulty": "normal",
+      "objectives": [
+        {
+          "type": "defeat_monsters",
+          "target": "forest_sprites",
+          "count": 10
+        },
+        {
+          "type": "test_damage_types",
+          "target": "various_elements",
+          "count": 5
+        },
+        {
+          "type": "document_findings",
+          "target": "resistance_journal",
+          "count": 1
+        },
+        {
+          "type": "report_to_scholar",
+          "target": "Scholar Miren",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 1800,
+        "experience": 960,
+        "resistance_knowledge": 2
+      },
+      "prerequisites": [
+        "unlocked_area_whispering_woods"
+      ],
+      "area_requirements": [
+        "whispering_woods"
+      ],
+      "level_requirement": 12,
+      "estimated_duration": 40,
+      "generation_timestamp": 1754693197.6620872,
+      "ai_tested": true,
+      "success_rate": 1.0,
+      "player_feedback": []
+    },
+    "proc_exploration_1754693197_8517": {
+      "id": "proc_exploration_1754693197_8517",
+      "name": "Understanding Poison Resistance",
+      "description": "Study the resistance patterns of corrupted_wolves creatures in whispering_woods. Discover their weaknesses and document your findings for future adventurers.",
+      "quest_type": "exploration",
+      "difficulty": "normal",
+      "objectives": [
+        {
+          "type": "defeat_monsters",
+          "target": "corrupted_wolves",
+          "count": 10
+        },
+        {
+          "type": "test_damage_types",
+          "target": "various_elements",
+          "count": 5
+        },
+        {
+          "type": "document_findings",
+          "target": "resistance_journal",
+          "count": 1
+        },
+        {
+          "type": "report_to_scholar",
+          "target": "Scholar Miren",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 1800,
+        "experience": 960,
+        "resistance_knowledge": 2
+      },
+      "prerequisites": [
+        "unlocked_area_whispering_woods"
+      ],
+      "area_requirements": [
+        "whispering_woods"
+      ],
+      "level_requirement": 12,
+      "estimated_duration": 40,
+      "generation_timestamp": 1754693197.6620872,
+      "ai_tested": true,
+      "success_rate": 0.25,
+      "player_feedback": []
+    },
+    "proc_survival_1754693197_3030": {
+      "id": "proc_survival_1754693197_3030",
+      "name": "Proving Grounds: Mastery",
+      "description": "Enter the adaptive proving grounds where the difficulty scales with your performance. Maintain a 70% success rate for 15 minutes.",
+      "quest_type": "survival",
+      "difficulty": "extreme",
+      "objectives": [
+        {
+          "type": "enter_proving_grounds",
+          "target": "adaptive_arena",
+          "count": 1
+        },
+        {
+          "type": "maintain_performance",
+          "target": "success_rate_70",
+          "duration": "15"
+        },
+        {
+          "type": "survive_escalation",
+          "target": "final_wave",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 38750,
+        "experience": 19375,
+        "mastery_token": 7
+      },
+      "prerequisites": [
+        "reached_level_15",
+        "completed_ai_challenge"
+      ],
+      "area_requirements": [
+        "proving_grounds"
+      ],
+      "level_requirement": 19,
+      "estimated_duration": 84,
+      "generation_timestamp": 1754693197.6635864,
+      "ai_tested": true,
+      "success_rate": 1.0,
+      "player_feedback": []
+    },
+    "proc_combat_1754693197_1859": {
+      "id": "proc_combat_1754693197_1859",
+      "name": "The Adaptation Challenge",
+      "description": "Test your skills against AI-controlled opponents in training_grounds. Adapt your strategy as they learn from your tactics and become more challenging.",
+      "quest_type": "combat",
+      "difficulty": "extreme",
+      "objectives": [
+        {
+          "type": "defeat_ai_opponents",
+          "target": "ai_party",
+          "count": 5
+        },
+        {
+          "type": "survive_adaptive_combat",
+          "target": "learning_ai",
+          "duration": 300
+        },
+        {
+          "type": "demonstrate_mastery",
+          "target": "combat_skills",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 15500,
+        "experience": 7750,
+        "ai_knowledge": 7
+      },
+      "prerequisites": [
+        "completed_basic_training"
+      ],
+      "area_requirements": [
+        "training_grounds",
+        "training_grounds"
+      ],
+      "level_requirement": 19,
+      "estimated_duration": 28,
+      "generation_timestamp": 1754693197.6635864,
+      "ai_tested": true,
+      "success_rate": 0.0,
+      "player_feedback": []
+    },
+    "proc_survival_1754693197_7469": {
+      "id": "proc_survival_1754693197_7469",
+      "name": "Proving Grounds: Endurance",
+      "description": "Enter the adaptive proving grounds where the difficulty scales with your performance. Maintain a 80% success rate for 20 minutes.",
+      "quest_type": "survival",
+      "difficulty": "extreme",
+      "objectives": [
+        {
+          "type": "enter_proving_grounds",
+          "target": "adaptive_arena",
+          "count": 1
+        },
+        {
+          "type": "maintain_performance",
+          "target": "success_rate_80",
+          "duration": "20"
+        },
+        {
+          "type": "survive_escalation",
+          "target": "final_wave",
+          "count": 1
+        }
+      ],
+      "rewards": {
+        "gold": 38750,
+        "experience": 19375,
+        "mastery_token": 7
+      },
+      "prerequisites": [
+        "reached_level_15",
+        "completed_ai_challenge"
+      ],
+      "area_requirements": [
+        "proving_grounds"
+      ],
+      "level_requirement": 19,
+      "estimated_duration": 84,
+      "generation_timestamp": 1754693197.6635864,
+      "ai_tested": true,
+      "success_rate": 0.0,
+      "player_feedback": []
+    }
+  },
+  "statistics": {
+    "total_generated": 12,
+    "by_type": {
+      "crafting": 4,
+      "gambling": 2,
+      "exploration": 3,
+      "survival": 2,
+      "combat": 1
+    },
+    "by_difficulty": {
+      "trivial": 3,
+      "normal": 6,
+      "extreme": 3
+    },
+    "average_success_rate": 0.5
+  }
+}

@@ -3,7 +3,9 @@
 ## **📊 DAMAGE CALCULATION FORMULAS**
 
 ### **⭕ ROUNDING RULES**
+
 **All damage calculations use standard rounding:**
+
 - **0.5 and above:** Round UP (15.5 → 16, 19.5 → 20)
 - **Below 0.5:** Round DOWN (15.4 → 15, 19.2 → 19)
 

@@ -1,0 +1,518 @@
+{
+  "timestamp": 1754693289.6461546,
+  "current_difficulty": {
+    "damage_scaling": 3.0,
+    "enemy_health": 1.0,
+    "enemy_damage": 1.0,
+    "spawn_rate": 0.9674645496292864,
+    "resource_scarcity": 1.0,
+    "xp_modifier": 1.0,
+    "gold_modifier": 1.0,
+    "skill_cooldowns": 1.0,
+    "resistance_scaling": 1.0
+  },
+  "performance_windows": [
+    {
+      "timestamp": 1754693289.6416543,
+      "win_rate": 0.874029871332179,
+      "survival_time": 0.8516146899629065,
+      "damage_efficiency": 1.0052428668568474,
+      "resource_efficiency": 0.8027390652728614,
+      "decision_speed": 0.6363012587604797,
+      "engagement_score": 0.8315663516052726
+    },
+    {
+      "timestamp": 1754693289.6416543,
+      "win_rate": 0.7576171124294911,
+      "survival_time": 0.7406862730322654,
+      "damage_efficiency": 0.856390296932098,
+      "resource_efficiency": 0.6501371668339048,
+      "decision_speed": 0.6212979258027097,
+      "engagement_score": 0.8080759926405618
+    },
+    {
+      "timestamp": 1754693289.6416543,
+      "win_rate": 0.7507883567622308,
+      "survival_time": 0.7662515223866204,
+      "damage_efficiency": 0.9118307324638286,
+      "resource_efficiency": 0.6148021553875154,
+      "decision_speed": 0.6714013903106986,
+      "engagement_score": 0.8095050767452638
+    },
+    {
+      "timestamp": 1754693289.6416543,
+      "win_rate": 0.7628473614740878,
+      "survival_time": 0.6997938101991816,
+      "damage_efficiency": 0.9326835216795637,
+      "resource_efficiency": 0.7244865078443272,
+      "decision_speed": 0.7418013078935382,
+      "engagement_score": 0.8434865101848298
+    },
+    {
+      "timestamp": 1754693289.6416543,
+      "win_rate": 0.8964993995533287,
+      "survival_time": 0.8258904510341836,
+      "damage_efficiency": 0.995842420931544,
+      "resource_efficiency": 0.8034097561239386,
+      "decision_speed": 0.7270735869059762,
+      "engagement_score": 0.9002543932053308
+    },
+    {
+      "timestamp": 1754693289.6416543,
+      "win_rate": 0.8958151698919701,
+      "survival_time": 0.8735701076321032,
+      "damage_efficiency": 1.0838132080177638,
+      "resource_efficiency": 0.7363357101439679,
+      "decision_speed": 0.7207863846306806,
+      "engagement_score": 0.8740941739817657
+    },
+    {
+      "timestamp": 1754693289.6416543,
+      "win_rate": 0.9373345072705582,
+      "survival_time": 0.8684666899355309,
+      "damage_efficiency": 1.0500888488416953,
+      "resource_efficiency": 0.839590315383073,
+      "decision_speed": 0.7265644919503212,
+      "engagement_score": 0.8993100854768905
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.8299612895764201,
+      "survival_time": 0.8392917205463795,
+      "damage_efficiency": 0.9572704930394079,
+      "resource_efficiency": 0.8362388526135023,
+      "decision_speed": 0.7650975937349545,
+      "engagement_score": 0.7570828265237544
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.9386027585079952,
+      "damage_efficiency": 1.141899625728475,
+      "resource_efficiency": 0.9452733966016256,
+      "decision_speed": 0.8546087203242916,
+      "engagement_score": 0.8882622221207828
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.9071282250901437,
+      "survival_time": 0.8377901325010475,
+      "damage_efficiency": 1.0379450768541034,
+      "resource_efficiency": 0.7374296600665508,
+      "decision_speed": 0.7136919356930748,
+      "engagement_score": 1.0134771713370745
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.8780406116344305,
+      "survival_time": 0.8686436106658444,
+      "damage_efficiency": 1.0113455095317878,
+      "resource_efficiency": 0.787033986505577,
+      "decision_speed": 0.887195292257902,
+      "engagement_score": 0.9893210883695301
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.9268408275296326,
+      "damage_efficiency": 1.0604796825274063,
+      "resource_efficiency": 0.8193415650989129,
+      "decision_speed": 0.8906128094907476,
+      "engagement_score": 0.9708360581632512
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.9297975560379064,
+      "damage_efficiency": 1.0507165272907482,
+      "resource_efficiency": 0.8768355188917942,
+      "decision_speed": 0.750855114875854,
+      "engagement_score": 1.0255439784096572
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.9014865455878966,
+      "survival_time": 0.9074157813565521,
+      "damage_efficiency": 0.999646346670745,
+      "resource_efficiency": 0.7583542286664621,
+      "decision_speed": 0.7785105319350083,
+      "engagement_score": 0.9463804017499251
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.9320407790001862,
+      "survival_time": 0.85082536249488,
+      "damage_efficiency": 1.1142735883131487,
+      "resource_efficiency": 0.794875692757874,
+      "decision_speed": 0.7783557460600323,
+      "engagement_score": 0.9627130031665883
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.9133672289291225,
+      "damage_efficiency": 1.097278271553196,
+      "resource_efficiency": 0.9469412515472855,
+      "decision_speed": 0.6612777598270609,
+      "engagement_score": 0.9982383601578829
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.8945785846791254,
+      "damage_efficiency": 1.112169022295997,
+      "resource_efficiency": 0.8199994159597525,
+      "decision_speed": 0.6948531588815562,
+      "engagement_score": 1.0053728984828805
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.9445086228986315,
+      "survival_time": 0.8958863128706269,
+      "damage_efficiency": 1.1388049292739388,
+      "resource_efficiency": 0.9548261878899241,
+      "decision_speed": 0.6219782163298899,
+      "engagement_score": 0.8926886230621764
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.9483259377993709,
+      "damage_efficiency": 1.133086417368644,
+      "resource_efficiency": 0.9358540484969086,
+      "decision_speed": 0.7108581266216651,
+      "engagement_score": 0.8865493664714463
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.9253539925087371,
+      "damage_efficiency": 1.106167776572595,
+      "resource_efficiency": 0.9574466127263008,
+      "decision_speed": 0.7961928953132198,
+      "engagement_score": 0.8565646214304315
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.8849378752199978,
+      "damage_efficiency": 1.1113388714966077,
+      "resource_efficiency": 0.9477860007854209,
+      "decision_speed": 0.6402873343180103,
+      "engagement_score": 0.8780857340838204
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.9103223640884816,
+      "damage_efficiency": 1.0722348212314816,
+      "resource_efficiency": 0.8809659654060448,
+      "decision_speed": 0.8152836561416393,
+      "engagement_score": 0.8957194624654906
+    },
+    {
+      "timestamp": 1754693289.6426537,
+      "win_rate": 0.95,
+      "survival_time": 0.8813983901630409,
+      "damage_efficiency": 1.0938531852149376,
+      "resource_efficiency": 0.9410672982158647,
+      "decision_speed": 0.8538311139884567,
+      "engagement_score": 0.8734596935425467
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.8826680223972252,
+      "damage_efficiency": 1.0453545689087782,
+      "resource_efficiency": 0.9142238446039255,
+      "decision_speed": 0.7911340131904139,
+      "engagement_score": 0.9073910524868696
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.9101680421126391,
+      "damage_efficiency": 1.0877686918980678,
+      "resource_efficiency": 0.761933939921668,
+      "decision_speed": 0.6225731580221301,
+      "engagement_score": 1.0316212786600285
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.9095590289205522,
+      "damage_efficiency": 1.1284595019886017,
+      "resource_efficiency": 0.8765019132979588,
+      "decision_speed": 0.6444281356702448,
+      "engagement_score": 0.8804891038564278
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.9448981488742589,
+      "damage_efficiency": 1.124612230488804,
+      "resource_efficiency": 0.9321405164001806,
+      "decision_speed": 0.8696773909579423,
+      "engagement_score": 0.8970153076679508
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.8652793621671786,
+      "damage_efficiency": 1.1230116241871442,
+      "resource_efficiency": 0.9368269402902019,
+      "decision_speed": 0.721913216949635,
+      "engagement_score": 0.9791323020301426
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.9479881015693674,
+      "damage_efficiency": 1.1314605696219964,
+      "resource_efficiency": 0.9552412065861926,
+      "decision_speed": 0.8432315159821191,
+      "engagement_score": 1.0312832409326649
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.9286564471755082,
+      "damage_efficiency": 1.0782185467946428,
+      "resource_efficiency": 0.9461631772096651,
+      "decision_speed": 0.8406705416811416,
+      "engagement_score": 1.027812805675056
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.8816805709594472,
+      "damage_efficiency": 1.1237374509135472,
+      "resource_efficiency": 0.7816191252805914,
+      "decision_speed": 0.8616500348718269,
+      "engagement_score": 1.0267186502675563
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.9366586605596929,
+      "damage_efficiency": 1.0910303234678942,
+      "resource_efficiency": 0.8210381734677201,
+      "decision_speed": 0.8386036497458584,
+      "engagement_score": 0.900519097481554
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.8743129788327708,
+      "damage_efficiency": 1.0778261951197705,
+      "resource_efficiency": 0.9328705884060573,
+      "decision_speed": 0.8900667312145083,
+      "engagement_score": 0.9108249985443743
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.894967838436006,
+      "damage_efficiency": 1.1431149687198259,
+      "resource_efficiency": 0.8672431464957444,
+      "decision_speed": 0.8817711420974147,
+      "engagement_score": 0.8780683503702855
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.8728567816172463,
+      "damage_efficiency": 1.1412534315761556,
+      "resource_efficiency": 0.8130932725045937,
+      "decision_speed": 0.6325207641644133,
+      "engagement_score": 0.9419127517129289
+    },
+    {
+      "timestamp": 1754693289.6431575,
+      "win_rate": 0.95,
+      "survival_time": 0.8863677314194991,
+      "damage_efficiency": 1.1056208853306142,
+      "resource_efficiency": 0.8622846119338956,
+      "decision_speed": 0.7155586300034181,
+      "engagement_score": 0.9703176086993199
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.925878528383417,
+      "damage_efficiency": 1.0451691278218629,
+      "resource_efficiency": 0.9451150330998166,
+      "decision_speed": 0.7615355991278375,
+      "engagement_score": 0.9988859998289691
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.9220628504432999,
+      "damage_efficiency": 1.0814221471781265,
+      "resource_efficiency": 0.7739947622252621,
+      "decision_speed": 0.7992713054733817,
+      "engagement_score": 0.9210400072085193
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.9398015279506335,
+      "damage_efficiency": 1.116975426301395,
+      "resource_efficiency": 0.8200644536422529,
+      "decision_speed": 0.6927853986625959,
+      "engagement_score": 0.9366785817238433
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.8845655202525947,
+      "damage_efficiency": 1.0577287799059152,
+      "resource_efficiency": 0.8440892667545816,
+      "decision_speed": 0.882109101219055,
+      "engagement_score": 0.9904635890545466
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.916551491595138,
+      "damage_efficiency": 1.0750949874565565,
+      "resource_efficiency": 0.8695874426271397,
+      "decision_speed": 0.6001217819091862,
+      "engagement_score": 0.9123827433737854
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.9129984781195681,
+      "damage_efficiency": 1.110470562370307,
+      "resource_efficiency": 0.8529976380494029,
+      "decision_speed": 0.7326479397914422,
+      "engagement_score": 0.89774028019782
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.9451180825828254,
+      "damage_efficiency": 1.124602476012678,
+      "resource_efficiency": 0.7939382792396109,
+      "decision_speed": 0.6254386610175365,
+      "engagement_score": 0.9580904019830433
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.88851882554098,
+      "damage_efficiency": 1.1268423464536663,
+      "resource_efficiency": 0.9102276275081465,
+      "decision_speed": 0.8018387011671501,
+      "engagement_score": 0.8999281331994576
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.8574425387726826,
+      "damage_efficiency": 1.069484254407835,
+      "resource_efficiency": 0.855027268843761,
+      "decision_speed": 0.8549213083874195,
+      "engagement_score": 0.8695656458369138
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.9179765380737713,
+      "damage_efficiency": 1.0644435236739709,
+      "resource_efficiency": 0.899270850098101,
+      "decision_speed": 0.7483131507031311,
+      "engagement_score": 0.9037968879156878
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.8555544818138031,
+      "damage_efficiency": 1.1200964476618471,
+      "resource_efficiency": 0.914009237714805,
+      "decision_speed": 0.6319761889690616,
+      "engagement_score": 0.9400292387885468
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.950796604227954,
+      "damage_efficiency": 1.096795775044374,
+      "resource_efficiency": 0.7700436770281281,
+      "decision_speed": 0.6747594838979915,
+      "engagement_score": 1.0246672694703318
+    },
+    {
+      "timestamp": 1754693289.6436577,
+      "win_rate": 0.95,
+      "survival_time": 0.9351416601722264,
+      "damage_efficiency": 1.1117577732586352,
+      "resource_efficiency": 0.9575784906132896,
+      "decision_speed": 0.7786356955408259,
+      "engagement_score": 1.0450079216886312
+    },
+    {
+      "timestamp": 1754693289.644158,
+      "win_rate": 0.95,
+      "survival_time": 0.9162652322761763,
+      "damage_efficiency": 1.1169273961275967,
+      "resource_efficiency": 0.8609556329648804,
+      "decision_speed": 0.8491707509164245,
+      "engagement_score": 0.9645743901221657
+    }
+  ],
+  "adjustment_history": [
+    {
+      "metric": "spawn_rate",
+      "old_value": 1.0,
+      "new_value": 0.988209876605706,
+      "adjustment_factor": -0.07860082262862615,
+      "reason": "Low survival time (47.99%)",
+      "timestamp": 1754693289.641154,
+      "confidence": 1.0
+    },
+    {
+      "metric": "spawn_rate",
+      "old_value": 0.988209876605706,
+      "new_value": 0.9778100189963512,
+      "adjustment_factor": -0.06933238406236505,
+      "reason": "Low survival time (50.59%)",
+      "timestamp": 1754693289.641154,
+      "confidence": 1.0
+    },
+    {
+      "metric": "spawn_rate",
+      "old_value": 0.9778100189963512,
+      "new_value": 0.9674645496292864,
+      "adjustment_factor": -0.06896979578043187,
+      "reason": "Low survival time (50.69%)",
+      "timestamp": 1754693289.641154,
+      "confidence": 1.0
+    },
+    {
+      "metric": "damage_scaling",
+      "old_value": 1.0,
+      "new_value": 2.3167511318328273,
+      "adjustment_factor": 26.335022636656547,
+      "reason": "Preemptive increase for positive trend (526.700)",
+      "timestamp": 1754693289.6416543,
+      "confidence": 0.813821349170448
+    },
+    {
+      "metric": "damage_scaling",
+      "old_value": 2.3167511318328273,
+      "new_value": 3.0,
+      "adjustment_factor": 23.276526109972934,
+      "reason": "Preemptive increase for positive trend (465.531)",
+      "timestamp": 1754693289.6416543,
+      "confidence": 0.8121520132737955
+    }
+  ],
+  "statistics": {
+    "total_adjustments": 5,
+    "performance_sessions": 50,
+    "average_adjustment_confidence": 0.9251946724888487
+  }
+}

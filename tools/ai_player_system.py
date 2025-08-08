@@ -1030,7 +1030,7 @@ class AIPlayerSystem:
     def create_ai_player_profile(self, name: str, playstyle: str, personality: str,
                                preferred_archetype: str, decision_style: str,
                                risk_tolerance: float = 0.5, patience_level: float = 0.5,
-                               optimization_focus: str = "balanced") -> PlayerProfile:
+                               optimization_focus: str = "balanced", skill_level: str = "casual") -> PlayerProfile:
         """Create a new AI player profile"""
         profile = PlayerProfile(
             name=name,
@@ -1040,7 +1040,8 @@ class AIPlayerSystem:
             decision_style=decision_style,
             risk_tolerance=risk_tolerance,
             patience_level=patience_level,
-            optimization_focus=optimization_focus
+            optimization_focus=optimization_focus,
+            skill_level=skill_level
         )
         
         self.ai_players[name] = profile
