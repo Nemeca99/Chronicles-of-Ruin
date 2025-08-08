@@ -1,0 +1,94 @@
+[
+  {
+    "id": "sunderfall_village",
+    "name": "Sunderfall Village",
+    "description": "A peaceful village nestled in the valley. Recently plagued by mysterious disappearances.",
+    "area_type": "AreaType.TOWN",
+    "level_range": [
+      1,
+      10
+    ],
+    "monsters": [],
+    "quests": [
+      "quest_001",
+      "quest_101"
+    ],
+    "connections": [
+      "whispering_woods"
+    ],
+    "story_flags_required": []
+  },
+  {
+    "id": "whispering_woods",
+    "name": "Whispering Woods",
+    "description": "A dense forest with ancient trees. The air feels heavy with corruption.",
+    "area_type": "AreaType.FOREST",
+    "level_range": [
+      2,
+      6
+    ],
+    "monsters": [
+      "corrupted_wolf",
+      "corrupted_bear",
+      "corrupted_sprite"
+    ],
+    "quests": [
+      "quest_002",
+      "quest_102"
+    ],
+    "connections": [
+      "sunderfall_village",
+      "ancient_ruins"
+    ],
+    "story_flags_required": [
+      "met_elder"
+    ]
+  },
+  {
+    "id": "ancient_ruins",
+    "name": "Ancient Ruins",
+    "description": "Crumbling ruins of an ancient civilization. The source of the corruption lies within.",
+    "area_type": "AreaType.RUINS",
+    "level_range": [
+      5,
+      10
+    ],
+    "monsters": [
+      "corrupted_guardian",
+      "corrupted_skeleton",
+      "corrupted_mage"
+    ],
+    "quests": [
+      "quest_003"
+    ],
+    "connections": [
+      "whispering_woods",
+      "corruption_heart"
+    ],
+    "story_flags_required": [
+      "discovered_corruption"
+    ]
+  },
+  {
+    "id": "corruption_heart",
+    "name": "Heart of Corruption",
+    "description": "The epicenter of corruption. A massive chamber where the Corruption Lord awaits.",
+    "area_type": "AreaType.BOSS_ARENA",
+    "level_range": [
+      8,
+      10
+    ],
+    "monsters": [
+      "corruption_lord"
+    ],
+    "quests": [
+      "quest_004"
+    ],
+    "connections": [
+      "ancient_ruins"
+    ],
+    "story_flags_required": [
+      "defeated_guardian"
+    ]
+  }
+]

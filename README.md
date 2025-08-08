@@ -81,6 +81,7 @@ Chronicles_of_Ruin/
 - **Pure Support** - 10% damage, 60% healing, 30% mitigation (0.4x damage multiplier)
 
 **Toolbelt Size:**
+
 - **Pure roles** (1 skill type) - Maximum specialization, highest effectiveness
 - **Hybrid roles** (2 skill types) - Balanced approach, moderate effectiveness
 - **Support role** (3 skill types) - Maximum versatility, lowest specialization
@@ -90,25 +91,30 @@ Chronicles_of_Ruin/
 **Universal Skill Access - Every archetype has access to all skill types:**
 
 #### **Damage Skills (3 skills available to all):**
+
 - **Fireball** - Single target fire damage with burning effect
-- **Lightning Strike** - Area lightning damage with shock effect  
+- **Lightning Strike** - Area lightning damage with shock effect
 - **Shadow Daggers** - Armor-piercing single target damage
 
 #### **Defense Skills (3 skills available to all):**
+
 - **Stone Skin** - Damage reduction and stun resistance
 - **Mirror Shield** - Damage reflection and magic resistance
 - **Evasion** - Dodge chance and movement speed boost
 
 #### **Support Skills (3 skills available to all):**
+
 - **Healing Light** - Single target healing with regeneration
 - **Group Heal** - Area healing for all allies
 - **Haste** - Speed boost and attack speed increase
 
 #### **Ultimate Skills (Pure specializations only):**
+
 - **Apocalypse** (Pure DPS) - Massive damage to all enemies
 - **Immortality** (Pure Support) - Invulnerability and mass healing
 
 **Skill Effectiveness by Archetype:**
+
 - **Pure DPS** - 2.25x damage multiplier, 20% cooldown reduction
 - **Hybrid DPS** - 1.8x damage multiplier, balanced effectiveness
 - **Support** - 1.75x damage multiplier, 1.4x healing multiplier

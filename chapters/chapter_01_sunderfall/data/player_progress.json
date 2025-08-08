@@ -1,0 +1,33 @@
+{
+  "ai_player_001": {
+    "player_id": "ai_player_001",
+    "level": 2,
+    "experience": 0,
+    "story_flags": [
+      "met_elder",
+      "discovered_disappearances"
+    ],
+    "completed_quests": [
+      "quest_001"
+    ],
+    "current_quests": [],
+    "discovered_areas": [
+      "sunderfall_village"
+    ],
+    "current_area": "sunderfall_village",
+    "inventory": {
+      "gold": 50,
+      "basic_healing_potion": 3,
+      "basic_weapon": 1
+    },
+    "skills_learned": [
+      "fireball",
+      "healing_light",
+      "stone_skin",
+      "lightning_strike"
+    ],
+    "achievements": [],
+    "playtime_hours": 0.0,
+    "last_session": "2025-08-08T15:33:51.001864"
+  }
+}

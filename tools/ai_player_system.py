@@ -163,85 +163,256 @@ class PlayerProfile:
         self.adaptation_history.append(adaptation)
     
     def get_team_behavior(self, team_size: int, team_composition: List[str]) -> Dict[str, Any]:
-        """Get team-oriented behavior based on role and team composition"""
-        # Default skill distribution if not available
-        default_distribution = {"damage": 0.5, "healing": 0.25, "mitigation": 0.25}
-        
+        """Get team behavior based on role and specialization"""
         team_behavior = {
-            'coordination_level': self.team_coordination,
-            'communication_style': self.communication_style,
-            'role_focus': self.team_role,
-            'team_adaptations': [],
-            'skill_distribution': default_distribution,
-            'toolbelt_size': 2,  # Default hybrid
-            'damage_multiplier': 1.0  # Default multiplier
+            "role": self.team_role,
+            "coordination_level": self.team_coordination,
+            "communication_style": self.communication_style,
+            "skill_distribution": {},
+            "toolbelt_size": 0,
+            "damage_multiplier": 1.0,
+            "healing_capability": 0.0,
+            "mitigation_capability": 0.0,
+            "universal_abilities": True,  # Guild Wars-style: everyone has access to all skill types
+            "learning_focus": self._get_learning_focus(),
+            "adaptation_strategy": self._get_adaptation_strategy(),
+            "boss_awareness": self._get_boss_awareness(),
+            "skill_priorities": self._get_skill_priorities()
         }
         
-        # Adjust behavior based on team composition
-        if team_size > 1:
-            if self.team_role == "pure_dps":
-                # Pure DPS focus on maximum damage output
-                team_behavior['priority'] = "maximize_damage"
-                team_behavior['risk_tolerance'] = min(1.0, self.risk_tolerance + 0.2)
-                team_behavior['self_sufficiency'] = 0.3  # Low self-sufficiency, rely on team
-                team_behavior['skill_distribution'] = {"damage": 0.8, "healing": 0.1, "mitigation": 0.1}
-                team_behavior['toolbelt_size'] = 1
-                team_behavior['damage_multiplier'] = 1.5
-            
-            elif self.team_role == "hybrid_dps":
-                # Hybrid DPS balance damage with some utility
-                team_behavior['priority'] = "balanced_damage"
-                team_behavior['risk_tolerance'] = min(1.0, self.risk_tolerance + 0.1)
-                team_behavior['self_sufficiency'] = 0.6  # Moderate self-sufficiency
-                team_behavior['skill_distribution'] = {"damage": 0.6, "healing": 0.2, "mitigation": 0.2}
-                team_behavior['toolbelt_size'] = 2
-                team_behavior['damage_multiplier'] = 1.2
-            
-            elif self.team_role == "support":
-                # Support roles provide utility and some healing
-                team_behavior['priority'] = "team_utility"
-                team_behavior['patience_level'] = min(1.0, self.patience_level + 0.2)
-                team_behavior['self_sufficiency'] = 0.7  # Good self-sufficiency
-                team_behavior['skill_distribution'] = {"damage": 0.3, "healing": 0.4, "mitigation": 0.3}
-                team_behavior['toolbelt_size'] = 3
-                team_behavior['damage_multiplier'] = 0.8
-            
-            elif self.team_role == "hybrid_support":
-                # Hybrid support focus on healing with some utility
-                team_behavior['priority'] = "team_healing"
-                team_behavior['patience_level'] = min(1.0, self.patience_level + 0.3)
-                team_behavior['self_sufficiency'] = 0.8  # High self-sufficiency
-                team_behavior['skill_distribution'] = {"damage": 0.2, "healing": 0.5, "mitigation": 0.3}
-                team_behavior['toolbelt_size'] = 2
-                team_behavior['damage_multiplier'] = 0.6
-            
-            elif self.team_role == "pure_support":
-                # Pure support focus on maximum healing and survival
-                team_behavior['priority'] = "team_survival"
-                team_behavior['patience_level'] = min(1.0, self.patience_level + 0.4)
-                team_behavior['self_sufficiency'] = 0.9  # Very high self-sufficiency
-                team_behavior['skill_distribution'] = {"damage": 0.1, "healing": 0.6, "mitigation": 0.3}
-                team_behavior['toolbelt_size'] = 1
-                team_behavior['damage_multiplier'] = 0.4
-            
-            # Team coordination adjustments based on composition
-            pure_dps_count = team_composition.count("pure_dps")
-            support_count = team_composition.count("pure_support") + team_composition.count("hybrid_support")
-            
-            if pure_dps_count > 2:
-                team_behavior['team_adaptations'].append("high_damage_team")
-                team_behavior['coordination_level'] = min(1.0, team_behavior['coordination_level'] + 0.1)
-            
-            if support_count > 2:
-                team_behavior['team_adaptations'].append("high_survival_team")
-                team_behavior['patience_level'] = min(1.0, team_behavior['patience_level'] + 0.1)
-            
-            # Everyone has access to healing and damage mitigation
-            team_behavior['universal_abilities'] = True
-            team_behavior['healing_capability'] = team_behavior['skill_distribution']["healing"]
-            team_behavior['mitigation_capability'] = team_behavior['skill_distribution']["mitigation"]
+        # Get role-specific specializations
+        role_specializations = {
+            "pure_dps": {
+                "skill_distribution": {"damage": 0.8, "defense": 0.1, "support": 0.1},
+                "toolbelt_size": 1,  # Pure specialization
+                "damage_multiplier": 1.5,
+                "ultimate_unlock": True
+            },
+            "hybrid_dps": {
+                "skill_distribution": {"damage": 0.6, "defense": 0.2, "support": 0.2},
+                "toolbelt_size": 2,  # Hybrid approach
+                "damage_multiplier": 1.2,
+                "ultimate_unlock": False
+            },
+            "support": {
+                "skill_distribution": {"damage": 0.3, "defense": 0.3, "support": 0.4},
+                "toolbelt_size": 3,  # Maximum versatility
+                "damage_multiplier": 0.8,
+                "ultimate_unlock": False
+            },
+            "hybrid_support": {
+                "skill_distribution": {"damage": 0.2, "defense": 0.3, "support": 0.5},
+                "toolbelt_size": 2,  # Hybrid approach
+                "damage_multiplier": 0.6,
+                "ultimate_unlock": False
+            },
+            "pure_support": {
+                "skill_distribution": {"damage": 0.1, "defense": 0.3, "support": 0.6},
+                "toolbelt_size": 1,  # Pure specialization
+                "damage_multiplier": 0.4,
+                "ultimate_unlock": True
+            }
+        }
+        
+        specialization = role_specializations.get(self.team_role, role_specializations["support"])
+        team_behavior.update(specialization)
+        
+        # Calculate capabilities based on skill distribution
+        skill_dist = specialization["skill_distribution"]
+        team_behavior["healing_capability"] = skill_dist.get("support", 0.0)
+        team_behavior["mitigation_capability"] = skill_dist.get("defense", 0.0)
         
         return team_behavior
+    
+    def _get_learning_focus(self) -> str:
+        """Get the AI's learning focus based on skill level and role"""
+        if self.skill_level == "noob":
+            return "basic_mechanics"
+        elif self.skill_level == "casual":
+            return "skill_usage"
+        elif self.skill_level == "experienced":
+            return "team_coordination"
+        elif self.skill_level == "expert":
+            return "advanced_strategies"
+        else:  # master
+            return "meta_optimization"
+    
+    def _get_adaptation_strategy(self) -> str:
+        """Get the AI's adaptation strategy"""
+        if self.team_role in ["pure_dps", "pure_support"]:
+            return "specialized_optimization"
+        elif self.team_role in ["hybrid_dps", "hybrid_support"]:
+            return "balanced_adaptation"
+        else:  # support
+            return "versatile_adaptation"
+    
+    def _get_boss_awareness(self) -> Dict[str, Any]:
+        """Get the AI's awareness of boss mechanics"""
+        return {
+            "immune_to_stun": True,
+            "immune_to_freeze": True,
+            "can_be_slowed": True,
+            "resistance_cap": 100.0,
+            "adaptation_required": True
+        }
+    
+    def _get_skill_priorities(self) -> List[str]:
+        """Get skill usage priorities based on role and situation"""
+        if self.team_role == "pure_dps":
+            return ["damage", "ultimate", "defense", "support"]
+        elif self.team_role == "hybrid_dps":
+            return ["damage", "defense", "support", "ultimate"]
+        elif self.team_role == "support":
+            return ["support", "defense", "damage", "ultimate"]
+        elif self.team_role == "hybrid_support":
+            return ["support", "defense", "damage", "ultimate"]
+        else:  # pure_support
+            return ["support", "ultimate", "defense", "damage"]
+    
+    def learn_from_game_session(self, session_data: Dict[str, Any]) -> None:
+        """Learn from a complete game session"""
+        # Extract key metrics
+        damage_dealt = session_data.get("damage_dealt", 0)
+        damage_taken = session_data.get("damage_taken", 0)
+        healing_done = session_data.get("healing_done", 0)
+        status_effects_applied = session_data.get("status_effects_applied", 0)
+        boss_encounters = session_data.get("boss_encounters", 0)
+        quests_completed = session_data.get("quests_completed", 0)
+        areas_explored = session_data.get("areas_explored", 0)
+        
+        # Update experience
+        self.experience_points += session_data.get("experience_gained", 0)
+        self.games_played += 1
+        
+        # Analyze performance
+        performance_score = self._calculate_performance_score(session_data)
+        
+        # Learn from boss encounters
+        if boss_encounters > 0:
+            self._learn_boss_strategies(session_data.get("boss_data", {}))
+        
+        # Learn from quest progression
+        if quests_completed > 0:
+            self._learn_quest_strategies(session_data.get("quest_data", {}))
+        
+        # Adapt based on performance
+        if performance_score > self.adaptation_threshold:
+            self._adapt_successful_strategies(session_data)
+        else:
+            self._adapt_failed_strategies(session_data)
+        
+        # Update learning metrics
+        self.total_decisions += session_data.get("decisions_made", 0)
+        if performance_score > 0.7:  # 70% success threshold
+            self.successful_decisions += session_data.get("decisions_made", 0)
+    
+    def _calculate_performance_score(self, session_data: Dict[str, Any]) -> float:
+        """Calculate overall performance score for the session"""
+        # Base score from combat effectiveness
+        damage_ratio = session_data.get("damage_dealt", 0) / max(session_data.get("damage_taken", 1), 1)
+        healing_efficiency = session_data.get("healing_done", 0) / max(session_data.get("damage_taken", 1), 1)
+        
+        # Quest and exploration progress
+        quest_progress = session_data.get("quests_completed", 0) / max(session_data.get("quests_available", 1), 1)
+        exploration_progress = session_data.get("areas_explored", 0) / max(session_data.get("areas_available", 1), 1)
+        
+        # Boss encounter success
+        boss_success = 0.0
+        if session_data.get("boss_encounters", 0) > 0:
+            boss_success = session_data.get("bosses_defeated", 0) / session_data.get("boss_encounters", 1)
+        
+        # Weighted performance score
+        performance_score = (
+            damage_ratio * 0.3 +
+            healing_efficiency * 0.2 +
+            quest_progress * 0.25 +
+            exploration_progress * 0.15 +
+            boss_success * 0.1
+        )
+        
+        return min(1.0, max(0.0, performance_score))
+    
+    def _learn_boss_strategies(self, boss_data: Dict[str, Any]) -> None:
+        """Learn from boss encounters"""
+        for boss_name, boss_info in boss_data.items():
+            # Learn boss immunities
+            if boss_info.get("immune_to_stun", False):
+                self.strategy_memory.setdefault("boss_immunities", {})[boss_name] = ["stun", "freeze"]
+            
+            # Learn effective strategies
+            effective_damage_types = boss_info.get("effective_damage_types", [])
+            if effective_damage_types:
+                self.strategy_memory.setdefault("effective_damage", {})[boss_name] = effective_damage_types
+            
+            # Learn boss vulnerabilities
+            vulnerabilities = boss_info.get("vulnerabilities", [])
+            if vulnerabilities:
+                self.strategy_memory.setdefault("boss_vulnerabilities", {})[boss_name] = vulnerabilities
+    
+    def _learn_quest_strategies(self, quest_data: Dict[str, Any]) -> None:
+        """Learn from quest progression"""
+        for quest_id, quest_info in quest_data.items():
+            # Learn efficient quest completion strategies
+            completion_time = quest_info.get("completion_time", 0)
+            if completion_time > 0:
+                self.strategy_memory.setdefault("quest_efficiency", {})[quest_id] = completion_time
+            
+            # Learn area exploration patterns
+            areas_visited = quest_info.get("areas_visited", [])
+            if areas_visited:
+                self.strategy_memory.setdefault("exploration_patterns", {}).setdefault(quest_id, []).extend(areas_visited)
+    
+    def _adapt_successful_strategies(self, session_data: Dict[str, Any]) -> None:
+        """Adapt based on successful strategies"""
+        # Increase confidence in successful approaches
+        if session_data.get("damage_dealt", 0) > session_data.get("damage_taken", 0):
+            self.risk_tolerance = min(1.0, self.risk_tolerance + 0.1)
+        
+        if session_data.get("healing_done", 0) > 0:
+            self.patience_level = min(1.0, self.patience_level + 0.05)
+        
+        # Remember successful skill combinations
+        successful_skills = session_data.get("successful_skills", [])
+        if successful_skills:
+            self.strategy_memory.setdefault("successful_combinations", []).extend(successful_skills)
+    
+    def _adapt_failed_strategies(self, session_data: Dict[str, Any]) -> None:
+        """Adapt based on failed strategies"""
+        # Reduce risk tolerance after failures
+        if session_data.get("damage_taken", 0) > session_data.get("damage_dealt", 0):
+            self.risk_tolerance = max(0.0, self.risk_tolerance - 0.1)
+        
+        # Increase patience after failures
+        self.patience_level = min(1.0, self.patience_level + 0.1)
+        
+        # Remember failure patterns to avoid
+        failed_skills = session_data.get("failed_skills", [])
+        if failed_skills:
+            self.failure_patterns.extend(failed_skills)
+    
+    def get_decision_context(self, scenario: str, game_state: Dict[str, Any]) -> Dict[str, Any]:
+        """Get enhanced decision context including progression and resistance info"""
+        context = {
+            "scenario": scenario,
+            "player_level": game_state.get("player_level", 1),
+            "current_area": game_state.get("current_area", "sunderfall_village"),
+            "available_quests": game_state.get("available_quests", []),
+            "discovered_areas": game_state.get("discovered_areas", []),
+            "skills_learned": game_state.get("skills_learned", []),
+            "inventory": game_state.get("inventory", {}),
+            "story_flags": game_state.get("story_flags", []),
+            "enemy_type": game_state.get("enemy_type", "regular_monster"),
+            "enemy_resistances": game_state.get("enemy_resistances", {}),
+            "boss_encounter": game_state.get("boss_encounter", False),
+            "team_composition": game_state.get("team_composition", []),
+            "team_health": game_state.get("team_health", {}),
+            "learning_focus": self._get_learning_focus(),
+            "adaptation_strategy": self._get_adaptation_strategy(),
+            "strategy_memory": self.strategy_memory,
+            "failure_patterns": self.failure_patterns
+        }
+        
+        return context
 
 @dataclass
 class GameContext:

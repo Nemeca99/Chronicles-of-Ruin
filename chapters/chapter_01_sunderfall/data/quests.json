@@ -1,0 +1,217 @@
+[
+  {
+    "id": "quest_001",
+    "name": "The Disappearances",
+    "description": "Villagers have been disappearing from Sunderfall. Investigate the recent disappearances and speak with the village elder.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 1,
+    "objectives": [
+      {
+        "type": "talk",
+        "target": "village_elder",
+        "description": "Speak with the village elder"
+      },
+      {
+        "type": "explore",
+        "target": "sunderfall_village",
+        "description": "Explore the village for clues"
+      },
+      {
+        "type": "collect",
+        "target": "disappearance_reports",
+        "count": 3,
+        "description": "Collect reports of disappearances"
+      }
+    ],
+    "rewards": {
+      "experience": 100,
+      "gold": 50,
+      "items": [
+        "basic_healing_potion"
+      ]
+    },
+    "story_flags": [
+      "met_elder",
+      "discovered_disappearances"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_002",
+    "name": "Into the Forest",
+    "description": "The elder believes the disappearances are linked to the corrupted forest. Venture into the Whispering Woods to investigate.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 2,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "whispering_woods",
+        "description": "Explore the Whispering Woods"
+      },
+      {
+        "type": "defeat",
+        "target": "corrupted_wolf",
+        "count": 3,
+        "description": "Defeat corrupted wolves"
+      },
+      {
+        "type": "collect",
+        "target": "corruption_sample",
+        "count": 1,
+        "description": "Collect a sample of the corruption"
+      }
+    ],
+    "rewards": {
+      "experience": 200,
+      "gold": 100,
+      "items": [
+        "forest_map"
+      ]
+    },
+    "story_flags": [
+      "discovered_corruption",
+      "cleared_forest_path"
+    ],
+    "prerequisites": [
+      "quest_001"
+    ]
+  },
+  {
+    "id": "quest_003",
+    "name": "The Ancient Ruins",
+    "description": "The corruption leads to ancient ruins beneath the forest. Find the source of the corruption and the missing villagers.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 5,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "ancient_ruins",
+        "description": "Explore the ancient ruins"
+      },
+      {
+        "type": "defeat",
+        "target": "corrupted_guardian",
+        "count": 1,
+        "description": "Defeat the corrupted guardian"
+      },
+      {
+        "type": "rescue",
+        "target": "missing_villagers",
+        "count": 5,
+        "description": "Rescue the missing villagers"
+      }
+    ],
+    "rewards": {
+      "experience": 500,
+      "gold": 250,
+      "items": [
+        "ancient_artifact"
+      ]
+    },
+    "story_flags": [
+      "found_villagers",
+      "defeated_guardian"
+    ],
+    "prerequisites": [
+      "quest_002"
+    ]
+  },
+  {
+    "id": "quest_004",
+    "name": "The Corrupted Heart",
+    "description": "The ancient artifact has been corrupted. Confront the source of corruption and restore balance to Sunderfall.",
+    "quest_type": "QuestType.STORY",
+    "level_requirement": 8,
+    "objectives": [
+      {
+        "type": "explore",
+        "target": "corruption_heart",
+        "description": "Reach the heart of corruption"
+      },
+      {
+        "type": "defeat",
+        "target": "corruption_lord",
+        "count": 1,
+        "description": "Defeat the Corruption Lord"
+      },
+      {
+        "type": "ritual",
+        "target": "purify_artifact",
+        "description": "Purify the ancient artifact"
+      }
+    ],
+    "rewards": {
+      "experience": 1000,
+      "gold": 500,
+      "items": [
+        "purified_artifact",
+        "hero_badge"
+      ]
+    },
+    "story_flags": [
+      "defeated_corruption_lord",
+      "purified_artifact",
+      "chapter_1_complete"
+    ],
+    "prerequisites": [
+      "quest_003"
+    ]
+  },
+  {
+    "id": "quest_101",
+    "name": "Herb Gathering",
+    "description": "The village healer needs rare herbs from the forest. Help gather healing herbs.",
+    "quest_type": "QuestType.SIDE_QUEST",
+    "level_requirement": 1,
+    "objectives": [
+      {
+        "type": "collect",
+        "target": "healing_herb",
+        "count": 10,
+        "description": "Gather healing herbs"
+      }
+    ],
+    "rewards": {
+      "experience": 50,
+      "gold": 25,
+      "items": [
+        "healing_potion"
+      ]
+    },
+    "story_flags": [
+      "helped_healer"
+    ],
+    "prerequisites": []
+  },
+  {
+    "id": "quest_102",
+    "name": "Lost Equipment",
+    "description": "A merchant lost his equipment in the forest. Help him recover his goods.",
+    "quest_type": "QuestType.SIDE_QUEST",
+    "level_requirement": 3,
+    "objectives": [
+      {
+        "type": "collect",
+        "target": "merchant_goods",
+        "count": 5,
+        "description": "Recover merchant goods"
+      },
+      {
+        "type": "return",
+        "target": "merchant",
+        "description": "Return goods to merchant"
+      }
+    ],
+    "rewards": {
+      "experience": 150,
+      "gold": 75,
+      "items": [
+        "discount_voucher"
+      ]
+    },
+    "story_flags": [
+      "helped_merchant"
+    ],
+    "prerequisites": []
+  }
+]
