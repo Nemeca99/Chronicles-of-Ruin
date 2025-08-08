@@ -2,16 +2,18 @@
 Combat System - Chronicles of Ruin: Sunderfall
 
 This module implements the core combat mechanics including damage calculation,
-combat triangle system, Wild monster mechanics, and status effect integration.
+combat triangle system, Wild monster mechanics, status effect integration,
+and AI learning integration.
 """
 
 import random
 import math
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List, Tuple, Optional, Any
 from enum import Enum
 from .player_system import PlayerSystem, StatType
 from .monster_system import MonsterSystem, MonsterArchetype
 from .xp_system import XPSystem
+from .resistance_system import ResistanceSystem, EntityType, ResistanceType
 
 
 class Archetype(Enum):
@@ -32,12 +34,15 @@ class StatusEffect(Enum):
     POISON = "poison"
     BLEED = "bleed"
     CHAOS = "chaos"
+    SLOW = "slow"
+    WEAKEN = "weaken"
+    VULNERABLE = "vulnerable"
 
 
 class CombatSystem:
     """
     Core combat system implementing damage calculation, combat triangle,
-    Wild monster mechanics, and status effect integration.
+    Wild monster mechanics, status effect integration, and AI learning.
     """
 
     def __init__(
@@ -45,6 +50,7 @@ class CombatSystem:
         player_system: PlayerSystem = None,
         monster_system: MonsterSystem = None,
         items_system=None,
+        resistance_system: ResistanceSystem = None,
     ):
         """Initialize the combat system with default configurations."""
         self.combat_triangle_bonus = 0.20  # 20% damage bonus/penalty (tuned)
@@ -57,6 +63,12 @@ class CombatSystem:
         self.monster_system = monster_system or MonsterSystem()
         self.items_system = items_system
         self.xp_system = XPSystem()
+        self.resistance_system = resistance_system or ResistanceSystem()
+
+        # AI learning integration
+        self.combat_patterns = {}
+        self.boss_encounters = {}
+        self.skill_effectiveness = {}
 
     def calculate_damage(
         self,
@@ -64,18 +76,20 @@ class CombatSystem:
         target_stats: Dict,
         skill_data: Dict,
         weapon_data: Dict,
-    ) -> Tuple[float, List[StatusEffect]]:
+        resistance_profile: Dict = None,
+    ) -> Tuple[float, List[StatusEffect], Dict[str, Any]]:
         """
-        Calculate final damage using the complete calculation system.
+        Calculate final damage using the complete calculation system with resistance.
 
         Args:
             attacker_stats: Dictionary containing attacker's current attributes
             target_stats: Dictionary containing target's current attributes
             skill_data: Dictionary containing skill information and modifiers
             weapon_data: Dictionary containing weapon statistics and bonuses
+            resistance_profile: Resistance profile for the target
 
         Returns:
-            Tuple of (final_damage, applied_status_effects)
+            Tuple of (final_damage, applied_status_effects, combat_analysis)
         """
         # Step 1: Calculate base stats
         base_damage = self._calculate_base_damage(
@@ -90,15 +104,26 @@ class CombatSystem:
             modified_damage, attacker_stats, target_stats
         )
 
-        # Step 4: Apply damage floor
-        final_damage = max(triangle_damage, self.damage_floor)
-
-        # Step 5: Apply status effects
-        applied_effects = self._apply_status_effects(
-            attacker_stats, target_stats, skill_data
+        # Step 4: Apply resistance system
+        resistance_damage = self._apply_resistance_system(
+            triangle_damage, target_stats, resistance_profile, skill_data
         )
 
-        return final_damage, applied_effects
+        # Step 5: Apply damage floor
+        final_damage = max(resistance_damage, self.damage_floor)
+
+        # Step 6: Apply status effects with resistance consideration
+        applied_effects = self._apply_status_effects_with_resistance(
+            attacker_stats, target_stats, skill_data, resistance_profile
+        )
+
+        # Step 7: Generate combat analysis for AI learning
+        combat_analysis = self._generate_combat_analysis(
+            attacker_stats, target_stats, skill_data, weapon_data,
+            base_damage, final_damage, applied_effects, resistance_profile
+        )
+
+        return final_damage, applied_effects, combat_analysis
 
     def _calculate_base_damage(
         self, attacker_stats: Dict, skill_data: Dict, weapon_data: Dict
@@ -187,29 +212,237 @@ class CombatSystem:
         """Check if target is a Wild monster."""
         return target_stats.get("is_wild", False)
 
-    def _apply_status_effects(
-        self, attacker_stats: Dict, target_stats: Dict, skill_data: Dict
+    def _apply_resistance_system(
+        self, 
+        damage: float, 
+        target_stats: Dict, 
+        resistance_profile: Dict = None,
+        skill_data: Dict = None
+    ) -> float:
+        """Apply resistance system to damage calculation"""
+        if not resistance_profile:
+            return damage
+
+        # Get damage type from skill
+        damage_type = skill_data.get("damage_type", "physical")
+        
+        # Calculate resistance
+        resistance_value = self.resistance_system.calculate_damage_with_resistance(
+            damage, damage_type, resistance_profile
+        )
+
+        return resistance_value
+
+    def _apply_status_effects_with_resistance(
+        self, 
+        attacker_stats: Dict, 
+        target_stats: Dict, 
+        skill_data: Dict,
+        resistance_profile: Dict = None
     ) -> List[StatusEffect]:
-        """Apply status effects based on attacker stats and skills."""
+        """Apply status effects considering resistance and immunities"""
         applied_effects = []
-
-        # Check if target is immune to status effects (e.g., bosses)
-        if target_stats.get("status_immune", False):
-            return applied_effects
-
-        # Apply status effects based on skill data
-        status_chances = skill_data.get("status_chances", {})
-
-        for status_type, chance in status_chances.items():
-            if random.random() < chance:
-                try:
-                    status_effect = StatusEffect(status_type)
-                    applied_effects.append(status_effect)
-                except ValueError:
-                    # Skip invalid status effects
+        
+        # Check if target is a boss
+        is_boss = target_stats.get("entity_type") == EntityType.BOSS
+        
+        # Get status effects from skill
+        skill_effects = skill_data.get("status_effects", [])
+        
+        for effect in skill_effects:
+            effect_enum = StatusEffect(effect)
+            
+            # Check if boss is immune to this effect
+            if is_boss:
+                if effect_enum in [StatusEffect.STUN, StatusEffect.FREEZE]:
+                    continue  # Bosses are immune to stun and freeze
+                elif effect_enum == StatusEffect.SLOW:
+                    # Bosses can be slowed but with reduced chance
+                    if random.random() < 0.3:  # 30% chance for bosses
+                        applied_effects.append(effect_enum)
                     continue
-
+            
+            # Check resistance system for status effect application
+            if resistance_profile and self.resistance_system.can_apply_status_effect(
+                effect_enum.value, resistance_profile
+            ):
+                # Calculate application chance based on resistance
+                chance = self.resistance_system.calculate_status_effect_chance(
+                    effect_enum.value, resistance_profile
+                )
+                
+                if random.random() < chance:
+                    applied_effects.append(effect_enum)
+            else:
+                # Default application chance
+                if random.random() < 0.7:  # 70% default chance
+                    applied_effects.append(effect_enum)
+        
         return applied_effects
+
+    def _generate_combat_analysis(
+        self, 
+        attacker_stats: Dict, 
+        target_stats: Dict, 
+        skill_data: Dict, 
+        weapon_data: Dict,
+        base_damage: float, 
+        final_damage: float, 
+        applied_effects: List[StatusEffect],
+        resistance_profile: Dict = None
+    ) -> Dict[str, Any]:
+        """Generate detailed combat analysis for AI learning"""
+        
+        # Calculate effectiveness metrics
+        damage_effectiveness = final_damage / max(base_damage, 1)
+        damage_reduction = (base_damage - final_damage) / max(base_damage, 1)
+        
+        # Analyze skill effectiveness
+        skill_name = skill_data.get("name", "unknown")
+        skill_type = skill_data.get("skill_type", "unknown")
+        
+        # Store for AI learning
+        if skill_name not in self.skill_effectiveness:
+            self.skill_effectiveness[skill_name] = {
+                "usage_count": 0,
+                "total_damage": 0,
+                "effectiveness_ratios": [],
+                "status_effect_success": 0,
+                "status_effect_attempts": 0
+            }
+        
+        skill_stats = self.skill_effectiveness[skill_name]
+        skill_stats["usage_count"] += 1
+        skill_stats["total_damage"] += final_damage
+        skill_stats["effectiveness_ratios"].append(damage_effectiveness)
+        
+        # Track status effect success
+        skill_stats["status_effect_attempts"] += len(skill_data.get("status_effects", []))
+        skill_stats["status_effect_success"] += len(applied_effects)
+        
+        # Generate analysis
+        analysis = {
+            "skill_used": skill_name,
+            "skill_type": skill_type,
+            "base_damage": base_damage,
+            "final_damage": final_damage,
+            "damage_effectiveness": damage_effectiveness,
+            "damage_reduction": damage_reduction,
+            "status_effects_applied": [effect.value for effect in applied_effects],
+            "status_effect_success_rate": len(applied_effects) / max(len(skill_data.get("status_effects", [])), 1),
+            "target_type": target_stats.get("entity_type", "unknown"),
+            "is_boss_encounter": target_stats.get("entity_type") == EntityType.BOSS,
+            "resistance_applied": resistance_profile is not None,
+            "combat_triangle_bonus": self._get_combat_triangle_multiplier(
+                Archetype(attacker_stats.get("archetype", "melee")),
+                Archetype(target_stats.get("archetype", "melee"))
+            ),
+            "skill_effectiveness_trend": self._calculate_skill_effectiveness_trend(skill_name)
+        }
+        
+        return analysis
+
+    def _calculate_skill_effectiveness_trend(self, skill_name: str) -> Dict[str, Any]:
+        """Calculate effectiveness trend for a skill"""
+        if skill_name not in self.skill_effectiveness:
+            return {"trend": "unknown", "average_effectiveness": 0.0}
+        
+        skill_stats = self.skill_effectiveness[skill_name]
+        if not skill_stats["effectiveness_ratios"]:
+            return {"trend": "unknown", "average_effectiveness": 0.0}
+        
+        recent_ratios = skill_stats["effectiveness_ratios"][-5:]  # Last 5 uses
+        average_effectiveness = sum(recent_ratios) / len(recent_ratios)
+        
+        if len(recent_ratios) >= 2:
+            trend = "improving" if recent_ratios[-1] > recent_ratios[0] else "declining"
+        else:
+            trend = "stable"
+        
+        return {
+            "trend": trend,
+            "average_effectiveness": average_effectiveness,
+            "usage_count": skill_stats["usage_count"]
+        }
+
+    def record_boss_encounter(self, boss_name: str, encounter_data: Dict[str, Any]):
+        """Record boss encounter data for AI learning"""
+        if boss_name not in self.boss_encounters:
+            self.boss_encounters[boss_name] = {
+                "encounters": 0,
+                "successful_strategies": [],
+                "failed_strategies": [],
+                "effective_skills": [],
+                "ineffective_skills": [],
+                "average_damage_taken": 0,
+                "average_damage_dealt": 0
+            }
+        
+        boss_stats = self.boss_encounters[boss_name]
+        boss_stats["encounters"] += 1
+        
+        # Record strategy effectiveness
+        strategy = encounter_data.get("strategy", "unknown")
+        success = encounter_data.get("success", False)
+        
+        if success:
+            boss_stats["successful_strategies"].append(strategy)
+        else:
+            boss_stats["failed_strategies"].append(strategy)
+        
+        # Record skill effectiveness
+        skills_used = encounter_data.get("skills_used", [])
+        for skill in skills_used:
+            if skill.get("effective", False):
+                boss_stats["effective_skills"].append(skill["name"])
+            else:
+                boss_stats["ineffective_skills"].append(skill["name"])
+        
+        # Update damage averages
+        damage_taken = encounter_data.get("damage_taken", 0)
+        damage_dealt = encounter_data.get("damage_dealt", 0)
+        
+        boss_stats["average_damage_taken"] = (
+            (boss_stats["average_damage_taken"] * (boss_stats["encounters"] - 1) + damage_taken) 
+            / boss_stats["encounters"]
+        )
+        boss_stats["average_damage_dealt"] = (
+            (boss_stats["average_damage_dealt"] * (boss_stats["encounters"] - 1) + damage_dealt) 
+            / boss_stats["encounters"]
+        )
+
+    def get_combat_learning_data(self) -> Dict[str, Any]:
+        """Get combat learning data for AI system"""
+        return {
+            "skill_effectiveness": self.skill_effectiveness,
+            "boss_encounters": self.boss_encounters,
+            "combat_patterns": self.combat_patterns,
+            "learning_insights": self._generate_combat_insights()
+        }
+
+    def _generate_combat_insights(self) -> List[str]:
+        """Generate insights from combat data"""
+        insights = []
+        
+        # Analyze skill effectiveness
+        for skill_name, stats in self.skill_effectiveness.items():
+            if stats["usage_count"] >= 3:  # Only analyze skills used multiple times
+                avg_effectiveness = sum(stats["effectiveness_ratios"]) / len(stats["effectiveness_ratios"])
+                if avg_effectiveness > 1.2:
+                    insights.append(f"{skill_name} is highly effective (avg: {avg_effectiveness:.2f})")
+                elif avg_effectiveness < 0.8:
+                    insights.append(f"{skill_name} is underperforming (avg: {avg_effectiveness:.2f})")
+        
+        # Analyze boss encounters
+        for boss_name, stats in self.boss_encounters.items():
+            if stats["encounters"] >= 2:
+                success_rate = len(stats["successful_strategies"]) / stats["encounters"]
+                if success_rate > 0.7:
+                    insights.append(f"Effective strategies found for {boss_name}")
+                elif success_rate < 0.3:
+                    insights.append(f"Struggling with {boss_name} - need new strategies")
+        
+        return insights
 
     def calculate_defense(self, target_stats: Dict, damage_type: str) -> float:
         """

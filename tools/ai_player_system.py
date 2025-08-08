@@ -270,7 +270,7 @@ class PlayerProfile:
             return ["support", "ultimate", "defense", "damage"]
     
     def learn_from_game_session(self, session_data: Dict[str, Any]) -> None:
-        """Learn from a complete game session"""
+        """Learn from a complete game session with enhanced pattern recognition"""
         # Extract key metrics
         damage_dealt = session_data.get("damage_dealt", 0)
         damage_taken = session_data.get("damage_taken", 0)
@@ -284,27 +284,149 @@ class PlayerProfile:
         self.experience_points += session_data.get("experience_gained", 0)
         self.games_played += 1
         
-        # Analyze performance
+        # Analyze performance with enhanced metrics
         performance_score = self._calculate_performance_score(session_data)
         
-        # Learn from boss encounters
+        # Enhanced learning from different scenarios
+        self._learn_combat_patterns(session_data)
+        self._learn_exploration_patterns(session_data)
+        self._learn_social_patterns(session_data)
+        
+        # Learn from boss encounters with detailed analysis
         if boss_encounters > 0:
             self._learn_boss_strategies(session_data.get("boss_data", {}))
         
-        # Learn from quest progression
+        # Learn from quest progression with efficiency analysis
         if quests_completed > 0:
             self._learn_quest_strategies(session_data.get("quest_data", {}))
         
-        # Adapt based on performance
+        # Emotional intelligence learning
+        self._learn_emotional_patterns(session_data)
+        
+        # Strategic adaptation based on performance
         if performance_score > self.adaptation_threshold:
             self._adapt_successful_strategies(session_data)
         else:
             self._adapt_failed_strategies(session_data)
         
-        # Update learning metrics
+        # Update learning metrics with enhanced tracking
         self.total_decisions += session_data.get("decisions_made", 0)
         if performance_score > 0.7:  # 70% success threshold
             self.successful_decisions += session_data.get("decisions_made", 0)
+        
+        # Advanced pattern recognition
+        self._recognize_advanced_patterns(session_data)
+    
+    def _learn_combat_patterns(self, session_data: Dict[str, Any]) -> None:
+        """Learn advanced combat patterns and strategies"""
+        combat_data = session_data.get("combat_data", {})
+        
+        # Analyze damage patterns
+        damage_patterns = combat_data.get("damage_patterns", {})
+        for enemy_type, damage_info in damage_patterns.items():
+            if enemy_type not in self.strategy_memory:
+                self.strategy_memory[enemy_type] = {}
+            
+            # Learn effective damage types
+            effective_types = damage_info.get("effective_types", [])
+            if effective_types:
+                self.strategy_memory[enemy_type]["effective_damage"] = effective_types
+            
+            # Learn optimal skill combinations
+            skill_combos = damage_info.get("skill_combinations", [])
+            if skill_combos:
+                self.strategy_memory[enemy_type]["skill_combinations"] = skill_combos
+        
+        # Analyze defensive patterns
+        defensive_data = combat_data.get("defensive_patterns", {})
+        for situation, defense_info in defensive_data.items():
+            if "defensive_strategies" not in self.strategy_memory:
+                self.strategy_memory["defensive_strategies"] = {}
+            
+            self.strategy_memory["defensive_strategies"][situation] = defense_info
+    
+    def _learn_exploration_patterns(self, session_data: Dict[str, Any]) -> None:
+        """Learn exploration and discovery patterns"""
+        exploration_data = session_data.get("exploration_data", {})
+        
+        # Learn efficient exploration routes
+        routes = exploration_data.get("efficient_routes", {})
+        if routes:
+            self.strategy_memory["exploration_routes"] = routes
+        
+        # Learn area discovery patterns
+        discovery_patterns = exploration_data.get("discovery_patterns", {})
+        if discovery_patterns:
+            self.strategy_memory["discovery_patterns"] = discovery_patterns
+        
+        # Learn resource gathering efficiency
+        resource_data = exploration_data.get("resource_efficiency", {})
+        if resource_data:
+            self.strategy_memory["resource_efficiency"] = resource_data
+    
+    def _learn_social_patterns(self, session_data: Dict[str, Any]) -> None:
+        """Learn social interaction and quest completion patterns"""
+        social_data = session_data.get("social_data", {})
+        
+        # Learn NPC interaction patterns
+        npc_patterns = social_data.get("npc_interactions", {})
+        if npc_patterns:
+            self.strategy_memory["npc_interactions"] = npc_patterns
+        
+        # Learn quest completion efficiency
+        quest_efficiency = social_data.get("quest_efficiency", {})
+        if quest_efficiency:
+            self.strategy_memory["quest_efficiency"] = quest_efficiency
+        
+        # Learn reputation building strategies
+        reputation_data = social_data.get("reputation_building", {})
+        if reputation_data:
+            self.strategy_memory["reputation_strategies"] = reputation_data
+    
+    def _learn_emotional_patterns(self, session_data: Dict[str, Any]) -> None:
+        """Learn emotional intelligence patterns"""
+        emotional_data = session_data.get("emotional_data", {})
+        
+        # Learn stress management patterns
+        stress_patterns = emotional_data.get("stress_management", {})
+        if stress_patterns:
+            self.strategy_memory["stress_management"] = stress_patterns
+        
+        # Learn confidence building patterns
+        confidence_patterns = emotional_data.get("confidence_building", {})
+        if confidence_patterns:
+            self.strategy_memory["confidence_patterns"] = confidence_patterns
+        
+        # Learn frustration handling
+        frustration_data = emotional_data.get("frustration_handling", {})
+        if frustration_data:
+            self.strategy_memory["frustration_handling"] = frustration_data
+    
+    def _recognize_advanced_patterns(self, session_data: Dict[str, Any]) -> None:
+        """Recognize advanced patterns in gameplay"""
+        # Pattern recognition for skill combinations
+        skill_patterns = session_data.get("skill_patterns", {})
+        if skill_patterns:
+            for pattern_name, pattern_data in skill_patterns.items():
+                if "advanced_patterns" not in self.strategy_memory:
+                    self.strategy_memory["advanced_patterns"] = {}
+                self.strategy_memory["advanced_patterns"][pattern_name] = pattern_data
+        
+        # Pattern recognition for enemy behavior
+        enemy_patterns = session_data.get("enemy_patterns", {})
+        if enemy_patterns:
+            for enemy_type, behavior_data in enemy_patterns.items():
+                if "enemy_behavior_patterns" not in self.strategy_memory:
+                    self.strategy_memory["enemy_behavior_patterns"] = {}
+                self.strategy_memory["enemy_behavior_patterns"][enemy_type] = behavior_data
+        
+        # Pattern recognition for environmental interactions
+        environment_patterns = session_data.get("environment_patterns", {})
+        if environment_patterns:
+            for env_type, interaction_data in environment_patterns.items():
+                if "environment_patterns" not in self.strategy_memory:
+                    self.strategy_memory["environment_patterns"] = {}
+                self.strategy_memory["environment_patterns"][env_type] = interaction_data
     
     def _calculate_performance_score(self, session_data: Dict[str, Any]) -> float:
         """Calculate overall performance score for the session"""
@@ -413,6 +535,367 @@ class PlayerProfile:
         }
         
         return context
+    
+    def make_enhanced_decision(self, scenario: str, game_state: Dict[str, Any], 
+                              available_choices: List[str], context: Dict[str, Any] = None) -> Dict[str, Any]:
+        """Make an enhanced decision with emotional intelligence and strategic depth"""
+        
+        # Get decision context with enhanced information
+        decision_context = self.get_decision_context(scenario, game_state)
+        if context:
+            decision_context.update(context)
+        
+        # Analyze emotional state
+        emotional_state = self._analyze_emotional_state(game_state)
+        
+        # Analyze strategic situation
+        strategic_analysis = self._analyze_strategic_situation(game_state, scenario)
+        
+        # Consider historical patterns
+        pattern_analysis = self._analyze_historical_patterns(scenario, game_state)
+        
+        # Generate decision options with reasoning
+        decision_options = self._generate_decision_options(
+            available_choices, 
+            decision_context, 
+            emotional_state, 
+            strategic_analysis, 
+            pattern_analysis
+        )
+        
+        # Select best decision based on personality and skill level
+        selected_decision = self._select_optimal_decision(
+            decision_options, 
+            emotional_state, 
+            strategic_analysis
+        )
+        
+        # Apply emotional intelligence adjustments
+        final_decision = self._apply_emotional_intelligence(
+            selected_decision, 
+            emotional_state, 
+            game_state
+        )
+        
+        return {
+            "decision": final_decision,
+            "reasoning": selected_decision.get("reasoning", ""),
+            "confidence": selected_decision.get("confidence", 0.5),
+            "emotional_state": emotional_state,
+            "strategic_analysis": strategic_analysis,
+            "pattern_analysis": pattern_analysis,
+            "alternatives": [opt["choice"] for opt in decision_options[:3]],
+            "metadata": {
+                "skill_level": self.skill_level,
+                "personality": self.personality,
+                "team_role": self.team_role,
+                "adaptation_history": len(self.adaptation_history)
+            }
+        }
+    
+    def _analyze_emotional_state(self, game_state: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze the AI's emotional state based on recent performance and situation"""
+        emotional_state = {
+            "confidence": 0.5,
+            "stress_level": 0.0,
+            "frustration": 0.0,
+            "excitement": 0.0,
+            "determination": 0.5
+        }
+        
+        # Analyze recent performance impact on emotions
+        recent_success_rate = self.get_success_rate()
+        if recent_success_rate > 0.8:
+            emotional_state["confidence"] = 0.9
+            emotional_state["excitement"] = 0.7
+        elif recent_success_rate < 0.3:
+            emotional_state["confidence"] = 0.2
+            emotional_state["frustration"] = 0.6
+            emotional_state["stress_level"] = 0.4
+        
+        # Analyze current situation impact
+        player_health = game_state.get("player_health", 100)
+        max_health = game_state.get("max_health", 100)
+        health_ratio = player_health / max_health
+        
+        if health_ratio < 0.3:
+            emotional_state["stress_level"] += 0.4
+            emotional_state["determination"] += 0.3
+        elif health_ratio > 0.8:
+            emotional_state["confidence"] += 0.2
+        
+        # Analyze boss encounters
+        if game_state.get("boss_encounter", False):
+            emotional_state["stress_level"] += 0.3
+            emotional_state["determination"] += 0.4
+        
+        # Personality-based emotional adjustments
+        if self.personality == "risk_taker":
+            emotional_state["excitement"] += 0.2
+            emotional_state["confidence"] += 0.1
+        elif self.personality == "cautious":
+            emotional_state["stress_level"] += 0.2
+            emotional_state["confidence"] -= 0.1
+        
+        # Normalize emotional values
+        for key in emotional_state:
+            emotional_state[key] = max(0.0, min(1.0, emotional_state[key]))
+        
+        return emotional_state
+    
+    def _analyze_strategic_situation(self, game_state: Dict[str, Any], scenario: str) -> Dict[str, Any]:
+        """Analyze the strategic situation and available options"""
+        strategic_analysis = {
+            "risk_level": "medium",
+            "urgency": "normal",
+            "resource_availability": "adequate",
+            "team_coordination_needed": False,
+            "optimal_strategy": "balanced"
+        }
+        
+        # Analyze risk level
+        player_level = game_state.get("player_level", 1)
+        enemy_level = game_state.get("enemy_level", 1)
+        level_difference = enemy_level - player_level
+        
+        if level_difference > 2:
+            strategic_analysis["risk_level"] = "high"
+            strategic_analysis["urgency"] = "high"
+        elif level_difference < -2:
+            strategic_analysis["risk_level"] = "low"
+            strategic_analysis["urgency"] = "low"
+        
+        # Analyze resource availability
+        inventory = game_state.get("inventory", {})
+        healing_items = inventory.get("healing_potion", 0) + inventory.get("basic_healing_potion", 0)
+        
+        if healing_items < 2:
+            strategic_analysis["resource_availability"] = "low"
+        elif healing_items > 5:
+            strategic_analysis["resource_availability"] = "high"
+        
+        # Analyze team situation
+        team_composition = game_state.get("team_composition", [])
+        if len(team_composition) > 1:
+            strategic_analysis["team_coordination_needed"] = True
+        
+        # Determine optimal strategy
+        if strategic_analysis["risk_level"] == "high":
+            if self.team_role in ["pure_support", "hybrid_support"]:
+                strategic_analysis["optimal_strategy"] = "defensive"
+            else:
+                strategic_analysis["optimal_strategy"] = "aggressive"
+        elif strategic_analysis["risk_level"] == "low":
+            strategic_analysis["optimal_strategy"] = "efficient"
+        
+        return strategic_analysis
+    
+    def _analyze_historical_patterns(self, scenario: str, game_state: Dict[str, Any]) -> Dict[str, Any]:
+        """Analyze historical patterns and their relevance to current situation"""
+        pattern_analysis = {
+            "successful_patterns": [],
+            "failed_patterns": [],
+            "recommended_actions": [],
+            "avoid_actions": []
+        }
+        
+        # Analyze scenario-specific patterns
+        if scenario in self.strategy_memory:
+            scenario_memory = self.strategy_memory[scenario]
+            
+            for action, data in scenario_memory.items():
+                if isinstance(data, dict) and "success_rate" in data:
+                    if data["success_rate"] > 0.7:
+                        pattern_analysis["successful_patterns"].append(action)
+                        pattern_analysis["recommended_actions"].append(action)
+                    elif data["success_rate"] < 0.3:
+                        pattern_analysis["failed_patterns"].append(action)
+                        pattern_analysis["avoid_actions"].append(action)
+        
+        # Analyze enemy-specific patterns
+        enemy_type = game_state.get("enemy_type", "unknown")
+        if enemy_type in self.strategy_memory:
+            enemy_memory = self.strategy_memory[enemy_type]
+            
+            if "effective_damage" in enemy_memory:
+                pattern_analysis["recommended_actions"].extend(enemy_memory["effective_damage"])
+            
+            if "skill_combinations" in enemy_memory:
+                pattern_analysis["successful_patterns"].extend(enemy_memory["skill_combinations"])
+        
+        # Analyze failure patterns to avoid
+        for failure_pattern in self.failure_patterns:
+            if scenario in failure_pattern:
+                pattern_analysis["avoid_actions"].append(failure_pattern.split("_")[-1])
+        
+        return pattern_analysis
+    
+    def _generate_decision_options(self, available_choices: List[str], 
+                                 decision_context: Dict[str, Any],
+                                 emotional_state: Dict[str, Any],
+                                 strategic_analysis: Dict[str, Any],
+                                 pattern_analysis: Dict[str, Any]) -> List[Dict[str, Any]]:
+        """Generate decision options with detailed reasoning"""
+        decision_options = []
+        
+        for choice in available_choices:
+            option = {
+                "choice": choice,
+                "reasoning": "",
+                "confidence": 0.5,
+                "risk_assessment": "medium",
+                "strategic_value": "neutral"
+            }
+            
+            # Generate reasoning based on context
+            option["reasoning"] = self._generate_reasoning_for_choice(
+                choice, decision_context, emotional_state, strategic_analysis, pattern_analysis
+            )
+            
+            # Assess confidence based on historical patterns
+            if choice in pattern_analysis["recommended_actions"]:
+                option["confidence"] = 0.8
+                option["strategic_value"] = "high"
+            elif choice in pattern_analysis["avoid_actions"]:
+                option["confidence"] = 0.2
+                option["strategic_value"] = "low"
+            
+            # Adjust confidence based on emotional state
+            if emotional_state["confidence"] > 0.7:
+                option["confidence"] = min(1.0, option["confidence"] + 0.1)
+            elif emotional_state["confidence"] < 0.3:
+                option["confidence"] = max(0.1, option["confidence"] - 0.1)
+            
+            # Assess risk based on strategic analysis
+            if strategic_analysis["risk_level"] == "high":
+                if choice in ["defend", "heal", "support"]:
+                    option["risk_assessment"] = "low"
+                else:
+                    option["risk_assessment"] = "high"
+            
+            decision_options.append(option)
+        
+        # Sort by confidence and strategic value
+        decision_options.sort(key=lambda x: (x["confidence"], x["strategic_value"] == "high"), reverse=True)
+        
+        return decision_options
+    
+    def _generate_reasoning_for_choice(self, choice: str, decision_context: Dict[str, Any],
+                                     emotional_state: Dict[str, Any], strategic_analysis: Dict[str, Any],
+                                     pattern_analysis: Dict[str, Any]) -> str:
+        """Generate detailed reasoning for a specific choice"""
+        reasoning_parts = []
+        
+        # Base reasoning
+        if choice in pattern_analysis["successful_patterns"]:
+            reasoning_parts.append(f"Historically effective in similar situations")
+        
+        if choice in pattern_analysis["recommended_actions"]:
+            reasoning_parts.append(f"Recommended based on enemy analysis")
+        
+        # Strategic reasoning
+        if strategic_analysis["risk_level"] == "high":
+            if choice in ["defend", "heal"]:
+                reasoning_parts.append("Prioritizing survival in high-risk situation")
+            else:
+                reasoning_parts.append("Taking calculated risk for potential high reward")
+        
+        # Emotional reasoning
+        if emotional_state["confidence"] > 0.7:
+            reasoning_parts.append("Feeling confident, willing to take initiative")
+        elif emotional_state["confidence"] < 0.3:
+            reasoning_parts.append("Playing it safe due to recent setbacks")
+        
+        # Role-based reasoning
+        if self.team_role == "pure_dps":
+            if "damage" in choice.lower():
+                reasoning_parts.append("Leveraging damage specialization")
+        elif self.team_role == "pure_support":
+            if "heal" in choice.lower() or "support" in choice.lower():
+                reasoning_parts.append("Fulfilling support role responsibilities")
+        
+        # Combine reasoning parts
+        if reasoning_parts:
+            return ". ".join(reasoning_parts) + "."
+        else:
+            return f"Choosing {choice} based on current situation analysis."
+    
+    def _select_optimal_decision(self, decision_options: List[Dict[str, Any]],
+                               emotional_state: Dict[str, Any],
+                               strategic_analysis: Dict[str, Any]) -> Dict[str, Any]:
+        """Select the optimal decision based on personality and skill level"""
+        
+        if not decision_options:
+            return {"choice": "wait", "reasoning": "No clear options available", "confidence": 0.1}
+        
+        # Personality-based decision selection
+        if self.personality == "risk_taker":
+            # Prefer high-risk, high-reward options
+            high_risk_options = [opt for opt in decision_options if opt["risk_assessment"] == "high"]
+            if high_risk_options and emotional_state["confidence"] > 0.6:
+                return high_risk_options[0]
+        
+        elif self.personality == "cautious":
+            # Prefer low-risk, safe options
+            low_risk_options = [opt for opt in decision_options if opt["risk_assessment"] == "low"]
+            if low_risk_options:
+                return low_risk_options[0]
+        
+        elif self.personality == "strategic":
+            # Prefer high strategic value options
+            high_value_options = [opt for opt in decision_options if opt["strategic_value"] == "high"]
+            if high_value_options:
+                return high_value_options[0]
+        
+        # Skill level-based adjustments
+        if self.skill_level == "master":
+            # Masters can handle complex decisions
+            return decision_options[0]  # Already sorted by confidence
+        elif self.skill_level == "noob":
+            # Noobs prefer simpler, safer options
+            safe_options = [opt for opt in decision_options if opt["confidence"] > 0.6]
+            if safe_options:
+                return safe_options[0]
+        
+        # Default to highest confidence option
+        return decision_options[0]
+    
+    def _apply_emotional_intelligence(self, decision: Dict[str, Any],
+                                    emotional_state: Dict[str, Any],
+                                    game_state: Dict[str, Any]) -> Dict[str, Any]:
+        """Apply emotional intelligence adjustments to the decision"""
+        
+        # Adjust decision based on emotional state
+        if emotional_state["stress_level"] > 0.7:
+            # High stress - might make suboptimal choices
+            if decision["confidence"] > 0.8:
+                decision["confidence"] = max(0.6, decision["confidence"] - 0.2)
+                decision["reasoning"] += " Decision made under stress."
+        
+        if emotional_state["frustration"] > 0.6:
+            # High frustration - might be more aggressive
+            if "defend" in decision["choice"].lower():
+                decision["reasoning"] += " Choosing defensive option despite frustration."
+        
+        if emotional_state["excitement"] > 0.7:
+            # High excitement - might be overconfident
+            if decision["confidence"] < 0.8:
+                decision["confidence"] = min(1.0, decision["confidence"] + 0.1)
+                decision["reasoning"] += " Feeling excited about the choice."
+        
+        # Add emotional context to reasoning
+        emotional_context = []
+        if emotional_state["confidence"] > 0.7:
+            emotional_context.append("confident")
+        if emotional_state["stress_level"] > 0.5:
+            emotional_context.append("stressed")
+        if emotional_state["determination"] > 0.7:
+            emotional_context.append("determined")
+        
+        if emotional_context:
+            decision["reasoning"] += f" Emotional state: {', '.join(emotional_context)}."
+        
+        return decision
 
 @dataclass
 class GameContext:
