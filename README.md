@@ -70,10 +70,50 @@ Chronicles_of_Ruin/
 - **Hybrid Support** - Healing with utility, high self-sufficiency
 - **Pure Support** - Maximum healing and survival, very high self-sufficiency
 
+### Role System (Guild Wars Style)
+
+**Everyone has access to healing, DPS, and damage mitigation - specialization determines effectiveness:**
+
+- **Pure DPS** - 80% damage, 10% healing, 10% mitigation (1.5x damage multiplier)
+- **Hybrid DPS** - 60% damage, 20% healing, 20% mitigation (1.2x damage multiplier)
+- **Support** - 30% damage, 40% healing, 30% mitigation (0.8x damage multiplier)
+- **Hybrid Support** - 20% damage, 50% healing, 30% mitigation (0.6x damage multiplier)
+- **Pure Support** - 10% damage, 60% healing, 30% mitigation (0.4x damage multiplier)
+
 **Toolbelt Size:**
 - **Pure roles** (1 skill type) - Maximum specialization, highest effectiveness
 - **Hybrid roles** (2 skill types) - Balanced approach, moderate effectiveness
 - **Support role** (3 skill types) - Maximum versatility, lowest specialization
+
+### 🎯 Skill System
+
+**Universal Skill Access - Every archetype has access to all skill types:**
+
+#### **Damage Skills (3 skills available to all):**
+- **Fireball** - Single target fire damage with burning effect
+- **Lightning Strike** - Area lightning damage with shock effect  
+- **Shadow Daggers** - Armor-piercing single target damage
+
+#### **Defense Skills (3 skills available to all):**
+- **Stone Skin** - Damage reduction and stun resistance
+- **Mirror Shield** - Damage reflection and magic resistance
+- **Evasion** - Dodge chance and movement speed boost
+
+#### **Support Skills (3 skills available to all):**
+- **Healing Light** - Single target healing with regeneration
+- **Group Heal** - Area healing for all allies
+- **Haste** - Speed boost and attack speed increase
+
+#### **Ultimate Skills (Pure specializations only):**
+- **Apocalypse** (Pure DPS) - Massive damage to all enemies
+- **Immortality** (Pure Support) - Invulnerability and mass healing
+
+**Skill Effectiveness by Archetype:**
+- **Pure DPS** - 2.25x damage multiplier, 20% cooldown reduction
+- **Hybrid DPS** - 1.8x damage multiplier, balanced effectiveness
+- **Support** - 1.75x damage multiplier, 1.4x healing multiplier
+- **Hybrid Support** - 1.6x damage multiplier, 1.5x healing multiplier
+- **Pure Support** - 1.55x damage multiplier, 1.6x healing multiplier, 20% cooldown reduction
 
 ### Learning Capabilities
 
