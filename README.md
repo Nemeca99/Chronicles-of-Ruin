@@ -1,297 +1,233 @@
-# Chronicles of Ruin
+# Chronicles of Ruin Saga
 
-A revolutionary RPG game development framework featuring **AI Learning Party Systems** for automated testing and game balance evaluation.
+A comprehensive AI-driven game development project featuring an advanced Learning AI Party System for autonomous testing and refinement.
 
-![Chronicles of Ruin](https://img.shields.io/badge/Status-Active%20Development-brightgreen)
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![AI Testing](https://img.shields.io/badge/AI%20Testing-Learning%20Party%20System-orange)
-![License](https://img.shields.io/badge/License-MIT-green)
+## 🎮 **Learning AI Party System**
 
-## 🎮 Overview
+### **Core Features**
+- **5 AI Players**: Work solo and as a coordinated team
+- **Adaptive Learning**: Improve over time through experience
+- **Human-like Behavior**: Treat AI players exactly like human players
+- **Skill Level Variation**: From "noob" to "master" for diverse testing
+- **Autonomous Testing**: Reduce need for human intervention
 
-Chronicles of Ruin is a multi-chapter RPG saga with an innovative **AI Learning Party System** that creates intelligent playtesters that learn, adapt, and work together like human players. This system enables automated game testing, balance evaluation, and continuous improvement without manual intervention.
+### **AI Player Capabilities**
+- **Emotional Intelligence**: AI players have emotional states (confidence, stress, frustration, excitement, determination)
+- **Strategic Depth**: Analyze risk levels, urgency, resource availability, and team coordination needs
+- **Pattern Recognition**: Learn from successful and failed strategies
+- **Advanced Decision Making**: Generate multiple options with detailed reasoning and confidence levels
+- **Adaptive Behavior**: Modify parameters based on performance and game changes
 
-## 🚀 Key Features
+### **Enhanced Learning System**
+- **Combat Pattern Learning**: Analyze damage patterns, effective skill combinations, defensive strategies
+- **Exploration Pattern Learning**: Learn efficient routes, area discovery, resource gathering
+- **Social Pattern Learning**: NPC interactions, quest completion efficiency, reputation building
+- **Emotional Pattern Learning**: Stress management, confidence building, frustration handling
+- **Advanced Pattern Recognition**: Complex skill combinations, enemy behavior, environmental interactions
 
-### 🤖 AI Learning Party System
+## 🎯 **Role System (Guild Wars Style)**
 
-- **5-Player Teams** with different skill levels (noob to master)
-- **Adaptive Learning** - AI players learn from decisions and adapt strategies
-- **Team Dynamics** - Players work together with roles (tank, dps, support, healer)
-- **Skill Progression** - AI players can level up and improve over time
-- **Performance Monitoring** - Real-time CPU/GPU usage and thermal tracking
+### **Universal Skill Access**
+Every player has access to healing, DPS, and damage mitigation skills, but specialization determines effectiveness:
 
-### 🎯 Game Development Tools
+- **Pure Roles (3 points in one specialization)**:
+  - `pure_dps`: Maximum damage output, ultimate skill access
+  - `pure_support`: Maximum healing and utility, ultimate skill access
+  - `pure_tank`: Maximum damage mitigation, ultimate skill access
 
-- **Automated Testing** - AI players test your game 24/7
-- **Balance Evaluation** - Detailed feedback on game mechanics
-- **Performance Profiling** - System resource monitoring during gameplay
-- **Cross-Chapter Features** - Shared save data and achievements
+- **Hybrid Roles (2 points in different specializations)**:
+  - `hybrid_dps_support`: Balanced damage and healing
+  - `hybrid_dps_tank`: Balanced damage and mitigation
+  - `hybrid_support_tank`: Balanced healing and mitigation
 
-### 🛠️ Development Infrastructure
+- **Support Role (1 point in each specialization)**:
+  - `support`: Access to all skill types, largest toolbelt
 
-- **CLI Tools** - Comprehensive command-line interface for all development tasks
-- **Modular Architecture** - Self-contained chapters with shared utilities
-- **Database Integration** - SQLite for cross-chapter features
-- **Testing Framework** - Automated testing with pytest integration
+### **Toolbelt System**
+- **Pure Roles**: 3 skill types (Damage, Defense, Support) + Ultimate
+- **Hybrid Roles**: 4 skill types (2 primary + 2 secondary)
+- **Support Role**: 5 skill types (all types available)
 
-## 📁 Project Structure
+## 🎯 **Skill System**
+
+### **Skill Types**
+- **Damage**: Raw damage output skills
+- **Defense**: Damage mitigation and protection skills
+- **Support**: Healing and utility skills
+- **Ultimate**: Powerful skills available only to pure specializations
+
+### **Skill Distribution**
+- **9 Regular Skills**: 3 Damage, 3 Defense, 3 Support
+- **1 Ultimate Skill**: Available only to pure specializations (3 points in one base)
+- **Unique Playstyles**: Each skill has distinct mechanics and effects
+
+### **Archetype Effectiveness**
+- **Pure Specializations**: 150% effectiveness in their primary skill type
+- **Hybrid Specializations**: 125% effectiveness in their primary types, 100% in secondary
+- **Support Role**: 100% effectiveness in all skill types, but largest variety
+
+## 🛡️ **Resistance System**
+
+### **Entity Types**
+- **Regular Monsters**: Max ±99% resistance
+- **Bosses**: 100% immunity to specific CC, can be slowed
+- **Players**: Max ±99% resistance
+- **NPCs**: Max ±99% resistance
+
+### **Boss Immunities**
+- **Immune to**: Stun, Freeze, and most crowd control
+- **Vulnerable to**: Slow effects, damage over time, damage reductions
+- **Resistance Application**: Applied to BASE damage, not modified damage
+
+### **Damage Calculation**
+1. Calculate base damage from stats and skills
+2. Apply resistance to base damage
+3. Apply other modifiers (combat triangle, items, etc.)
+4. Apply damage floor
+
+## 📈 **Progression System**
+
+### **Chapter 1 Content**
+- **25 Quests**: 10 story, 6 side, 3 exploration, 2 combat, 2 crafting, 2 social
+- **17 Areas**: 4 town, 6 forest, 6 ruins, 1 boss arena
+- **Story Progression**: 4 acts from village to corruption heart
+- **Level Progression**: Start at level 1, progress through Chapter 1
+
+### **Quest Types**
+- **Story Quests**: Main narrative progression
+- **Side Quests**: Optional content and world building
+- **Exploration Quests**: Area discovery and lore
+- **Combat Quests**: Training and combat challenges
+- **Crafting Quests**: Item creation and resource gathering
+- **Social Quests**: NPC interactions and relationships
+
+### **Area Types**
+- **Town Areas**: Safe zones with NPCs and services
+- **Forest Areas**: Wilderness with corrupted creatures
+- **Ruins Areas**: Ancient civilization remains
+- **Boss Arena**: Special areas for boss encounters
+
+## 🔧 **Development Tools**
+
+### **Master Development Script**
+```bash
+python dev_master.py [command] [options]
+```
+
+### **Available Commands**
+- `ai-playtest`: Run AI playtest with detailed logging
+- `ai-playtest-adaptive`: Run adaptive AI testing with learning
+- `ai-party`: Test the Learning AI Party System
+- `demo`: Quick demonstration of AI capabilities
+- `performance`: Monitor system performance and AI learning
+- `build`: Build and test the game systems
+- `test`: Run comprehensive test suite
+
+### **AI Learning Session System**
+- **Realistic Game Simulation**: Combat, quests, exploration, boss encounters
+- **Comprehensive Analytics**: Performance tracking, learning insights, adaptation metrics
+- **Campaign Mode**: Multiple sessions for long-term learning analysis
+
+## 📊 **Performance Monitoring**
+
+### **Enhanced Analytics**
+- **System Performance**: CPU, GPU, memory, temperatures, network I/O
+- **AI Learning Metrics**: Decision success rates, combat analytics, adaptation patterns
+- **Combat Analytics**: Skill effectiveness, boss encounter data, strategy success rates
+- **Learning Insights**: Pattern recognition, emotional state analysis, strategic depth
+
+### **Real-time Monitoring**
+- **Per-second Tracking**: Detailed resource usage over time
+- **Thermal Monitoring**: CPU and GPU temperature tracking
+- **AI Decision Logging**: Full prompts, responses, and reasoning
+- **Combat Analysis**: Damage patterns, skill usage, status effect success
+
+## 🚀 **Quick Start**
+
+### **Setup**
+```bash
+# Clone the repository
+git clone https://github.com/Nemeca99/Chronicles-of-Ruin.git
+cd Chronicles-of-Ruin
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run AI playtest
+python dev_master.py ai-playtest
+
+# Test AI party system
+python dev_master.py ai-party
+
+# Monitor performance
+python dev_master.py performance
+```
+
+### **AI Learning Campaign**
+```bash
+# Run comprehensive AI learning campaign
+python dev_master.py ai-playtest-adaptive --test-sessions 10
+
+# Monitor AI learning progress
+python dev_master.py performance --export-report
+```
+
+## 📁 **Project Structure**
 
 ```
 Chronicles_of_Ruin/
-├── chapters/                    # Individual game chapters
-│   └── chapter_01_sunderfall/  # First chapter implementation
-├── tools/                      # Development tools and utilities
-│   ├── ai_playtest_tool.py     # AI playtesting system
-│   ├── ai_player_system.py     # AI player management
-│   ├── performance_monitor.py  # System performance tracking
-│   └── dev_master.py          # Master CLI interface
-├── docs/                       # Comprehensive documentation
-├── shared/                     # Cross-chapter resources
-├── tests/                      # Test suites
-└── venv/                      # Python virtual environment
+├── tools/                          # Development tools
+│   ├── ai_player_system.py        # AI player management
+│   ├── ai_playtest_tool.py        # AI playtest orchestration
+│   ├── performance_monitor.py     # Enhanced performance monitoring
+│   └── dev_master.py              # Master development CLI
+├── chapters/
+│   └── chapter_01_sunderfall/     # Chapter 1 content
+│       ├── src/systems/           # Game systems
+│       │   ├── skills_system.py   # Guild Wars-style skills
+│       │   ├── resistance_system.py # Resistance and immunities
+│       │   ├── progression_system.py # Quest and area progression
+│       │   ├── combat_system.py   # Enhanced combat with resistance
+│       │   └── ai_learning_session.py # AI learning orchestration
+│       ├── data/                  # Game data
+│       │   ├── skills.json        # Skill definitions
+│       │   ├── quests.json        # Quest definitions
+│       │   ├── areas.json         # Area definitions
+│       │   └── player_progress.json # AI player progress
+│       └── lore/                  # Story and lore
+│           └── chapter_01_lore_and_story.md
+└── docs/                          # Documentation
+    └── README.md                  # Documentation index
 ```
 
-## 🎯 AI Learning Party System
-
-### Party Composition
-
-- **Alex** (Noob Pure DPS) - Maximum damage output, low self-sufficiency
-- **Sam** (Casual Hybrid DPS) - Balanced damage with utility, moderate self-sufficiency
-- **Jordan** (Experienced Support) - Team utility and healing, good self-sufficiency
-- **Casey** (Expert Hybrid Support) - Healing with utility, high self-sufficiency
-- **Riley** (Master Pure Support) - Maximum healing and survival, very high self-sufficiency
-
-#### Team Roles
-
-- **Pure DPS** - Maximum damage output, rely on team for survival
-- **Hybrid DPS** - Balanced damage with utility, moderate self-sufficiency
-- **Support** - Team utility and healing, good self-sufficiency
-- **Hybrid Support** - Healing with utility, high self-sufficiency
-- **Pure Support** - Maximum healing and survival, very high self-sufficiency
-
-### Role System (Guild Wars Style)
-
-**Everyone has access to healing, DPS, and damage mitigation - specialization determines effectiveness:**
-
-- **Pure DPS** - 80% damage, 10% healing, 10% mitigation (1.5x damage multiplier)
-- **Hybrid DPS** - 60% damage, 20% healing, 20% mitigation (1.2x damage multiplier)
-- **Support** - 30% damage, 40% healing, 30% mitigation (0.8x damage multiplier)
-- **Hybrid Support** - 20% damage, 50% healing, 30% mitigation (0.6x damage multiplier)
-- **Pure Support** - 10% damage, 60% healing, 30% mitigation (0.4x damage multiplier)
-
-**Toolbelt Size:**
-
-- **Pure roles** (1 skill type) - Maximum specialization, highest effectiveness
-- **Hybrid roles** (2 skill types) - Balanced approach, moderate effectiveness
-- **Support role** (3 skill types) - Maximum versatility, lowest specialization
-
-### 🎯 Skill System
-
-**Universal Skill Access - Every archetype has access to all skill types:**
-
-#### **Damage Skills (3 skills available to all):**
-
-- **Fireball** - Single target fire damage with burning effect
-- **Lightning Strike** - Area lightning damage with shock effect
-- **Shadow Daggers** - Armor-piercing single target damage
-
-#### **Defense Skills (3 skills available to all):**
-
-- **Stone Skin** - Damage reduction and stun resistance
-- **Mirror Shield** - Damage reflection and magic resistance
-- **Evasion** - Dodge chance and movement speed boost
-
-#### **Support Skills (3 skills available to all):**
-
-- **Healing Light** - Single target healing with regeneration
-- **Group Heal** - Area healing for all allies
-- **Haste** - Speed boost and attack speed increase
-
-#### **Ultimate Skills (Pure specializations only):**
-
-- **Apocalypse** (Pure DPS) - Massive damage to all enemies
-- **Immortality** (Pure Support) - Invulnerability and mass healing
-
-**Skill Effectiveness by Archetype:**
-
-- **Pure DPS** - 2.25x damage multiplier, 20% cooldown reduction
-- **Hybrid DPS** - 1.8x damage multiplier, balanced effectiveness
-- **Support** - 1.75x damage multiplier, 1.4x healing multiplier
-- **Hybrid Support** - 1.6x damage multiplier, 1.5x healing multiplier
-- **Pure Support** - 1.55x damage multiplier, 1.6x healing multiplier, 20% cooldown reduction
-
-### Learning Capabilities
-
-- **Success Rate Tracking** - Monitors decision outcomes
-- **Strategy Memory** - Remembers successful approaches
-- **Failure Pattern Recognition** - Avoids unsuccessful strategies
-- **Adaptation Thresholds** - Changes strategies when needed
-- **Team Coordination** - Improves teamwork over time
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.12
-- Git
-- Ollama (for AI model integration)
-
-### Installation
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/Nemeca99/Chronicles-of-Ruin.git
-   cd Chronicles-of-Ruin
-   ```
-
-2. **Set up virtual environment**
-
-   ```bash
-   python -m venv venv
-   venv\Scripts\activate  # Windows
-   source venv/bin/activate  # Linux/Mac
-   ```
-
-3. **Install dependencies**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. **Initialize development environment**
-   ```bash
-   python setup_dev.py
-   ```
-
-### Running AI Playtests
-
-1. **Enhanced AI Playtest** (with full thinking process)
-
-   ```bash
-   venv\Scripts\python.exe tools\dev_master.py ai-playtest-enhanced Alex --verbose
-   ```
-
-2. **Learning Party Session** (5-player team)
-
-   ```bash
-   venv\Scripts\python.exe tools\dev_master.py ai-playtest-learning-party
-   ```
-
-3. **Adaptive Testing** (multiple sessions)
-
-   ```bash
-   venv\Scripts\python.exe tools\dev_master.py ai-playtest-adaptive 5
-   ```
-
-4. **Demo the Learning System**
-   ```bash
-   venv\Scripts\python.exe tools\ai_playtest_tool.py demo
-   ```
-
-## 🛠️ Development Commands
-
-### Master CLI Interface
-
-```bash
-# AI Playtesting
-ai-playtest-quick <player>              # Quick test
-ai-playtest-comprehensive <player>       # Comprehensive test
-ai-playtest-compare <players> <scenarios> # Compare players
-ai-playtest-enhanced <player> [scenarios] # Enhanced with thinking process
-ai-playtest-learning-party [scenarios]   # 5-player learning party
-ai-playtest-adaptive [sessions] [scenarios] # Adaptive testing
-
-# Performance Monitoring
-performance-start [session_name]         # Start monitoring
-performance-stop                         # Stop monitoring
-performance-summary                      # Get summary
-
-# AI Player Management
-ai-player-create-profile <name> <params> # Create AI player
-ai-player-samples                        # Create sample players
-ai-player-list                           # List all players
-```
-
-### Available Scenarios
-
-- `character_creation` - Character building and customization
-- `combat_test` - Combat system evaluation
-- `skill_allocation` - Skill tree and progression testing
-- `exploration_test` - World exploration and discovery
-- `full_gameplay` - Complete game session simulation
-
-## 📊 Performance Monitoring
-
-The system includes comprehensive performance monitoring:
-
-- **CPU Usage** - Real-time CPU utilization tracking
-- **GPU Monitoring** - GPU usage, temperature, and power draw
-- **Memory Tracking** - RAM usage and memory patterns
-- **Thermal Monitoring** - CPU and GPU temperature logging
-- **Network I/O** - Network activity monitoring
-- **Performance Trends** - Analysis of system stress over time
-
-## 🎮 Game Systems
-
-### Core Systems
-
-- **Combat System** - Turn-based tactical combat
-- **Character Progression** - Leveling, skills, and abilities
-- **Quest System** - Dynamic quest generation and tracking
-- **Economy System** - Trading, crafting, and resource management
-- **Monster System** - AI-driven enemy behavior
-- **World System** - Dynamic environment and exploration
-
-### Advanced Features
-
-- **Achievement System** - Cross-chapter progression tracking
-- **Multiplayer Foundation** - Social features and team coordination
-- **UI/UX System** - Modern, responsive interface design
-- **Status Effects** - Elemental and magical status systems
-- **Itemization** - Comprehensive item and equipment system
-
-## 📚 Documentation
-
-Comprehensive documentation is available in the `docs/` directory:
-
-- **System Documentation** - Detailed technical specifications
-- **Implementation Guides** - Step-by-step development guides
-- **API Reference** - Code documentation and examples
-- **Testing Documentation** - QA procedures and test cases
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Setup
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Submit a pull request
-
-## 📄 License
+## 🎯 **Current Development Focus**
+
+### **AI Learning Enhancement**
+- **Emotional Intelligence**: AI players now analyze their emotional state and adjust decisions accordingly
+- **Strategic Depth**: Advanced analysis of risk, urgency, resources, and team coordination
+- **Pattern Recognition**: Learning from historical successes and failures
+- **Enhanced Decision Making**: Multiple options with detailed reasoning and confidence levels
+
+### **Combat System Integration**
+- **Resistance System**: Full integration with boss immunities and damage calculation
+- **Status Effects**: Enhanced status effect system with boss immunity handling
+- **Combat Analytics**: Detailed analysis for AI learning and skill effectiveness tracking
+- **Boss Encounters**: Special handling for boss mechanics and learning
+
+### **Performance Monitoring**
+- **AI Learning Analytics**: Track decision success rates, combat patterns, adaptation metrics
+- **Comprehensive Reporting**: Generate detailed insights and recommendations
+- **Real-time Monitoring**: Per-second tracking of system resources and AI performance
+- **Export Capabilities**: Generate full analytics reports for analysis
+
+## 🤝 **Contributing**
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on contributing to the project.
+
+## 📄 **License**
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Acknowledgments
-
-- **AI Integration** - Powered by Ollama and local language models
-- **Performance Monitoring** - Advanced system resource tracking
-- **Game Development** - Comprehensive RPG framework
-- **Testing Automation** - Intelligent AI playtesting system
-
-## 📞 Support
-
-- **Issues** - Report bugs and request features on GitHub
-- **Discussions** - Join community discussions
-- **Documentation** - Comprehensive guides and tutorials
-
 ---
 
-**Chronicles of Ruin** - Where AI meets game development, creating the future of automated testing and intelligent game design.
-
-_Built with ❤️ and 🤖_
+**Current Status**: Enhanced AI learning system with emotional intelligence and strategic depth. Combat system fully integrated with resistance mechanics. Performance monitoring provides comprehensive analytics. Chapter 1 content expanded with 25 quests across 17 areas. Ready for autonomous testing and refinement.
