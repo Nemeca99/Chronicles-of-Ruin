@@ -343,7 +343,7 @@ class SetManager:
         total_tax = sum(set_data['gambling_tax_per_piece'].values())
         tax_multiplier = 1 + total_tax
         
-        return int(escalation_cost * tax_multiplier)
+        return round(escalation_cost * tax_multiplier)
     
     def reroll_set_bonuses(self, set_id: str, player_gold: int) -> Dict:
         """Reroll set bonuses with gambling tax system"""

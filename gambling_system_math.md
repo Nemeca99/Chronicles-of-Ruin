@@ -2,6 +2,11 @@
 
 ## **📊 DAMAGE CALCULATION FORMULAS**
 
+### **⭕ ROUNDING RULES**
+**All damage calculations use standard rounding:**
+- **0.5 and above:** Round UP (15.5 → 16, 19.5 → 20)
+- **Below 0.5:** Round DOWN (15.4 → 15, 19.2 → 19)
+
 ### **Step 1: Base Damage Calculation**
 
 ```
@@ -41,7 +46,7 @@ Modified Damage = Base Damage × (1 + Total Percentage Bonuses)
 
 ```
 Total Percentage = 0.15 + 0.10 + 0.25 = 0.50 (50%)
-Modified Damage = 20 × (1 + 0.50) = 20 × 1.50 = 30
+Modified Damage = 20 × (1 + 0.50) = 20 × 1.50 = 30 (no rounding needed)
 ```
 
 ### **Step 3: Combat Triangle Multiplier**
@@ -58,7 +63,7 @@ Final Damage = Modified Damage × Triangle Multiplier
 **Calculation:**
 
 ```
-Final Damage = 30 × 1.25 = 37.5
+Final Damage = 30 × 1.25 = 37.5 → **38 damage** (rounded up)
 ```
 
 ### **Complete Example:**
@@ -70,10 +75,10 @@ Negative: 1+3+1 = 5
 Base: 18-5 = 13
 
 With +20% gear bonus:
-Modified: 13 × 1.20 = 15.6
+Modified: 13 × 1.20 = 15.6 → **16 damage** (rounded up)
 
 Against weak enemy (+25%):
-Final: 15.6 × 1.25 = 19.5 damage
+Final: 16 × 1.25 = 20.0 → **20 damage** (no rounding needed)
 ```
 
 ---

@@ -109,8 +109,8 @@ class CombatSystem:
             triangle_damage, target_stats, resistance_profile, skill_data
         )
 
-        # Step 5: Apply damage floor
-        final_damage = max(resistance_damage, self.damage_floor)
+        # Step 5: Apply damage floor and round properly
+        final_damage = max(round(resistance_damage), self.damage_floor)
 
         # Step 6: Apply status effects with resistance consideration
         applied_effects = self._apply_status_effects_with_resistance(
@@ -172,8 +172,8 @@ class CombatSystem:
         total_negative = sum(negative_bonuses)
         base_damage = total_positive - total_negative
         
-        # Ensure minimum base damage
-        return max(base_damage, 1.0)
+        # Ensure minimum base damage and round properly
+        return max(round(base_damage), 1)
 
     def _apply_item_percentages(self, base_damage: float, weapon_data: Dict) -> float:
         """Apply percentage bonuses from equipment."""
@@ -197,7 +197,7 @@ class CombatSystem:
         percentage_bonuses = weapon_data.get("percentage_bonuses", [])
         total_percentage = sum(percentage_bonuses)
 
-        return base_damage * (1 + total_percentage)
+        return round(base_damage * (1 + total_percentage))
 
     def _apply_combat_triangle(
         self, damage: float, attacker_stats: Dict, target_stats: Dict
