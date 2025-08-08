@@ -1,0 +1,46 @@
+{
+  "classes": {
+    "warrior": {
+      "name": "Warrior",
+      "description": "A master of martial combat and physical prowess",
+      "base_stats": {
+        "health": 120,
+        "mana": 50,
+        "strength": 15,
+        "agility": 10,
+        "intelligence": 8,
+        "vitality": 12
+      },
+      "skills": ["slash", "defend", "charge"],
+      "archetypes": ["berserker", "guardian", "battlemaster"]
+    },
+    "mage": {
+      "name": "Mage", 
+      "description": "A wielder of arcane magic and elemental forces",
+      "base_stats": {
+        "health": 80,
+        "mana": 120,
+        "strength": 6,
+        "agility": 8,
+        "intelligence": 18,
+        "vitality": 8
+      },
+      "skills": ["fireball", "ice_shard", "lightning"],
+      "archetypes": ["pyromancer", "cryomancer", "stormcaller"]
+    },
+    "rogue": {
+      "name": "Rogue",
+      "description": "A stealthy fighter skilled in precision and deception",
+      "base_stats": {
+        "health": 90,
+        "mana": 60,
+        "strength": 8,
+        "agility": 18,
+        "intelligence": 10,
+        "vitality": 9
+      },
+      "skills": ["backstab", "stealth", "poison"],
+      "archetypes": ["assassin", "scout", "trickster"]
+    }
+  }
+}

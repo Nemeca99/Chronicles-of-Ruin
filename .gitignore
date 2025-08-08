@@ -1,0 +1,191 @@
+# Chronicles of Ruin: Sunderfall - Git Ignore File
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Game specific
+*.log
+*.LOG
+logs/
+temp/
+build/
+ai_simulations/
+ai_decisions/
+ai_players/
+ai_party/
+conversations/
+generated_images/
+npc_images/
+voices/
+npcs/
+
+# Discord Bot
+discord_bot.log
+discord_bot_config.json
+discord_token.txt
+discord_secret.txt
+*.token
+*.secret
+
+# AI and ML
+*.model
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.onnx
+*.tflite
+*.pb
+
+# Performance monitoring
+*.csv
+*.CSV
+livelog.CSV
+hwinfo.LOG
+performance_*.csv
+monitoring_*.csv
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+saves/
+*.save
+
+# Configuration files with sensitive data
+config.json
+settings.json
+secrets.json
+.env
+.env.local
+.env.production
+
+# Stable Diffusion
+stable-diffusion-webui/
+models/
+checkpoints/
+embeddings/
+hypernetworks/
+loras/
+vae/
+*.ckpt
+*.safetensors
+
+# Ollama
+ollama_models/
+*.gguf
+*.bin
+
+# Generated content
+generated_*.png
+generated_*.jpg
+generated_*.jpeg
+ai_generated_*
+npc_generated_*
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.tmp
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Documentation build
+docs/_build/
+site/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# PEP 582
+__pypackages__/
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/

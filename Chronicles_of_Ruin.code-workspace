@@ -1,0 +1,34 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.defaultInterpreterPath": "./venv/Scripts/python.exe",
+		"python.terminal.activateEnvironment": true,
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.provider": "black",
+		"python.formatting.blackArgs": ["--line-length=88"],
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": "explicit"
+		},
+		"files.exclude": {
+			"**/__pycache__": true,
+			"**/*.pyc": true,
+			"**/.pytest_cache": true,
+			"**/venv": false
+		},
+		"search.exclude": {
+			"**/venv": true,
+			"**/__pycache__": true,
+			"**/*.pyc": true
+		},
+		"python.analysis.extraPaths": [
+			"./chapters/chapter_01_sunderfall/src",
+			"./tools"
+		]
+	}
+}

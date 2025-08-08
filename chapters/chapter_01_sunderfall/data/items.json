@@ -1,0 +1,98 @@
+{
+  "weapons": {
+    "sword": {
+      "name": "Iron Sword",
+      "type": "weapon",
+      "subtype": "sword",
+      "damage": 15,
+      "durability": 100,
+      "requirements": {
+        "strength": 10
+      },
+      "effects": ["bleeding"],
+      "rarity": "common"
+    },
+    "staff": {
+      "name": "Mage Staff",
+      "type": "weapon", 
+      "subtype": "staff",
+      "damage": 8,
+      "magic_bonus": 15,
+      "requirements": {
+        "intelligence": 12
+      },
+      "effects": ["mana_boost"],
+      "rarity": "common"
+    },
+    "dagger": {
+      "name": "Steel Dagger",
+      "type": "weapon",
+      "subtype": "dagger", 
+      "damage": 12,
+      "critical_chance": 0.15,
+      "requirements": {
+        "agility": 12
+      },
+      "effects": ["poison"],
+      "rarity": "common"
+    }
+  },
+  "armor": {
+    "leather_armor": {
+      "name": "Leather Armor",
+      "type": "armor",
+      "subtype": "light",
+      "defense": 8,
+      "requirements": {
+        "agility": 8
+      },
+      "effects": ["stealth_bonus"],
+      "rarity": "common"
+    },
+    "chain_mail": {
+      "name": "Chain Mail",
+      "type": "armor",
+      "subtype": "medium", 
+      "defense": 15,
+      "requirements": {
+        "strength": 12
+      },
+      "effects": ["damage_reduction"],
+      "rarity": "common"
+    },
+    "robes": {
+      "name": "Mage Robes",
+      "type": "armor",
+      "subtype": "cloth",
+      "defense": 5,
+      "magic_defense": 12,
+      "requirements": {
+        "intelligence": 10
+      },
+      "effects": ["mana_regeneration"],
+      "rarity": "common"
+    }
+  },
+  "consumables": {
+    "health_potion": {
+      "name": "Health Potion",
+      "type": "consumable",
+      "effect": "heal",
+      "value": 50,
+      "rarity": "common"
+    },
+    "mana_potion": {
+      "name": "Mana Potion", 
+      "type": "consumable",
+      "effect": "restore_mana",
+      "value": 40,
+      "rarity": "common"
+    },
+    "antidote": {
+      "name": "Antidote",
+      "type": "consumable",
+      "effect": "cure_poison",
+      "rarity": "uncommon"
+    }
+  }
+}
